@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-niksy",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "ESLint shareable config by Ivan Nikolić",
   "main": "index.js",
   "scripts": {
