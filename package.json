@@ -1,0 +1,21 @@
+{
+  "name": "eslint-config-niksy",
+  "version": "1.0.0",
+  "description": "ESLint shareable config by Ivan Nikolić",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/**/*.js"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "niksy"
+  ],
+  "author": "Ivan Nikolić <niksy5@gmail.com> (http://ivannikolic.com/)",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^1.10.3",
+    "lodash": "^4.0.0",
+    "mocha": "^2.3.4"
+  }
+}
