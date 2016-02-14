@@ -48,11 +48,11 @@ module.exports = {
 			'getWithoutSet': true
 		}],
 		'block-scoped-var': 2,
-		'complexity': [1, 3],
+		'complexity': [1, 10],
 		'consistent-return': 1,
 		'curly': [2, 'all'],
 		'default-case': 1,
-		'dot-location': [1, 'object'],
+		'dot-location': [1, 'property'],
 		'dot-notation': 1,
 		'eqeqeq': 2,
 		'guard-for-in': 2,
@@ -146,7 +146,7 @@ module.exports = {
 		'no-path-concat': 2,
 		'no-process-exit': 2,
 		'no-restricted-modules': 0,
-		'no-sync': 1,
+		'no-sync': 0,
 
 		// Stylistic issues
 		'array-bracket-spacing': [1, 'never'],
