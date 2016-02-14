@@ -76,7 +76,7 @@ module.exports = {
 		'no-labels': 2,
 		'no-lone-blocks': 2,
 		'no-loop-func': 2,
-		'no-magic-numbers': 1,
+		'no-magic-numbers': 0,
 		'no-multi-spaces': [1, {
 			'exceptions': {
 				'Property': true,
