@@ -34,7 +34,7 @@ module.exports = {
 		'use-isnan': 2,
 		'valid-jsdoc': [1, {
 			'prefer': {
-				'return': 'returns'
+				'return': 'return'
 			},
 			'requireReturn': false,
 			'requireParamDescription': false,
