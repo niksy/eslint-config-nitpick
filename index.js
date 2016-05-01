@@ -171,7 +171,9 @@ module.exports = {
 		}],
 		'id-length': 0,
 		'id-match': 0,
-		'indent': [2, 'tab'],
+		'indent': [2, 'tab', {
+			'SwitchCase': 1
+		}],
 		'jsx-quotes': [2, 'prefer-double'],
 		'key-spacing': [2, {
 			'beforeColon': false,
