@@ -199,7 +199,7 @@ module.exports = {
 			'max': 5,
 			'maxEOF': 1
 		}],
-		'no-negated-condition': 1,
+		'no-negated-condition': 0,
 		'no-nested-ternary': 2,
 		'no-new-object': 1,
 		'no-plusplus': 0,
