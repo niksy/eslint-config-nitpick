@@ -22,9 +22,22 @@ Add this config to your `.eslintrc`:
 }
 ```
 
-### ES2015 support
+## Presets
 
-Default config is included.
+In addition to default preset, there are also specific presets. All presets
+extend default one.
+
+### Browser
+
+```json
+{
+	"extends": [
+		"niksy/browser"
+	]
+}
+```
+
+### ES2015 support
 
 ```json
 {

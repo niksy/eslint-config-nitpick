@@ -1,14 +1,13 @@
 module.exports = {
 	env: {
-		node: true,
-		browser: true
+		node: true
 	},
 	rules: {
 
 		// Possible errors
 		'comma-dangle': [2, 'never'],
 		'no-cond-assign': [2, 'except-parens'],
-		'no-console': 2,
+		'no-console': 0,
 		'no-constant-condition': 2,
 		'no-control-regex': 1,
 		'no-debugger': 2,

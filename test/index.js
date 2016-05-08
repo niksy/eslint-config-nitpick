@@ -10,7 +10,7 @@ function runEslint ( code, configFile ) {
 	return linter.executeOnText(code).results[0].messages;
 }
 
-describe('Default config', function () {
+describe('Config format', function () {
 
 	var config = require('../');
 
@@ -20,27 +20,38 @@ describe('Default config', function () {
 		assert.ok(isPlainObject(config.rules));
 	});
 
+});
+
+describe('Default config', function () {
+
 	it('linted code should return proper validation errors', function () {
 		var errors = runEslint('console.log("foobar")\n', '../');
-		assert.equal(errors[0].ruleId, 'no-console');
-		assert.equal(errors[1].ruleId, 'quotes');
-		assert.equal(errors[2].ruleId, 'semi');
+		assert.equal(errors[0].ruleId, 'quotes');
+		assert.equal(errors[1].ruleId, 'semi');
 	});
 
 });
 
 describe('ES2015 config', function () {
 
-	var config = require('../es2015');
-
 	it('linted code should return proper validation errors', function () {
 		var errors = runEslint('var foo = x => x;\nconsole.log("foobar")\n', '../es2015');
 		assert.equal(errors[0].ruleId, 'no-unused-vars');
 		assert.equal(errors[1].ruleId, 'arrow-parens');
 		assert.equal(errors[2].ruleId, 'arrow-body-style');
-		assert.equal(errors[3].ruleId, 'no-console');
-		assert.equal(errors[4].ruleId, 'quotes');
-		assert.equal(errors[5].ruleId, 'semi');
+		assert.equal(errors[3].ruleId, 'quotes');
+		assert.equal(errors[4].ruleId, 'semi');
+	});
+
+});
+
+describe('Browser config', function () {
+
+	it('linted code should return proper validation errors', function () {
+		var errors = runEslint('console.log("foobar")\n', '../browser');
+		assert.equal(errors[0].ruleId, 'no-console');
+		assert.equal(errors[1].ruleId, 'quotes');
+		assert.equal(errors[2].ruleId, 'semi');
 	});
 
 });
