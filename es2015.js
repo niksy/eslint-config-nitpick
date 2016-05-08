@@ -21,7 +21,7 @@ module.exports = {
 			'before': true,
 			'after': false
 		}],
-		'no-arrow-condition': 1,
+		'no-confusing-arrow': 1,
 		'no-class-assign': 1,
 		'no-const-assign': 2,
 		'no-dupe-class-members': 2,

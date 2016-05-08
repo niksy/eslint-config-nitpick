@@ -61,7 +61,6 @@ module.exports = {
 		'no-case-declarations': 2,
 		'no-div-regex': 2,
 		'no-else-return': 1,
-		'no-empty-label': 2,
 		'no-empty-pattern': 2,
 		'no-eq-null': 2,
 		'no-eval': 1,
@@ -228,13 +227,14 @@ module.exports = {
 		}],
 		'semi': [2, 'always'],
 		'sort-vars': 0,
-		'space-after-keywords': [2, 'always'],
+		'keyword-spacing': [2, {
+			'before': true,
+			'after': true
+		}],
 		'space-before-blocks': [2, 'always'],
 		'space-before-function-paren': [2, 'always'],
-		'space-before-keywords': [2, 'always'],
 		'space-in-parens': 0,
 		'space-infix-ops': 1,
-		'space-return-throw-case': 2,
 		'space-unary-ops': [1, {
 			'words': true,
 			'nonwords': false
