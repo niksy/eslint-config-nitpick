@@ -41,6 +41,7 @@ module.exports = {
 			'requireReturnType': true
 		}],
 		'valid-typeof': 2,
+		'no-unsafe-finally': 1,
 
 		// Best practices
 		'accessor-pairs': [2, {
@@ -119,6 +120,7 @@ module.exports = {
 		'no-unmodified-loop-condition': 1,
 		'no-unused-labels': 2,
 		'no-implicit-globals': 0,
+		'no-useless-escape': 1,
 
 		// Strict mode
 		'strict': 0,
@@ -139,6 +141,7 @@ module.exports = {
 		'no-undefined': 2,
 		'no-unused-vars': 1,
 		'no-use-before-define': [2, 'nofunc'],
+		'no-restricted-globals': 0,
 
 		// Node.js and CommonJS
 		'callback-return': 0,
@@ -191,9 +194,13 @@ module.exports = {
 		'max-nested-callbacks': [1, 3],
 		'max-params': [1, 4],
 		'max-statements': 0,
+		'max-statements-per-line': [1, {
+			'max': 4
+		}],
 		'new-cap': 2,
 		'new-parens': 2,
 		'newline-after-var': 0,
+		'newline-before-return': 0,
 		'no-array-constructor': 1,
 		'no-bitwise': 1,
 		'no-continue': 1,

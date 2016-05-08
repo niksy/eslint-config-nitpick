@@ -40,6 +40,8 @@ module.exports = {
 		'prefer-rest-params': 1,
 		'sort-imports': 0,
 		'template-curly-spacing': [1, 'never'],
-		'yield-star-spacing': [1, 'after']
+		'yield-star-spacing': [1, 'after'],
+		'no-duplicate-imports': 1,
+		'no-useless-computed-key': 0
 	}
 };

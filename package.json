@@ -4,7 +4,7 @@
   "description": "ESLint shareable config by Ivan Nikolić",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/**/*.js"
+    "test": "eslint-find-rules -u ./test/fixtures/all-configs.js && mocha test/index.js"
   },
   "keywords": [
     "eslint",
@@ -15,6 +15,7 @@
   "license": "MIT",
   "devDependencies": {
     "eslint": "^2.9.0",
+    "eslint-find-rules": "^1.9.2",
     "lodash": "^4.0.0",
     "mocha": "^2.3.4"
   },
