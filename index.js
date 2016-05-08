@@ -113,6 +113,13 @@ module.exports = {
 		'vars-on-top': 2,
 		'wrap-iife': [2, 'inside'],
 		'yoda': 1,
+		'array-callback-return': 1,
+		'no-empty-function': 0,
+		'no-extra-label': 2,
+		'no-self-assign': 0,
+		'no-unmodified-loop-condition': 1,
+		'no-unused-labels': 2,
+		'no-implicit-globals': 0,
 
 		// Strict mode
 		'strict': 0,
@@ -247,6 +254,12 @@ module.exports = {
 				'exceptions': ['-']
 			}
 		}],
-		'wrap-regex': 0
+		'wrap-regex': 0,
+		'id-blacklist': 0,
+		'newline-per-chained-call': [1, {
+			'ignoreChainWithDepth': 4
+		}],
+		'no-whitespace-before-property': 1,
+		'one-var-declaration-per-line': 0
 	}
 };

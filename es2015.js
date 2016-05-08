@@ -33,6 +33,13 @@ module.exports = {
 		'prefer-reflect': 0,
 		'prefer-spread': 0,
 		'prefer-template': 0,
-		'require-yield': 1
+		'require-yield': 1,
+		'no-new-symbol': 2,
+		'no-restricted-imports': 0,
+		'no-useless-constructor': 1,
+		'prefer-rest-params': 1,
+		'sort-imports': 0,
+		'template-curly-spacing': [1, 'never'],
+		'yield-star-spacing': [1, 'after']
 	}
 };
