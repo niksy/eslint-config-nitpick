@@ -4,7 +4,10 @@
   "description": "ESLint shareable config by Ivan Nikolić",
   "main": "index.js",
   "scripts": {
-    "test": "eslint-find-rules -u ./test/fixtures/all-configs.js && mocha test/index.js"
+    "test": "eslint index.js {index,es2015,browser}.js && eslint-find-rules -u ./test/fixtures/all-configs.js && mocha test/index.js"
+  },
+  "engines": {
+    "node": ">=0.10.0"
   },
   "keywords": [
     "eslint",
