@@ -1,7 +1,12 @@
 module.exports = {
+	extends: [
+		'./lib/es2015-basic'
+	].map(require.resolve),
+
 	env: {
 		node: true
 	},
+
 	rules: {
 
 		// Possible errors

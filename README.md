@@ -22,6 +22,9 @@ Add this config to your `.eslintrc`:
 }
 ```
 
+Default preset works with ES5 environments, but some ES2015 features are
+supported (e.g. Promise).
+
 ## Presets
 
 In addition to default preset, there are also specific presets. All presets

@@ -30,6 +30,11 @@ describe('Default config', function () {
 		assert.equal(errors[1].ruleId, 'semi');
 	});
 
+	it('eslint-plugin-promise is applied', function () {
+		var errors = runEslint('var p = new Promise(function ( r1, r2 ) {})\n', '../');
+		assert.equal(errors[1].ruleId, 'promise/param-names');
+	});
+
 });
 
 describe('ES2015 config', function () {
