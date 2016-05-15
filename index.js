@@ -271,6 +271,7 @@ module.exports = {
 			'ignoreChainWithDepth': 4
 		}],
 		'no-whitespace-before-property': 1,
-		'one-var-declaration-per-line': 0
+		'one-var-declaration-per-line': 0,
+		'object-property-newline': 1
 	}
 };
