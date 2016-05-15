@@ -4,6 +4,7 @@ module.exports = {
 	].map(require.resolve),
 
 	env: {
+		node: false,
 		browser: true,
 		commonjs: true
 	},
