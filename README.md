@@ -7,7 +7,7 @@
 ## Installation
 
 ```sh
-npm install eslint eslint-config-niksy --save-dev
+npm install eslint eslint-config-niksy eslint-plugin-promise --save-dev
 ```
 
 ## Usage
