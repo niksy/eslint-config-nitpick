@@ -7,7 +7,19 @@ module.exports = {
 		node: true
 	},
 
+	plugins: [
+		'extend'
+	],
+
 	rules: {
+
+		// extend
+		'extend/no-unsafe-extend-inside-call': [2, {
+			libraryNames: ['_', 'jQuery', '$']
+		}],
+		'extend/no-unsafe-extend-inside-assignment': [2, {
+			libraryNames: ['_', 'jQuery', '$']
+		}],
 
 		// Possible errors
 		'comma-dangle': [2, 'never'],

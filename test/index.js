@@ -1,13 +1,15 @@
+var fs = require('fs');
+var path = require('path');
 var assert = require('assert');
 var isPlainObject = require('lodash/isPlainObject');
 var eslint = require('eslint');
 
-function runEslint ( code, configFile ) {
+function runEslint ( file, configFile ) {
 	var linter = new eslint.CLIEngine({
 		useEslintrc: false,
 		configFile: require.resolve(configFile)
 	});
-	return linter.executeOnText(code).results[0].messages.map(function ( err ) {
+	return linter.executeOnText(fs.readFileSync(path.join(__dirname, file), 'utf8')).results[0].messages.map(function ( err ) {
 		return err.ruleId;
 	});
 }
@@ -36,10 +38,12 @@ describe('Config format', function () {
 describe('Default config', function () {
 
 	it('linted code should return proper validation errors', function () {
-		var errors = runEslint('console.log("foobar")\nvar p = new Promise(function ( r1, r2 ) {})\n', '../');
+		var errors = runEslint('./fixtures/default-config.js', '../');
 		assert.notEqual(errors.indexOf('quotes'), -1);
 		assert.notEqual(errors.indexOf('semi'), -1);
 		assert.notEqual(errors.indexOf('promise/param-names'), -1);
+		assert.notEqual(errors.indexOf('extend/no-unsafe-extend-inside-call'), -1);
+		assert.notEqual(errors.indexOf('extend/no-unsafe-extend-inside-assignment'), -1);
 	});
 
 });
@@ -47,7 +51,7 @@ describe('Default config', function () {
 describe('ES2015 config', function () {
 
 	it('linted code should return proper validation errors', function () {
-		var errors = runEslint('var foo = x => x;\nconsole.log("foobar")\n', '../es2015');
+		var errors = runEslint('./fixtures/es2015-config.js', '../es2015');
 		assert.notEqual(errors.indexOf('no-unused-vars'), -1);
 		assert.notEqual(errors.indexOf('arrow-parens'), -1);
 		assert.notEqual(errors.indexOf('arrow-body-style'), -1);
@@ -60,7 +64,7 @@ describe('ES2015 config', function () {
 describe('Browser config', function () {
 
 	it('linted code should return proper validation errors', function () {
-		var errors = runEslint('console.log("foobar")\n', '../browser');
+		var errors = runEslint('./fixtures/browser-config.js', '../browser');
 		assert.notEqual(errors.indexOf('no-console'), -1);
 		assert.notEqual(errors.indexOf('quotes'), -1);
 		assert.notEqual(errors.indexOf('semi'), -1);
