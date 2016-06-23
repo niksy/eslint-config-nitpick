@@ -13,13 +13,13 @@ module.exports = {
 		'arrow-body-style': [2, 'always'],
 		'arrow-parens': [2, 'always'],
 		'arrow-spacing': [2, {
-			'before': true,
-			'after': true
+			before: true,
+			after: true
 		}],
 		'constructor-super': 0,
 		'generator-star-spacing': [2, {
-			'before': true,
-			'after': false
+			before: true,
+			after: false
 		}],
 		'no-confusing-arrow': 1,
 		'no-class-assign': 1,
@@ -42,6 +42,8 @@ module.exports = {
 		'template-curly-spacing': [1, 'never'],
 		'yield-star-spacing': [1, 'after'],
 		'no-duplicate-imports': 1,
-		'no-useless-computed-key': 0
+		'no-useless-computed-key': 0,
+		'no-useless-rename': 1,
+		'rest-spread-spacing': [2, 'never']
 	}
 };

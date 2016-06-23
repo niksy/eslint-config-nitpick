@@ -7,7 +7,9 @@ function runEslint ( code, configFile ) {
 		useEslintrc: false,
 		configFile: require.resolve(configFile)
 	});
-	return linter.executeOnText(code).results[0].messages;
+	return linter.executeOnText(code).results[0].messages.map(function ( err ) {
+		return err.ruleId;
+	});
 }
 
 describe('Config format', function () {
@@ -25,14 +27,10 @@ describe('Config format', function () {
 describe('Default config', function () {
 
 	it('linted code should return proper validation errors', function () {
-		var errors = runEslint('console.log("foobar")\n', '../');
-		assert.equal(errors[0].ruleId, 'quotes');
-		assert.equal(errors[1].ruleId, 'semi');
-	});
-
-	it('eslint-plugin-promise is applied', function () {
-		var errors = runEslint('var p = new Promise(function ( r1, r2 ) {})\n', '../');
-		assert.equal(errors[1].ruleId, 'promise/param-names');
+		var errors = runEslint('console.log("foobar")\nvar p = new Promise(function ( r1, r2 ) {})\n', '../');
+		assert.notEqual(errors.indexOf('quotes'), -1);
+		assert.notEqual(errors.indexOf('semi'), -1);
+		assert.notEqual(errors.indexOf('promise/param-names'), -1);
 	});
 
 });
@@ -41,11 +39,11 @@ describe('ES2015 config', function () {
 
 	it('linted code should return proper validation errors', function () {
 		var errors = runEslint('var foo = x => x;\nconsole.log("foobar")\n', '../es2015');
-		assert.equal(errors[0].ruleId, 'no-unused-vars');
-		assert.equal(errors[1].ruleId, 'arrow-parens');
-		assert.equal(errors[2].ruleId, 'arrow-body-style');
-		assert.equal(errors[3].ruleId, 'quotes');
-		assert.equal(errors[4].ruleId, 'semi');
+		assert.notEqual(errors.indexOf('no-unused-vars'), -1);
+		assert.notEqual(errors.indexOf('arrow-parens'), -1);
+		assert.notEqual(errors.indexOf('arrow-body-style'), -1);
+		assert.notEqual(errors.indexOf('quotes'), -1);
+		assert.notEqual(errors.indexOf('semi'), -1);
 	});
 
 });
@@ -54,9 +52,9 @@ describe('Browser config', function () {
 
 	it('linted code should return proper validation errors', function () {
 		var errors = runEslint('console.log("foobar")\n', '../browser');
-		assert.equal(errors[0].ruleId, 'no-console');
-		assert.equal(errors[1].ruleId, 'quotes');
-		assert.equal(errors[2].ruleId, 'semi');
+		assert.notEqual(errors.indexOf('no-console'), -1);
+		assert.notEqual(errors.indexOf('quotes'), -1);
+		assert.notEqual(errors.indexOf('semi'), -1);
 	});
 
 });
