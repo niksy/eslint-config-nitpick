@@ -49,6 +49,17 @@ describe('Default config', function () {
 
 });
 
+describe('Browser config', function () {
+
+	it('linted code should return proper validation errors', function () {
+		var errors = runEslint('./fixtures/browser-config.js', '../browser');
+		assert.notEqual(errors.indexOf('no-console'), -1);
+		assert.notEqual(errors.indexOf('quotes'), -1);
+		assert.notEqual(errors.indexOf('semi'), -1);
+	});
+
+});
+
 describe('ES2015 config', function () {
 
 	it('linted code should return proper validation errors', function () {
@@ -62,13 +73,11 @@ describe('ES2015 config', function () {
 
 });
 
-describe('Browser config', function () {
+describe('Tests config', function () {
 
 	it('linted code should return proper validation errors', function () {
-		var errors = runEslint('./fixtures/browser-config.js', '../browser');
-		assert.notEqual(errors.indexOf('no-console'), -1);
-		assert.notEqual(errors.indexOf('quotes'), -1);
-		assert.notEqual(errors.indexOf('semi'), -1);
+		var errors = runEslint('./fixtures/tests-config.js', '../tests');
+		assert.notEqual(errors.indexOf('max-nested-callbacks'), -1);
 	});
 
 });

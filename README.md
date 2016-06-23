@@ -7,7 +7,7 @@
 ## Install
 
 ```sh
-npm install eslint eslint-config-niksy --save
+npm install eslint eslint-config-niksy --save-dev
 ```
 
 ## Usage
@@ -46,6 +46,16 @@ extend default one.
 {
 	"extends": [
 		"niksy/es2015"
+	]
+}
+```
+
+### Testing
+
+```json
+{
+	"extends": [
+		"niksy/tests"
 	]
 }
 ```
