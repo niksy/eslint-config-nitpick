@@ -8,10 +8,14 @@ module.exports = {
 	},
 
 	plugins: [
-		'extend'
+		'extend',
+		'new-with-error'
 	],
 
 	rules: {
+
+		// `new` with error
+		'new-with-error/new-with-error': 1,
 
 		// extend
 		'extend/no-unsafe-extend-inside-call': [2, {

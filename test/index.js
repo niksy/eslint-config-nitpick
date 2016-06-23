@@ -44,6 +44,7 @@ describe('Default config', function () {
 		assert.notEqual(errors.indexOf('promise/param-names'), -1);
 		assert.notEqual(errors.indexOf('extend/no-unsafe-extend-inside-call'), -1);
 		assert.notEqual(errors.indexOf('extend/no-unsafe-extend-inside-assignment'), -1);
+		assert.notEqual(errors.indexOf('new-with-error/new-with-error'), -1);
 	});
 
 });
