@@ -20,6 +20,9 @@
     "lodash": "^4.13.1",
     "mocha": "^2.4.5"
   },
+  "peerDependencies": {
+    "eslint-plugin-promise": "^1.3.2"
+  },
   "engines": {
     "node": ">=4"
   },
