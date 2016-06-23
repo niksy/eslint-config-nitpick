@@ -4,10 +4,10 @@
 
 [ESLint][eslint] config for my projects.
 
-## Installation
+## Install
 
 ```sh
-npm install eslint eslint-config-niksy eslint-plugin-promise --save-dev
+npm install eslint eslint-config-niksy --save
 ```
 
 ## Usage

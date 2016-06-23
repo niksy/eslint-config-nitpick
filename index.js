@@ -1,5 +1,5 @@
 module.exports = {
-	extends: [
+	'extends': [
 		'./lib/es2015-basic'
 	].map(require.resolve),
 
