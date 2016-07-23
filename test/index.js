@@ -16,7 +16,7 @@ function runEslint ( file, configFile ) {
 
 describe('Dependencies', function () {
 
-	it('all "dependencies" are defined in "peerDependencies"', function () {
+	it('should have all "dependencies" defined in "peerDependencies"', function () {
 		var pkg = require('../package.json');
 		assert.deepStrictEqual(pkg.dependencies, pkg.peerDependencies);
 	});
@@ -27,7 +27,7 @@ describe('Config format', function () {
 
 	var config = require('../');
 
-	it('config objects should be plain objects', function () {
+	it('should have config objects which are plain objects', function () {
 		assert.ok(isPlainObject(config));
 		assert.ok(isPlainObject(config.env));
 		assert.ok(isPlainObject(config.rules));
@@ -37,7 +37,7 @@ describe('Config format', function () {
 
 describe('Default config', function () {
 
-	it('linted code should return proper validation errors', function () {
+	it('should return proper validation errors for linted code', function () {
 		var errors = runEslint('./fixtures/default-config.js', '../');
 		assert.notEqual(errors.indexOf('quotes'), -1);
 		assert.notEqual(errors.indexOf('semi'), -1);
@@ -51,7 +51,7 @@ describe('Default config', function () {
 
 describe('Browser config', function () {
 
-	it('linted code should return proper validation errors', function () {
+	it('should return proper validation errors for linted code', function () {
 		var errors = runEslint('./fixtures/browser-config.js', '../browser');
 		assert.notEqual(errors.indexOf('no-console'), -1);
 		assert.notEqual(errors.indexOf('quotes'), -1);
@@ -62,7 +62,7 @@ describe('Browser config', function () {
 
 describe('ES2015 config', function () {
 
-	it('linted code should return proper validation errors', function () {
+	it('should return proper validation errors for linted code', function () {
 		var errors = runEslint('./fixtures/es2015-config.js', '../es2015');
 		assert.notEqual(errors.indexOf('no-unused-vars'), -1);
 		assert.notEqual(errors.indexOf('arrow-parens'), -1);
@@ -75,7 +75,7 @@ describe('ES2015 config', function () {
 
 describe('Tests config', function () {
 
-	it('linted code should return proper validation errors', function () {
+	it('should return proper validation errors for linted code', function () {
 		var errors = runEslint('./fixtures/tests-config.js', '../tests');
 		assert.notEqual(errors.indexOf('max-nested-callbacks'), -1);
 	});
