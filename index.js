@@ -7,6 +7,12 @@ module.exports = {
 		node: true
 	},
 
+	parserOptions: {
+		ecmaFeatures: {
+			impliedStrict: true
+		}
+	},
+
 	plugins: [
 		'extend',
 		'new-with-error'

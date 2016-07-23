@@ -10,6 +10,9 @@ function runEslint ( file, configFile ) {
 		configFile: require.resolve(configFile)
 	});
 	return linter.executeOnText(fs.readFileSync(path.join(__dirname, file), 'utf8')).results[0].messages.map(function ( err ) {
+		if ( err.ruleId === null && err.fatal === true ) {
+			return 'parsing error';
+		}
 		return err.ruleId;
 	});
 }
@@ -39,12 +42,14 @@ describe('Default config', function () {
 
 	it('should return proper validation errors for linted code', function () {
 		var errors = runEslint('./fixtures/default-config.js', '../');
+		var errorsNonStrict = runEslint('./fixtures/default-config-non-strict.js', '../');
 		assert.notEqual(errors.indexOf('quotes'), -1);
 		assert.notEqual(errors.indexOf('semi'), -1);
 		assert.notEqual(errors.indexOf('promise/param-names'), -1);
 		assert.notEqual(errors.indexOf('extend/no-unsafe-extend-inside-call'), -1);
 		assert.notEqual(errors.indexOf('extend/no-unsafe-extend-inside-assignment'), -1);
 		assert.notEqual(errors.indexOf('new-with-error/new-with-error'), -1);
+		assert.notEqual(errorsNonStrict.indexOf('parsing error'), -1);
 	});
 
 });
