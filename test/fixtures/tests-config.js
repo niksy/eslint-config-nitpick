@@ -12,6 +12,11 @@ describe('foo', function () {
 			})
 		})
 
+		Promise.resolve()
+			.then(function () {
+
+			})
+
 	});
 
 });

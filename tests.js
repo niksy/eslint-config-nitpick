@@ -9,6 +9,8 @@ module.exports = {
 
 	rules: {
 
+		'promise/always-return': 0,
+
 		// Stylistic issues
 		'max-nested-callbacks': [1, 5]
 	}
