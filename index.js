@@ -221,6 +221,7 @@ module.exports = {
 		'max-nested-callbacks': [1, 3],
 		'max-params': [1, 4],
 		'max-statements': 0,
+		'multiline-ternary': 0,
 		'max-statements-per-line': [1, {
 			max: 4
 		}],
