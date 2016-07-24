@@ -7,6 +7,7 @@ function foo () {
 		bad: () => {
 			var a = `a b c ${d} e`;
 			var aa = 'a b c' + d + 'e';
+			var b = [1, 2, ...bb];
 			console.log(this.foo);
 		},
 		catch: function () {}

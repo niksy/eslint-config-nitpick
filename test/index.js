@@ -51,6 +51,7 @@ describe('Default config', function () {
 		assert.notEqual(errors.indexOf('new-with-error/new-with-error'), -1);
 		assert.notEqual(errors.indexOf('no-const-assign'), -1);
 		assert.notEqual(errors.indexOf('prefer-template'), -1);
+		assert.notEqual(errors.indexOf('node/no-unsupported-features'), -1);
 		assert.notEqual(errorsNonStrict.indexOf('parsing error'), -1);
 	});
 
