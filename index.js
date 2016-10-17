@@ -15,7 +15,8 @@ module.exports = {
 
 	plugins: [
 		'extend',
-		'new-with-error'
+		'new-with-error',
+		'node'
 	],
 
 	rules: {
@@ -30,6 +31,10 @@ module.exports = {
 		'extend/no-unsafe-extend-inside-assignment': [2, {
 			libraryNames: ['_', 'jQuery', '$']
 		}],
+
+		// Node
+		'node/exports-style': [1, 'module.exports'],
+		'node/process-exit-as-throw': 1,
 
 		// Possible errors
 		'comma-dangle': [2, 'never'],
@@ -69,6 +74,7 @@ module.exports = {
 		}],
 		'valid-typeof': 2,
 		'no-unsafe-finally': 1,
+		'no-unsafe-negation': 2,
 		'no-prototype-builtins': 0,
 
 		// Best practices
@@ -96,6 +102,7 @@ module.exports = {
 		'no-extra-bind': 1,
 		'no-fallthrough': 2,
 		'no-floating-decimal': 2,
+		'no-global-assign': 2,
 		'no-implicit-coercion': 2,
 		'no-implied-eval': 2,
 		'no-invalid-this': 1,
@@ -126,6 +133,7 @@ module.exports = {
 		'no-redeclare': [2, {
 			builtinGlobals: true
 		}],
+		'no-restricted-properties': 0,
 		'no-return-assign': [2, 'always'],
 		'no-script-url': 1,
 		'no-self-compare': 1,
@@ -201,6 +209,8 @@ module.exports = {
 		'computed-property-spacing': [2, 'never'],
 		'consistent-this': [2, 'self'],
 		'eol-last': [2, 'unix'],
+		'func-call-spacing': [2, 'never'],
+		'func-name-matching': 0,
 		'func-names': 0,
 		'func-style': [1, 'declaration', {
 			allowArrowFunctions: true
@@ -217,6 +227,7 @@ module.exports = {
 		}],
 		'linebreak-style': [2, 'unix'],
 		'lines-around-comment': 0,
+		'lines-around-directive': [2, 'always'],
 		'max-depth': [1, 3],
 		'max-len': 0,
 		'max-lines': [1, {
@@ -251,6 +262,7 @@ module.exports = {
 		'no-new-object': 1,
 		'no-plusplus': 0,
 		'no-restricted-syntax': 0,
+		'no-tabs': 0,
 		'no-spaced-func': 2,
 		'no-ternary': 0,
 		'no-trailing-spaces': 2,
@@ -274,11 +286,13 @@ module.exports = {
 			after: true
 		}],
 		'semi': [2, 'always'],
+		'sort-keys': 0,
 		'sort-vars': 0,
 		'keyword-spacing': [2, {
 			before: true,
 			after: true
 		}],
+		'line-comment-position': 0,
 		'space-before-blocks': [2, 'always'],
 		'space-before-function-paren': [2, 'always'],
 		'space-in-parens': 0,

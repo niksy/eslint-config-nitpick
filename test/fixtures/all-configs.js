@@ -19,7 +19,7 @@ module.exports = {
 		'node/no-missing-require': 0,
 		'node/no-unpublished-import': 0,
 		'node/no-unpublished-require': 0,
-		'node/process-exit-as-throw': 0,
+		'node/no-unpublished-bin': 0,
 		'node/shebang': 0
 	}
 };

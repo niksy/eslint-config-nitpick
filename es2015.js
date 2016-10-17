@@ -27,10 +27,13 @@ module.exports = {
 		'no-useless-constructor': 1,
 		'prefer-rest-params': 1,
 		'sort-imports': 0,
+		'symbol-description': 0,
 		'yield-star-spacing': [1, 'after'],
 		'no-duplicate-imports': 1,
 		'no-useless-computed-key': 0,
 		'no-useless-rename': 1,
-		'rest-spread-spacing': [2, 'never']
+		'rest-spread-spacing': [2, 'never'],
+		'class-methods-use-this': 0,
+		'prefer-numeric-literals': 0
 	}
 };
