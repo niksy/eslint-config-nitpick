@@ -37,7 +37,7 @@ module.exports = {
 		'node/process-exit-as-throw': 1,
 
 		// Possible errors
-		'comma-dangle': [2, 'never'],
+		'comma-dangle': [1, 'never'],
 		'no-cond-assign': [2, 'except-parens'],
 		'no-console': 0,
 		'no-constant-condition': 2,
