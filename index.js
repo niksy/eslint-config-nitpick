@@ -181,7 +181,7 @@ module.exports = {
 
 		// Node.js and CommonJS
 		'callback-return': 0,
-		'global-require': 1,
+		'global-require': 0,
 		'handle-callback-err': 1,
 		'no-mixed-requires': [1, {
 			grouping: true
