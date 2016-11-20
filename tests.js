@@ -11,6 +11,9 @@ module.exports = {
 
 		'promise/always-return': 0,
 
+		// Best practices
+		'no-invalid-this': 0,
+
 		// Stylistic issues
 		'max-nested-callbacks': [1, 5]
 	}
