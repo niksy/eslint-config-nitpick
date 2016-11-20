@@ -35,6 +35,7 @@ module.exports = {
 		'rest-spread-spacing': [2, 'never'],
 		'class-methods-use-this': 0,
 		'prefer-numeric-literals': 0,
+		'no-return-await': 2,
 
 		// Best practices
 

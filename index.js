@@ -140,6 +140,7 @@ module.exports = {
 		'no-unused-expressions': 1,
 		'no-useless-call': 0,
 		'no-useless-concat': 1,
+		'no-useless-return': 1,
 		'no-void': 2,
 		'no-warning-comments': 0,
 		'no-with': 2,
