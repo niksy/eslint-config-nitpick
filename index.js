@@ -125,9 +125,7 @@ module.exports = {
 		'no-new': 1,
 		'no-octal-escape': 2,
 		'no-octal': 2,
-		'no-param-reassign': [1, {
-			props: true
-		}],
+		'no-param-reassign': 0,
 		'no-process-env': 1,
 		'no-proto': 2,
 		'no-redeclare': [2, {

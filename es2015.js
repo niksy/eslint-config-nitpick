@@ -34,6 +34,13 @@ module.exports = {
 		'no-useless-rename': 1,
 		'rest-spread-spacing': [2, 'never'],
 		'class-methods-use-this': 0,
-		'prefer-numeric-literals': 0
+		'prefer-numeric-literals': 0,
+
+		// Best practices
+
+		// Disable param reassignment since we can use default parameters
+		'no-param-reassign': [1, {
+			props: true
+		}]
 	}
 };
