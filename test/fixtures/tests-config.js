@@ -1,6 +1,6 @@
 describe('foo', function () {
 
-	it('bar', function () {
+	it('bar', () => {
 
 		fn1(function () {
 			fn2(function () {

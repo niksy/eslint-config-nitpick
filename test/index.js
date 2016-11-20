@@ -86,6 +86,7 @@ describe('Tests config', function () {
 	it('should return proper validation errors for linted code', function () {
 		var errors = runEslint('./fixtures/tests-config.js', '../tests');
 		assert.notEqual(errors.indexOf('max-nested-callbacks'), -1);
+		assert.notEqual(errors.indexOf('mocha/no-mocha-arrows'), -1);
 		assert.equal(errors.indexOf('promise/always-return'), -1);
 	});
 
