@@ -277,7 +277,9 @@ module.exports = {
 		'quote-props': [1, 'as-needed', {
 			keywords: true
 		}],
-		'quotes': [2, 'single'],
+		'quotes': [2, 'single', {
+			allowTemplateLiterals: true
+		}],
 		'require-jsdoc': 0,
 		'semi-spacing': [1, {
 			before: false,
