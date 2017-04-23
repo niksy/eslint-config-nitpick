@@ -15,14 +15,11 @@ module.exports = {
 
 	plugins: [
 		'extend',
-		'new-with-error',
-		'node'
+		'node',
+		'unicorn'
 	],
 
 	rules: {
-
-		// `new` with error
-		'new-with-error/new-with-error': 1,
 
 		// extend
 		'extend/no-unsafe-extend-inside-call': [2, {
@@ -35,6 +32,19 @@ module.exports = {
 		// Node
 		'node/exports-style': [1, 'module.exports'],
 		'node/process-exit-as-throw': 1,
+
+		// Unicorn
+		'unicorn/catch-error-name': 1,
+		'unicorn/explicit-length-check': 1,
+		'unicorn/filename-case': [1, {
+			'case': 'kebabCase'
+		}],
+		'unicorn/no-process-exit': 2,
+		'unicorn/throw-new-error': 1,
+		'unicorn/no-array-instanceof': 1,
+		'unicorn/no-new-buffer': 2,
+		'unicorn/custom-error-definition': 2,
+		'unicorn/prefer-type-error': 2,
 
 		// Possible errors
 		'no-compare-neg-zero': 2,

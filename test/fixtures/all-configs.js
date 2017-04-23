@@ -21,6 +21,12 @@ module.exports = {
 		'node/no-unpublished-require': 0,
 		'node/no-unpublished-bin': 0,
 		'node/shebang': 0,
-		'node/no-hide-core-modules': 0
+		'node/no-hide-core-modules': 0,
+
+		'unicorn/escape-case': 0,
+		'unicorn/no-abusive-eslint-disable': 0,
+		'unicorn/no-hex-escape': 0,
+		'unicorn/number-literal-case': 0,
+		'unicorn/prefer-starts-ends-with': 0
 	}
 };
