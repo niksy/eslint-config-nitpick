@@ -1,7 +1,7 @@
 var path = require('path');
 
 module.exports = {
-	extends: [
+	'extends': [
 		'./',
 		'./es2015',
 		'./browser'
@@ -20,6 +20,7 @@ module.exports = {
 		'node/no-unpublished-import': 0,
 		'node/no-unpublished-require': 0,
 		'node/no-unpublished-bin': 0,
-		'node/shebang': 0
+		'node/shebang': 0,
+		'node/no-hide-core-modules': 0
 	}
 };

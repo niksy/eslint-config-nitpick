@@ -37,6 +37,7 @@ module.exports = {
 		'node/process-exit-as-throw': 1,
 
 		// Possible errors
+		'no-compare-neg-zero': 2,
 		'comma-dangle': [1, 'never'],
 		'no-cond-assign': [2, 'except-parens'],
 		'no-console': 0,
@@ -200,6 +201,10 @@ module.exports = {
 		'camelcase': [2, {
 			properties: 'always'
 		}],
+		'capitalized-comments': [1, 'always', {
+			ignoreInlineComments: true,
+			ignoreConsecutiveComments: true
+		}],
 		'comma-spacing': [2, {
 			before: false,
 			after: true
@@ -252,6 +257,7 @@ module.exports = {
 		'no-lonely-if': 1,
 		'no-mixed-operators': 2,
 		'no-mixed-spaces-and-tabs': [2, 'smart-tabs'],
+		'no-multi-assign': 0,
 		'no-multiple-empty-lines': [2, {
 			max: 5,
 			maxEOF: 1
@@ -316,6 +322,7 @@ module.exports = {
 			ignoreChainWithDepth: 4
 		}],
 		'no-whitespace-before-property': 1,
+		'nonblock-statement-body-position': 0,
 		'one-var-declaration-per-line': 0,
 		'object-property-newline': 1,
 		'object-curly-newline': 0,

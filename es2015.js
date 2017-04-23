@@ -36,6 +36,14 @@ module.exports = {
 		'class-methods-use-this': 0,
 		'prefer-numeric-literals': 0,
 		'no-return-await': 2,
+		'no-await-in-loop': 1,
+		'prefer-destructuring': [1, {
+			array: true,
+			object: true
+		}, {
+			enforceForRenamedProperties: true
+		}],
+		'require-await': 1,
 
 		// Best practices
 
