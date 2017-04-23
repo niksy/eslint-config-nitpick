@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
 	'extends': [
 		'./lib/es2015-basic'
