@@ -1,9 +1,9 @@
 {
   "name": "eslint-config-niksy",
   "version": "3.2.0",
-  "description": "ESLint config by Ivan Nikolić",
+  "description": "ESLint config by Ivan Nikolić.",
   "main": "index.js",
-  "author": "Ivan Nikolić <niksy5@gmail.com> (http://ivannikolic.com/)",
+  "author": "Ivan Nikolić <niksy5@gmail.com> (http://ivannikolic.com)",
   "license": "MIT",
   "directories": {
     "test": "test"
@@ -22,7 +22,7 @@
     "eslint": "^3.19.0",
     "eslint-find-rules": "^1.10.0",
     "lodash": "^4.13.1",
-    "mocha": "^2.4.5"
+    "mocha": "^3.1.2"
   },
   "peerDependencies": {
     "eslint-plugin-extend": "^0.1.1",

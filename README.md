@@ -65,5 +65,5 @@ extend default one.
 MIT © [Ivan Nikolić](http://ivannikolic.com)
 
 [ci]: https://travis-ci.org/niksy/eslint-config-niksy
-[ci-img]: https://img.shields.io/travis/niksy/eslint-config-niksy/master.svg
+[ci-img]: https://travis-ci.org/niksy/eslint-config-niksy.svg?branch=master
 [eslint]: http://eslint.org/
