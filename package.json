@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-niksy",
   "version": "3.3.0",
-  "description": "ESLint config by Ivan Nikolić.",
+  "description": "ESLint config for my projects.",
   "main": "index.js",
   "author": "Ivan Nikolić <niksy5@gmail.com> (http://ivannikolic.com)",
   "license": "MIT",
