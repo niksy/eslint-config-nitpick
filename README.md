@@ -86,6 +86,18 @@ React specific rules.
 }
 ```
 
+### Vue
+
+Vue specific rules.
+
+```json
+{
+	"extends": [
+		"niksy/vue"
+	]
+}
+```
+
 ## License
 
 MIT © [Ivan Nikolić](http://ivannikolic.com)

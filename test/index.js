@@ -126,3 +126,17 @@ describe('React config', function () {
 	});
 
 });
+
+describe('Vue config', function () {
+
+	it('should return proper validation errors for linted code', function () {
+		const errors = runEslint('./fixtures/vue.config.js', {
+			'extends': [
+				'../',
+				'../vue'
+			].map(require.resolve)
+		});
+		assert.equal(errors.length, 0);
+	});
+
+});
