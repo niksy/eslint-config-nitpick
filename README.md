@@ -50,14 +50,14 @@ Browser specific rules.
 }
 ```
 
-### ES2015
+### Next
 
-Advanced ES2015 specific rules.
+Features usually available in next major Node.js version or [latest proposals][tc39-proposals].
 
 ```json
 {
 	"extends": [
-		"niksy/es2015"
+		"niksy/next"
 	]
 }
 ```
@@ -106,3 +106,4 @@ MIT © [Ivan Nikolić](http://ivannikolic.com)
 [ci-img]: https://travis-ci.org/niksy/eslint-config-niksy.svg?branch=master
 [eslint]: http://eslint.org/
 [eslint-extends]: http://eslint.org/docs/user-guide/configuring#extending-configuration-files
+[tc39-proposals]: https://github.com/tc39/proposals#active-proposals

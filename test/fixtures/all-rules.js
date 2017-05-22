@@ -5,8 +5,11 @@ const path = require('path');
 module.exports = {
 	'extends': [
 		'./',
-		'./es2015',
-		'./browser'
+		'./browser',
+		'./next',
+		'./tests',
+		'./react',
+		'./vue'
 	].map(( m ) => {
 		return require.resolve(path.resolve(process.cwd(), m));
 	}),

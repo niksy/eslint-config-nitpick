@@ -79,13 +79,13 @@ describe('Browser config', function () {
 
 });
 
-describe('ES2015 config', function () {
+describe('Next config', function () {
 
 	it('should return proper validation errors for linted code', function () {
-		const errors = runEslint('./fixtures/es2015.config.js', {
+		const errors = runEslint('./fixtures/next.config.js', {
 			'extends': [
 				'../',
-				'../es2015'
+				'../next'
 			].map(require.resolve)
 		});
 		assert.notEqual(errors.indexOf('no-unused-vars'), -1);
