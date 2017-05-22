@@ -43,10 +43,10 @@ describe('Config format', function () {
 describe('Default config', function () {
 
 	it('should return proper validation errors for linted code', function () {
-		const errors = runEslint('./fixtures/default-config.js', {
+		const errors = runEslint('./fixtures/default.config.js', {
 			'extends': require.resolve('../')
 		});
-		const errorsNonStrict = runEslint('./fixtures/default-config-non-strict.js', {
+		const errorsNonStrict = runEslint('./fixtures/default-non-strict.config.js', {
 			'extends': require.resolve('../')
 		});
 		assert.notEqual(errors.indexOf('quotes'), -1);
@@ -66,7 +66,7 @@ describe('Default config', function () {
 describe('Browser config', function () {
 
 	it('should return proper validation errors for linted code', function () {
-		const errors = runEslint('./fixtures/browser-config.js', {
+		const errors = runEslint('./fixtures/browser.config.js', {
 			'extends': [
 				'../',
 				'../browser'
@@ -82,7 +82,7 @@ describe('Browser config', function () {
 describe('ES2015 config', function () {
 
 	it('should return proper validation errors for linted code', function () {
-		const errors = runEslint('./fixtures/es2015-config.js', {
+		const errors = runEslint('./fixtures/es2015.config.js', {
 			'extends': [
 				'../',
 				'../es2015'
@@ -100,7 +100,7 @@ describe('ES2015 config', function () {
 describe('Tests config', function () {
 
 	it('should return proper validation errors for linted code', function () {
-		const errors = runEslint('./fixtures/tests-config.js', {
+		const errors = runEslint('./fixtures/tests.config.js', {
 			'extends': [
 				'../',
 				'../tests'
@@ -116,7 +116,7 @@ describe('Tests config', function () {
 describe('React config', function () {
 
 	it('should return proper validation errors for linted code', function () {
-		const errors = runEslint('./fixtures/react-config.js', {
+		const errors = runEslint('./fixtures/react.config.js', {
 			'extends': [
 				'../',
 				'../react'

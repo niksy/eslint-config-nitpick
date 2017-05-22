@@ -9,7 +9,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "eslint {index,es2015,browser,tests}.js && eslint-find-rules -u ./test/fixtures/all-configs.js && mocha test/index.js"
+    "test": "eslint {index,es2015,browser,tests}.js && eslint-find-rules -u ./test/fixtures/all-rules.js && mocha test/index.js"
   },
   "dependencies": {
     "eslint-plugin-extend": "^0.1.1",
