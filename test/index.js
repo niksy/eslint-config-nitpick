@@ -67,7 +67,10 @@ describe('Browser config', function () {
 
 	it('should return proper validation errors for linted code', function () {
 		const errors = runEslint('./fixtures/browser-config.js', {
-			'extends': require.resolve('../browser')
+			'extends': [
+				'../',
+				'../browser'
+			].map(require.resolve)
 		});
 		assert.notEqual(errors.indexOf('no-console'), -1);
 		assert.notEqual(errors.indexOf('quotes'), -1);
@@ -80,7 +83,10 @@ describe('ES2015 config', function () {
 
 	it('should return proper validation errors for linted code', function () {
 		const errors = runEslint('./fixtures/es2015-config.js', {
-			'extends': require.resolve('../es2015')
+			'extends': [
+				'../',
+				'../es2015'
+			].map(require.resolve)
 		});
 		assert.notEqual(errors.indexOf('no-unused-vars'), -1);
 		assert.notEqual(errors.indexOf('arrow-parens'), -1);
@@ -95,7 +101,10 @@ describe('Tests config', function () {
 
 	it('should return proper validation errors for linted code', function () {
 		const errors = runEslint('./fixtures/tests-config.js', {
-			'extends': require.resolve('../tests')
+			'extends': [
+				'../',
+				'../tests'
+			].map(require.resolve)
 		});
 		assert.notEqual(errors.indexOf('max-nested-callbacks'), -1);
 		assert.notEqual(errors.indexOf('mocha/no-mocha-arrows'), -1);

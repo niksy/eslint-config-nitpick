@@ -22,15 +22,25 @@ Add this config to your `.eslintrc`:
 }
 ```
 
-Default preset works with ES5 environments, but some ES2015 features are
-supported (e.g. Promise, let/const, …).
-
 ## Presets
 
-In addition to default preset, there are also specific presets. All presets
-extend default one.
+In addition to default preset, there are also specific presets. You can apply
+multiple presets with [ESLint `extends` option][eslint-extends].
+
+**It’s highly recommended to apply default preset:**
+
+```json
+{
+	"extends": [
+		"niksy",
+		"niksy/other-preset"
+	]
+}
+```
 
 ### Browser
+
+Browser specific rules.
 
 ```json
 {
@@ -40,7 +50,9 @@ extend default one.
 }
 ```
 
-### ES2015 support
+### ES2015
+
+Advanced ES2015 specific rules.
 
 ```json
 {
@@ -51,6 +63,8 @@ extend default one.
 ```
 
 ### Testing
+
+Rules for testing frameworks (e.g. Mocha).
 
 ```json
 {
@@ -67,3 +81,4 @@ MIT © [Ivan Nikolić](http://ivannikolic.com)
 [ci]: https://travis-ci.org/niksy/eslint-config-niksy
 [ci-img]: https://travis-ci.org/niksy/eslint-config-niksy.svg?branch=master
 [eslint]: http://eslint.org/
+[eslint-extends]: http://eslint.org/docs/user-guide/configuring#extending-configuration-files
