@@ -74,6 +74,18 @@ Rules for testing frameworks (e.g. Mocha).
 }
 ```
 
+### React
+
+React specific rules.
+
+```json
+{
+	"extends": [
+		"niksy/react"
+	]
+}
+```
+
 ## License
 
 MIT © [Ivan Nikolić](http://ivannikolic.com)

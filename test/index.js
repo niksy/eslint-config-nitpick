@@ -112,3 +112,17 @@ describe('Tests config', function () {
 	});
 
 });
+
+describe('React config', function () {
+
+	it('should return proper validation errors for linted code', function () {
+		const errors = runEslint('./fixtures/react-config.js', {
+			'extends': [
+				'../',
+				'../react'
+			].map(require.resolve)
+		});
+		assert.equal(errors.length, 0);
+	});
+
+});
