@@ -76,7 +76,7 @@ Rules for testing frameworks (e.g. Mocha).
 
 ### React
 
-React specific rules.
+React (JSX) specific rules.
 
 ```json
 {
@@ -88,7 +88,7 @@ React specific rules.
 
 ### Vue
 
-Vue specific rules.
+Vue (JSX) specific rules.
 
 ```json
 {

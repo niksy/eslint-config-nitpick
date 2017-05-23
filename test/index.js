@@ -131,7 +131,7 @@ describe('Vue config', function () {
 				'../vue'
 			].map(require.resolve)
 		});
-		assert.equal(errors.length, 0);
+		assert.notEqual(errors.indexOf('react/jsx-no-undef'), -1);
 	});
 
 });
