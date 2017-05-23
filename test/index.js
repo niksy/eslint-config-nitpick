@@ -90,7 +90,6 @@ describe('Next config', function () {
 		});
 		assert.notEqual(errors.indexOf('no-unused-vars'), -1);
 		assert.notEqual(errors.indexOf('arrow-parens'), -1);
-		assert.notEqual(errors.indexOf('arrow-body-style'), -1);
 		assert.notEqual(errors.indexOf('quotes'), -1);
 		assert.notEqual(errors.indexOf('semi'), -1);
 	});
