@@ -1,2 +1,1 @@
-var foo = x => x;
-console.log("foobar")
+var [foo, ... bar] = [1, 2];

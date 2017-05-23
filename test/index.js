@@ -86,10 +86,7 @@ describe('Next config', function () {
 				'../next'
 			].map(require.resolve)
 		});
-		assert.notEqual(errors.indexOf('no-unused-vars'), -1);
-		assert.notEqual(errors.indexOf('arrow-parens'), -1);
-		assert.notEqual(errors.indexOf('quotes'), -1);
-		assert.notEqual(errors.indexOf('semi'), -1);
+		assert.notEqual(errors.indexOf('rest-spread-spacing'), -1);
 	});
 
 });

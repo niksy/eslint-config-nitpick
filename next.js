@@ -8,6 +8,8 @@ module.exports = {
 
 	rules: {
 
+		'node/no-unsupported-features': 0,
+
 		// ES2015
 		'constructor-super': 0,
 		'generator-star-spacing': [2, {
