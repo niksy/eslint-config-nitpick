@@ -116,7 +116,8 @@ describe('React config', function () {
 				'../react'
 			].map(require.resolve)
 		});
-		assert.equal(errors.length, 0);
+		assert.notEqual(errors.indexOf('react/react-in-jsx-scope'), -1);
+		assert.notEqual(errors.indexOf('react/jsx-no-undef'), -1);
 	});
 
 });

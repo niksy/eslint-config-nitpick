@@ -32,6 +32,8 @@ module.exports = {
 		'unicorn/no-abusive-eslint-disable': 0,
 		'unicorn/no-hex-escape': 0,
 		'unicorn/number-literal-case': 0,
-		'unicorn/prefer-starts-ends-with': 0
+		'unicorn/prefer-starts-ends-with': 0,
+
+		'react/jsx-space-before-closing': 0
 	}
 };
