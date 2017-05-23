@@ -6,6 +6,13 @@ module.exports = {
 		es6: true
 	},
 
+	parserOptions: {
+		sourceType: 'module',
+		ecmaFeatures: {
+			experimentalObjectRestSpread: true
+		}
+	},
+
 	rules: {
 
 		'node/no-unsupported-features': 0,
