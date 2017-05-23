@@ -73,8 +73,6 @@ describe('Browser config', function () {
 			].map(require.resolve)
 		});
 		assert.notEqual(errors.indexOf('no-console'), -1);
-		assert.notEqual(errors.indexOf('quotes'), -1);
-		assert.notEqual(errors.indexOf('semi'), -1);
 	});
 
 });
