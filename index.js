@@ -361,7 +361,7 @@ module.exports = {
 			version: 4
 		}],
 
-		'arrow-body-style': [2, 'as-needed'],
+		'arrow-body-style': [1, 'as-needed'],
 		'arrow-parens': [2, 'always'],
 		'arrow-spacing': [2, {
 			before: true,
