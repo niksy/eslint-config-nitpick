@@ -14,6 +14,9 @@ module.exports = {
 
 	rules: {
 
+		// Other
+		'no-unused-vars': [1, { argsIgnorePattern: '^h$' }],
+
 		// React/JSX
 		'react/no-array-index-key': 2,
 		'react/no-unescaped-entities': 2,
