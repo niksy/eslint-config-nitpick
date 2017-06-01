@@ -380,6 +380,6 @@ module.exports = {
 		}],
 		'template-tag-spacing': [2, 'never'],
 		'no-useless-computed-key': 1,
-		'object-shorthand': [1, 'always']
+		'object-shorthand': [1, 'consistent-as-needed']
 	}
 };
