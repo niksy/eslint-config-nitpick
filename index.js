@@ -367,7 +367,7 @@ module.exports = {
 			before: true,
 			after: true
 		}],
-		'no-confusing-arrow': 1,
+		'no-confusing-arrow': [1, { allowParens: true }],
 		'no-const-assign': 2,
 		'no-var': 0,
 		'prefer-arrow-callback': 0,
