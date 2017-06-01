@@ -378,6 +378,8 @@ module.exports = {
 		'prefer-promise-reject-errors': [1, {
 			allowEmptyReject: true
 		}],
-		'template-tag-spacing': [2, 'never']
+		'template-tag-spacing': [2, 'never'],
+		'no-useless-computed-key': 1,
+		'object-shorthand': [1, 'always']
 	}
 };
