@@ -339,7 +339,7 @@ module.exports = {
 		'no-whitespace-before-property': 1,
 		'nonblock-statement-body-position': 0,
 		'one-var-declaration-per-line': 0,
-		'object-property-newline': 1,
+		'object-property-newline': [1, { allowMultiplePropertiesPerLine: true }],
 		'object-curly-newline': 0,
 		'unicode-bom': [2, 'never'],
 
