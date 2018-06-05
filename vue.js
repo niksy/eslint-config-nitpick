@@ -26,6 +26,14 @@ module.exports = {
 		'react/void-dom-elements-no-children': 2,
 
 		// JSX
+		'react/jsx-space-before-closing': 0,
+		'react/jsx-child-element-spacing': 1,
+		'react/jsx-closing-tag-location': 2,
+		'react/jsx-curly-brace-presence': [1, 'never'],
+		'react/jsx-max-depth': [1, { max: 15 }],
+		'react/jsx-one-expression-per-line': 0,
+		'react/jsx-props-no-multi-spaces': 2,
+		'react/button-has-type': 2,
 		'react/jsx-boolean-value': [2, 'always'],
 		'react/jsx-closing-bracket-location': [1, 'tag-aligned'],
 		'react/jsx-curly-spacing': [1, 'never'],

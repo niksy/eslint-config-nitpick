@@ -31,6 +31,7 @@ module.exports = {
 		'mocha/no-identical-title': 2,
 		'mocha/max-top-level-suites': 0,
 		'mocha/no-nested-tests': 2,
+		'mocha/no-setup-in-describe': 1,
 
 		// Best practices
 		'no-invalid-this': 0,

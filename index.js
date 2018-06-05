@@ -40,16 +40,24 @@ module.exports = {
 
 		// Unicorn
 		'unicorn/catch-error-name': 1,
-		'unicorn/explicit-length-check': 1,
+		'unicorn/explicit-length-check': [1, {
+			'non-zero': 'not-equal'
+		}],
 		'unicorn/filename-case': [1, {
 			'case': 'kebabCase'
 		}],
 		'unicorn/no-process-exit': 2,
 		'unicorn/throw-new-error': 1,
 		'unicorn/no-array-instanceof': 1,
-		'unicorn/no-new-buffer': 2,
 		'unicorn/custom-error-definition': 2,
 		'unicorn/prefer-type-error': 2,
+		'unicorn/new-for-builtins': 2,
+		'unicorn/no-fn-reference-in-iterator': 1,
+		'unicorn/no-unsafe-regex': 2,
+		'unicorn/prefer-add-event-listener': 2,
+		'unicorn/prefer-spread': 1,
+		'unicorn/regex-shorthand': 1,
+		'unicorn/error-message': 1,
 
 		// Possible errors
 		'getter-return': [2, { allowImplicit: true }],
@@ -367,6 +375,9 @@ module.exports = {
 		'promise/no-return-wrap': 1,
 		'promise/prefer-await-to-callbacks': 0,
 		'promise/prefer-await-to-then': 0,
+		'promise/no-new-statics': 2,
+		'promise/no-return-in-finally': 1,
+		'promise/valid-params': 2,
 
 		'node/no-unsupported-features': [2, {
 			version: 4

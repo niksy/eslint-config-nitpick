@@ -27,13 +27,15 @@ module.exports = {
 		'node/no-unpublished-bin': 0,
 		'node/shebang': 0,
 		'node/no-hide-core-modules': 0,
+		'node/no-extraneous-import': 0,
+		'node/no-extraneous-require': 0,
 
 		'unicorn/escape-case': 0,
 		'unicorn/no-abusive-eslint-disable': 0,
 		'unicorn/no-hex-escape': 0,
 		'unicorn/number-literal-case': 0,
 		'unicorn/prefer-starts-ends-with': 0,
-
-		'react/jsx-space-before-closing': 0
+		'unicorn/import-index': 0,
+		'unicorn/no-new-buffer': 0,
 	}
 };
