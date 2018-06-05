@@ -52,6 +52,7 @@ module.exports = {
 		'unicorn/prefer-type-error': 2,
 
 		// Possible errors
+		'getter-return': [2, { allowImplicit: true }],
 		'no-compare-neg-zero': 2,
 		'comma-dangle': [1, 'never'],
 		'no-cond-assign': [2, 'except-parens'],
@@ -172,6 +173,7 @@ module.exports = {
 		'no-unused-labels': 2,
 		'no-implicit-globals': 0,
 		'no-useless-escape': 1,
+		'for-direction': 2,
 
 		// Strict mode
 		'strict': 0,
@@ -195,6 +197,7 @@ module.exports = {
 		'no-restricted-globals': 0,
 
 		// Node.js and CommonJS
+		'no-buffer-constructor': 2,
 		'callback-return': 0,
 		'global-require': 0,
 		'handle-callback-err': 1,
@@ -205,9 +208,16 @@ module.exports = {
 		'no-path-concat': 2,
 		'no-process-exit': 2,
 		'no-restricted-modules': 0,
-		'no-sync': 0,
+		'no-sync': 1,
 
 		// Stylistic issues
+		'switch-colon-spacing': [1, { before: false, after: true }],
+		'semi-style': [2, 'last'],
+		'padding-line-between-statements': 0,
+		'multiline-comment-style': [1, 'starred-block'],
+		'lines-between-class-members': [1, 'always'],
+		'implicit-arrow-linebreak': [1, 'beside'],
+		'function-paren-newline': [1, 'multiline'],
 		'array-bracket-spacing': [1, 'never'],
 		'block-spacing': [1, 'always'],
 		'brace-style': [2, '1tbs', {
@@ -339,12 +349,13 @@ module.exports = {
 		'no-whitespace-before-property': 1,
 		'nonblock-statement-body-position': 0,
 		'one-var-declaration-per-line': 0,
-		'object-property-newline': [1, { allowMultiplePropertiesPerLine: true }],
+		'object-property-newline': [1, { allowAllPropertiesOnSameLine: true }],
 		'object-curly-newline': 0,
 		'unicode-bom': [2, 'never'],
+		'array-bracket-newline': [1, { multiline: true }],
+		'array-element-newline': [1, { multiline: true }],
 
-		// ES2015
-		// We want to use subset from ES2015
+		// ES2015 (we want to use subset from ES2015)
 		'promise/catch-or-return': 1,
 		'promise/always-return': 2,
 		'promise/param-names': 2,
