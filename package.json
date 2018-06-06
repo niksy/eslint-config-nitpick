@@ -12,6 +12,7 @@
     "tests.js",
     "react.js",
     "vue.js",
+    "lib/",
     "LICENSE.md",
     "README.md"
   ],
