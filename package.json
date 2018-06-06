@@ -5,6 +5,16 @@
   "main": "index.js",
   "author": "Ivan Nikolić <niksy5@gmail.com> (http://ivannikolic.com)",
   "license": "MIT",
+  "files": [
+    "index.js",
+    "browser.js",
+    "next.js",
+    "tests.js",
+    "react.js",
+    "vue.js",
+    "LICENSE.md",
+    "README.md"
+  ],
   "directories": {
     "test": "test"
   },
