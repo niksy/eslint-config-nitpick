@@ -16,6 +16,10 @@ module.exports = {
 
 		// Other
 		'no-unused-vars': [1, { argsIgnorePattern: '^h$' }],
+		'no-param-reassign': [1, {
+			props: true,
+			ignorePropertyModificationsFor: ['state']
+		}],
 
 		// React/JSX
 		'react/no-array-index-key': 2,
