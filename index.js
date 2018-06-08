@@ -361,7 +361,7 @@ module.exports = {
 		'object-curly-newline': 0,
 		'unicode-bom': [2, 'never'],
 		'array-bracket-newline': [1, { multiline: true }],
-		'array-element-newline': [1, { multiline: true }],
+		'array-element-newline': [1, 'always'],
 
 		// ES2015 (we want to use subset from ES2015)
 		'promise/catch-or-return': 1,
