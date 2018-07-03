@@ -50,6 +50,7 @@ module.exports = {
 		'react/require-optimization': 0,
 		'react/sort-comp': 1,
 		'react/sort-prop-types': 0,
-		'react/jsx-uses-react': 1
+		'react/jsx-uses-react': 1,
+		'react/no-unsafe': 2
 	}
 };
