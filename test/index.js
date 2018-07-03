@@ -23,6 +23,7 @@ describe('Dependencies', function () {
 
 	it('should have all "dependencies" defined in "peerDependencies"', function () {
 		const pkg = require('../package.json');
+
 		assert.deepStrictEqual(pkg.dependencies, pkg.peerDependencies);
 	});
 

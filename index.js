@@ -221,7 +221,24 @@ module.exports = {
 		// Stylistic issues
 		'switch-colon-spacing': [1, { before: false, after: true }],
 		'semi-style': [2, 'last'],
-		'padding-line-between-statements': 0,
+		'padding-line-between-statements': [2,
+
+			// Blank line always after directives
+			{ blankLine: 'always', prev: 'directive', next: '*' },
+			{ blankLine: 'any', prev: 'directive', next: 'directive' },
+
+			// Blank line always before "module.exports" and "export" statement
+			{ blankLine: 'always', prev: '*', next: 'cjs-export' },
+			{ blankLine: 'never', prev: 'cjs-export', next: 'cjs-export' },
+			{ blankLine: 'always', prev: '*', next: 'export' },
+
+			// Blank line always after last "require" and "import" statement
+			{ blankLine: 'always', prev: 'cjs-import', next: '*' },
+			{ blankLine: 'any', prev: 'cjs-import', next: 'cjs-import' },
+			{ blankLine: 'always', prev: 'import', next: '*' },
+			{ blankLine: 'any', prev: 'import', next: 'import' }
+
+		],
 		'multiline-comment-style': [1, 'starred-block'],
 		'lines-between-class-members': [1, 'always'],
 		'implicit-arrow-linebreak': [1, 'beside'],
@@ -264,7 +281,6 @@ module.exports = {
 		}],
 		'linebreak-style': [2, 'unix'],
 		'lines-around-comment': 0,
-		'lines-around-directive': [2, 'always'],
 		'max-depth': [1, 3],
 		'max-len': 0,
 		'max-lines': [1, {
@@ -281,8 +297,6 @@ module.exports = {
 		}],
 		'new-cap': 2,
 		'new-parens': 2,
-		'newline-after-var': 0,
-		'newline-before-return': 0,
 		'no-array-constructor': 1,
 		'no-bitwise': 1,
 		'no-continue': 1,
