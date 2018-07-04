@@ -372,10 +372,10 @@ module.exports = {
 		'nonblock-statement-body-position': 0,
 		'one-var-declaration-per-line': 0,
 		'object-property-newline': [1, { allowAllPropertiesOnSameLine: true }],
-		'object-curly-newline': 0,
+		'object-curly-newline': [1, { multiline: true, minProperties: 3, consistent: true }],
 		'unicode-bom': [2, 'never'],
-		'array-bracket-newline': [1, { multiline: true }],
-		'array-element-newline': [1, 'always'],
+		'array-bracket-newline': [1, { multiline: true, minItems: 3 }],
+		'array-element-newline': [1, { multiline: true, minItems: 3 }],
 
 		// ES2015 (we want to use subset from ES2015)
 		'promise/catch-or-return': 1,
