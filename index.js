@@ -493,11 +493,11 @@ module.exports = {
 		'object-curly-newline': [
 			1,
 			{
-				multiline: true, minProperties: 3, consistent: true
+				consistent: true
 			}
 		],
 		'unicode-bom': [2, 'never'],
-		'array-bracket-newline': [1, { multiline: true, minItems: 3 }],
+		'array-bracket-newline': [1, 'consistent'],
 		'array-element-newline': [1, { multiline: true, minItems: 3 }],
 
 		// ES2015 (we want to use subset from ES2015)
