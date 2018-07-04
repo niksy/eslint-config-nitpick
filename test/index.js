@@ -5,6 +5,7 @@ const path = require('path');
 const assert = require('assert');
 const isPlainObject = require('lodash/isPlainObject');
 const eslint = require('eslint');
+const _ = require('lodash');
 
 function runEslint ( file, config ) {
 	const linter = new eslint.CLIEngine({
@@ -24,7 +25,7 @@ describe('Dependencies', function () {
 	it('should have all "dependencies" defined in "peerDependencies"', function () {
 		const pkg = require('../package.json');
 
-		assert.deepStrictEqual(pkg.dependencies, pkg.peerDependencies);
+		assert.deepStrictEqual(_.omit(pkg.dependencies, ['resolve-from', 'lodash']), pkg.peerDependencies);
 	});
 
 });
@@ -126,13 +127,14 @@ describe('React config', function () {
 describe('Vue config', function () {
 
 	it('should return proper validation errors for linted code', function () {
-		const errors = runEslint('./fixtures/vue.config.js', {
+		const errors = runEslint('./fixtures/vue.config.vue', {
 			'extends': [
 				'../',
 				'../vue'
 			].map(require.resolve)
 		});
-		assert.notEqual(errors.indexOf('react/jsx-no-undef'), -1);
+		assert.notEqual(errors.indexOf('vue/valid-template-root'), -1);
+		assert.notEqual(errors.indexOf('vue/script-indent'), -1);
 	});
 
 });
