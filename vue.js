@@ -1,10 +1,11 @@
 'use strict';
 
+const path = require('path');
 const resolveFrom = require('resolve-from');
 
 module.exports = {
 
-	parser: resolveFrom('eslint-plugin-vue', 'vue-eslint-parser'),
+	parser: resolveFrom(path.dirname(require.resolve('eslint-plugin-vue')), 'vue-eslint-parser'),
 
 	extends: require.resolve('./lib/jsx'),
 
