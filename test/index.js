@@ -12,7 +12,7 @@ function runEslint ( file, config ) {
 		useEslintrc: false,
 		baseConfig: config
 	});
-	return linter.executeOnText(fs.readFileSync(path.join(__dirname, file), 'utf8')).results[0].messages.map(( err ) => {
+	return linter.executeOnFiles([path.join(__dirname, file)]).results[0].messages.map(( err ) => {
 		if ( err.ruleId === null && err.fatal === true ) {
 			return 'parsing error';
 		}

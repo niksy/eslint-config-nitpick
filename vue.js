@@ -24,9 +24,6 @@ module.exports = {
 			ignorePropertyModificationsFor: ['state']
 		}],
 
-		// Indentation is handled with "vue/html-indent" and "vue/script-indent"
-		'indent': 0,
-
 		// Base rules
 		'vue/comment-directive': 2,
 		'vue/jsx-uses-vars': 2,
@@ -113,5 +110,15 @@ module.exports = {
 			switchCase: 1
 		}]
 
-	}
+	},
+
+	overrides: [
+		{
+			files: ['*.vue'],
+			rules: {
+				indent: 0
+			}
+		}
+	]
+
 };
