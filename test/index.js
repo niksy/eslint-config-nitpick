@@ -89,6 +89,8 @@ describe('Next config', function () {
 			].map(require.resolve)
 		});
 		assert.notEqual(errors.indexOf('rest-spread-spacing'), -1);
+		assert.notEqual(errors.indexOf('import/exports-last'), -1);
+		assert.notEqual(errors.indexOf('import/no-mutable-exports'), -1);
 	});
 
 });
