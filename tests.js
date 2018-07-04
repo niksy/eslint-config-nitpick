@@ -6,9 +6,7 @@ module.exports = {
 		mocha: true
 	},
 
-	plugins: [
-		'mocha'
-	],
+	plugins: ['mocha'],
 
 	rules: {
 

@@ -14,9 +14,7 @@ module.exports = {
 		}
 	},
 
-	plugins: [
-		'import'
-	],
+	plugins: ['import'],
 
 	rules: {
 
@@ -24,10 +22,13 @@ module.exports = {
 
 		// ES2015
 		'constructor-super': 1,
-		'generator-star-spacing': [2, {
-			before: true,
-			after: false
-		}],
+		'generator-star-spacing': [
+			2,
+			{
+				before: true,
+				after: false
+			}
+		],
 		'no-class-assign': 1,
 		'no-dupe-class-members': 2,
 		'no-this-before-super': 2,
@@ -48,12 +49,16 @@ module.exports = {
 		'prefer-numeric-literals': 0,
 		'no-return-await': 2,
 		'no-await-in-loop': 1,
-		'prefer-destructuring': [1, {
-			array: true,
-			object: true
-		}, {
-			enforceForRenamedProperties: true
-		}],
+		'prefer-destructuring': [
+			1,
+			{
+				array: true,
+				object: true
+			},
+			{
+				enforceForRenamedProperties: true
+			}
+		],
 		'require-await': 1,
 
 		// "import" and "require"
@@ -76,8 +81,11 @@ module.exports = {
 		// Best practices
 
 		// Disable param reassignment since we can use default parameters
-		'no-param-reassign': [1, {
-			props: true
-		}]
+		'no-param-reassign': [
+			1,
+			{
+				props: true
+			}
+		]
 	}
 };

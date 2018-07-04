@@ -2,16 +2,14 @@
 
 module.exports = {
 
-	extends: require.resolve('./lib/jsx'),
+	'extends': require.resolve('./lib/jsx'),
 
-	plugins: [
-		'react'
-	],
+	plugins: ['react'],
 
 	rules: {
 
 		// React
-		'react/boolean-prop-naming': [1, { 'rule': '^(is|has)[A-Z]([A-Za-z0-9]?)+' }],
+		'react/boolean-prop-naming': [1, { rule: '^(is|has)[A-Z]([A-Za-z0-9]?)+' }],
 		'react/default-props-match-prop-types': 1,
 		'react/destructuring-assignment': [1, 'always'],
 		'react/forbid-dom-props': 0,

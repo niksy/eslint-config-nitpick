@@ -7,23 +7,24 @@ module.exports = {
 
 	parser: resolveFrom(path.dirname(require.resolve('eslint-plugin-vue')), 'vue-eslint-parser'),
 
-	extends: require.resolve('./lib/jsx'),
+	'extends': require.resolve('./lib/jsx'),
 
 	parserOptions: {
 		sourceType: 'module'
 	},
 
-	plugins: [
-		'vue'
-	],
+	plugins: ['vue'],
 
 	rules: {
 
 		// Other
-		'no-param-reassign': [1, {
-			props: true,
-			ignorePropertyModificationsFor: ['state']
-		}],
+		'no-param-reassign': [
+			1,
+			{
+				props: true,
+				ignorePropertyModificationsFor: ['state']
+			}
+		],
 
 		// Base rules
 		'vue/comment-directive': 2,
@@ -64,22 +65,28 @@ module.exports = {
 		'vue/attribute-hyphenation': [2, 'never'],
 		'vue/html-end-tags': 2,
 		'vue/html-indent': [2, 'tab'],
-		'vue/html-self-closing': [2, {
-			html: {
-				void: 'always',
-				normal: 'never',
-				component: 'always'
-			},
-			svg: 'always',
-			math: 'always'
-		}],
-		'vue/max-attributes-per-line': [2, {
-			singleline: 3,
-			multiline: {
-				max: 1,
-				allowFirstLine: false
+		'vue/html-self-closing': [
+			2,
+			{
+				html: {
+					'void': 'always',
+					normal: 'never',
+					component: 'always'
+				},
+				svg: 'always',
+				math: 'always'
 			}
-		}],
+		],
+		'vue/max-attributes-per-line': [
+			2,
+			{
+				singleline: 3,
+				multiline: {
+					max: 1,
+					allowFirstLine: false
+				}
+			}
+		],
 		'vue/mustache-interpolation-spacing': [2, 'always'],
 		'vue/name-property-casing': [2, 'PascalCase'],
 		'vue/no-multi-spaces': 2,
@@ -96,20 +103,30 @@ module.exports = {
 		'vue/this-in-template': [1, 'never'], // TODO: review later
 
 		// Uncategorized
-		'vue/html-closing-bracket-newline': [2, {
-			singleline: 'never',
-			multiline: 'always'
-		}],
-		'vue/html-closing-bracket-spacing': [2, {
-			startTag: 'never',
-			endTag: 'never',
-			selfClosingTag: 'always'
-		}],
+		'vue/html-closing-bracket-newline': [
+			2,
+			{
+				singleline: 'never',
+				multiline: 'always'
+			}
+		],
+		'vue/html-closing-bracket-spacing': [
+			2,
+			{
+				startTag: 'never',
+				endTag: 'never',
+				selfClosingTag: 'always'
+			}
+		],
 		'vue/prop-name-casing': [2, 'camelCase'],
-		'vue/script-indent': [2, 'tab', {
-			baseIndent: 1,
-			switchCase: 1
-		}]
+		'vue/script-indent': [
+			2,
+			'tab',
+			{
+				baseIndent: 1,
+				switchCase: 1
+			}
+		]
 
 	},
 
