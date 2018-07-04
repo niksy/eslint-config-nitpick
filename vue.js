@@ -19,7 +19,6 @@ module.exports = {
 	rules: {
 
 		// Other
-		'no-unused-vars': [1, { argsIgnorePattern: '^h$' }],
 		'no-param-reassign': [1, {
 			props: true,
 			ignorePropertyModificationsFor: ['state']
