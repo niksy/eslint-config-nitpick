@@ -23,6 +23,11 @@
     "test": "eslint '{index,browser,next,tests,react,vue,test/index}.js' && eslint-find-rules -u ./test/fixtures/all-rules.js && mocha 'test/index.js'"
   },
   "dependencies": {
+    "resolve-from": "^4.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-find-rules": "^3.2.3",
     "eslint-plugin-extend": "^0.1.1",
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-mocha": "^4.9.0",
@@ -31,13 +36,8 @@
     "eslint-plugin-react": "^7.9.1",
     "eslint-plugin-unicorn": "^4.0.3",
     "eslint-plugin-vue": "^4.5.0",
-    "resolve-from": "^4.0.0"
-  },
-  "devDependencies": {
-    "eslint": "^4.19.1",
-    "eslint-find-rules": "^3.2.3",
     "lodash": "^4.17.10",
-    "mocha": "^3.1.2"
+    "mocha": "^4.1.0"
   },
   "peerDependencies": {
     "eslint-plugin-extend": "^0.1.1",

@@ -1,6 +1,5 @@
 'use strict';
 
-const fs = require('fs');
 const path = require('path');
 const assert = require('assert');
 const isPlainObject = require('lodash/isPlainObject');
@@ -25,7 +24,12 @@ describe('Dependencies', function () {
 	it('should have all "dependencies" defined in "peerDependencies"', function () {
 		const pkg = require('../package.json');
 
-		assert.deepStrictEqual(_.omit(pkg.dependencies, ['resolve-from', 'lodash']), pkg.peerDependencies);
+		assert.deepStrictEqual(_.omit(pkg.devDependencies, [
+			'eslint',
+			'eslint-find-rules',
+			'lodash',
+			'mocha'
+		]), pkg.peerDependencies);
 	});
 
 });
