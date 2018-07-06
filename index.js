@@ -424,7 +424,7 @@ module.exports = {
 		'padded-blocks': 0,
 		'quote-props': [
 			1,
-			'as-needed',
+			'consistent-as-needed',
 			{
 				keywords: true
 			}
