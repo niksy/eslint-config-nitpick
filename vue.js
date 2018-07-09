@@ -10,6 +10,7 @@ module.exports = {
 	'extends': require.resolve('./lib/jsx'),
 
 	parserOptions: {
+		parser: 'babel-eslint',
 		sourceType: 'module'
 	},
 
