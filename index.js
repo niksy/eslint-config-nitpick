@@ -289,10 +289,16 @@ module.exports = {
 				blankLine: 'any', prev: 'cjs-import', next: 'cjs-import'
 			},
 			{
+				blankLine: 'any', prev: 'cjs-import', next: 'import'
+			},
+			{
 				blankLine: 'always', prev: 'import', next: '*'
 			},
 			{
 				blankLine: 'any', prev: 'import', next: 'import'
+			},
+			{
+				blankLine: 'any', prev: 'import', next: 'cjs-import'
 			}
 
 		],
