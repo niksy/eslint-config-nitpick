@@ -5,17 +5,17 @@ const resolveFrom = require('resolve-from');
 
 module.exports = {
 
-	parser: resolveFrom(path.dirname(require.resolve('eslint-plugin-vue')), 'vue-eslint-parser'),
+	'parser': resolveFrom(path.dirname(require.resolve('eslint-plugin-vue')), 'vue-eslint-parser'),
 
 	'extends': require.resolve('./lib/jsx'),
 
-	parserOptions: {
+	'parserOptions': {
 		sourceType: 'module'
 	},
 
-	plugins: ['vue'],
+	'plugins': ['vue'],
 
-	rules: {
+	'rules': {
 
 		// Other
 		'no-param-reassign': [
@@ -70,8 +70,8 @@ module.exports = {
 			{
 				html: {
 					'void': 'always',
-					normal: 'never',
-					component: 'always'
+					'normal': 'never',
+					'component': 'always'
 				},
 				svg: 'always',
 				math: 'always'
@@ -132,7 +132,7 @@ module.exports = {
 
 	},
 
-	overrides: [
+	'overrides': [
 		{
 			files: ['*.vue'],
 			rules: {

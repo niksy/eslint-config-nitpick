@@ -4,9 +4,9 @@ module.exports = {
 
 	'extends': require.resolve('./lib/jsx'),
 
-	plugins: ['react'],
+	'plugins': ['react'],
 
-	rules: {
+	'rules': {
 
 		// React
 		'react/boolean-prop-naming': [1, { rule: '^(is|has)[A-Z]([A-Za-z0-9]?)+' }],

@@ -26,3 +26,5 @@ console.log("foobar")
 var p = new Promise(function ( r1, r2 ) {})
 
 throw Error();
+
+var [foo, ... bar] = [1, 2];

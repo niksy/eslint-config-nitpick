@@ -3,11 +3,12 @@
 module.exports = {
 
 	env: {
-		node: true
+		node: true,
+		es6: true
 	},
 
 	parserOptions: {
-		ecmaVersion: 2015,
+		ecmaVersion: 2017,
 		ecmaFeatures: {
 			impliedStrict: true
 		}
@@ -132,13 +133,13 @@ module.exports = {
 			}
 		],
 		'block-scoped-var': 2,
-		complexity: [1, 10],
+		'complexity': [1, 10],
 		'consistent-return': 1,
-		curly: [2, 'all'],
+		'curly': [2, 'all'],
 		'default-case': 1,
 		'dot-location': [1, 'property'],
 		'dot-notation': 1,
-		eqeqeq: 2,
+		'eqeqeq': 2,
 		'guard-for-in': 2,
 		'no-alert': 0,
 		'no-caller': 2,
@@ -178,7 +179,7 @@ module.exports = {
 		'no-new': 1,
 		'no-octal-escape': 2,
 		'no-octal': 2,
-		'no-param-reassign': 0,
+		'no-param-reassign': [1, { props: true }],
 		'no-process-env': 1,
 		'no-proto': 2,
 		'no-redeclare': [
@@ -200,10 +201,10 @@ module.exports = {
 		'no-void': 2,
 		'no-warning-comments': 0,
 		'no-with': 2,
-		radix: [2, 'always'],
+		'radix': [2, 'always'],
 		'vars-on-top': 2,
 		'wrap-iife': [2, 'inside'],
-		yoda: 1,
+		'yoda': 1,
 		'array-callback-return': 1,
 		'no-empty-function': 0,
 		'no-extra-label': 2,
@@ -215,7 +216,7 @@ module.exports = {
 		'for-direction': 2,
 
 		// Strict mode
-		strict: 0,
+		'strict': 0,
 
 		// Variables
 		'init-declarations': 0,
@@ -314,7 +315,7 @@ module.exports = {
 				allowSingleLine: true
 			}
 		],
-		camelcase: [
+		'camelcase': [
 			2,
 			{
 				properties: 'always'
@@ -351,7 +352,7 @@ module.exports = {
 		],
 		'id-length': 0,
 		'id-match': 0,
-		indent: [
+		'indent': [
 			2,
 			'tab',
 			{
@@ -434,7 +435,7 @@ module.exports = {
 				keywords: true
 			}
 		],
-		quotes: [
+		'quotes': [
 			2,
 			'single',
 			{
@@ -449,7 +450,7 @@ module.exports = {
 				after: true
 			}
 		],
-		semi: [2, 'always'],
+		'semi': [2, 'always'],
 		'sort-keys': 0,
 		'sort-vars': 0,
 		'keyword-spacing': [
@@ -521,13 +522,6 @@ module.exports = {
 		'promise/no-return-in-finally': 1,
 		'promise/valid-params': 2,
 
-		'node/no-unsupported-features': [
-			2,
-			{
-				version: 4
-			}
-		],
-
 		'arrow-body-style': [1, 'as-needed'],
 		'arrow-parens': [2, 'always'],
 		'arrow-spacing': [
@@ -553,6 +547,45 @@ module.exports = {
 		],
 		'template-tag-spacing': [2, 'never'],
 		'no-useless-computed-key': 1,
-		'object-shorthand': [1, 'consistent-as-needed']
+		'object-shorthand': [1, 'consistent-as-needed'],
+		'constructor-super': 1,
+		'generator-star-spacing': [
+			2,
+			{
+				before: true,
+				after: false
+			}
+		],
+		'no-class-assign': 1,
+		'no-dupe-class-members': 2,
+		'no-this-before-super': 2,
+		'prefer-reflect': 0,
+		'prefer-spread': 1,
+		'require-yield': 1,
+		'no-new-symbol': 2,
+		'no-restricted-imports': 0,
+		'no-useless-constructor': 1,
+		'prefer-rest-params': 1,
+		'sort-imports': 0,
+		'symbol-description': 1,
+		'yield-star-spacing': [1, 'after'],
+		'no-duplicate-imports': 1,
+		'no-useless-rename': 1,
+		'rest-spread-spacing': [2, 'never'],
+		'class-methods-use-this': 0,
+		'prefer-numeric-literals': 0,
+		'no-return-await': 2,
+		'no-await-in-loop': 1,
+		'prefer-destructuring': [
+			1,
+			{
+				array: true,
+				object: true
+			},
+			{
+				enforceForRenamedProperties: true
+			}
+		],
+		'require-await': 1
 	}
 };

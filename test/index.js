@@ -63,7 +63,7 @@ describe('Default config', function () {
 		assert.notEqual(errors.indexOf('unicorn/throw-new-error'), -1);
 		assert.notEqual(errors.indexOf('no-const-assign'), -1);
 		assert.notEqual(errors.indexOf('prefer-template'), -1);
-		assert.notEqual(errors.indexOf('node/no-unsupported-features'), -1);
+		assert.notEqual(errors.indexOf('rest-spread-spacing'), -1);
 		assert.notEqual(errorsNonStrict.indexOf('parsing error'), -1);
 	});
 
@@ -86,7 +86,6 @@ describe('Next config', function () {
 		const errors = runEslint('./fixtures/next.config.js', {
 			'extends': ['../', '../next'].map(require.resolve)
 		});
-		assert.notEqual(errors.indexOf('rest-spread-spacing'), -1);
 		assert.notEqual(errors.indexOf('import/exports-last'), -1);
 		assert.notEqual(errors.indexOf('import/no-mutable-exports'), -1);
 	});

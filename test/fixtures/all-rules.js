@@ -29,6 +29,7 @@ module.exports = {
 		'node/no-hide-core-modules': 0,
 		'node/no-extraneous-import': 0,
 		'node/no-extraneous-require': 0,
+		'node/no-unsupported-features': 0,
 
 		'unicorn/escape-case': 0,
 		'unicorn/no-abusive-eslint-disable': 0,
