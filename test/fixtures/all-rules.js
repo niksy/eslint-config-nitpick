@@ -37,6 +37,7 @@ module.exports = {
 		'unicorn/prefer-starts-ends-with': 0,
 		'unicorn/import-index': 0,
 		'unicorn/no-new-buffer': 0,
+		'unicorn/no-fn-reference-in-iterator': 0,
 
 		'import/no-unresolved': 0,
 		'import/named': 0,

@@ -72,7 +72,6 @@ module.exports = {
 		'unicorn/custom-error-definition': 2,
 		'unicorn/prefer-type-error': 2,
 		'unicorn/new-for-builtins': 2,
-		'unicorn/no-fn-reference-in-iterator': 1,
 		'unicorn/no-unsafe-regex': 2,
 		'unicorn/prefer-add-event-listener': 2,
 		'unicorn/prefer-spread': 1,
