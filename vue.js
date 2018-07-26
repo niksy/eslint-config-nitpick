@@ -101,6 +101,8 @@ module.exports = {
 		'vue/no-confusing-v-for-v-if': 2,
 		'vue/order-in-components': 2,
 		'vue/this-in-template': [1, 'never'], // TODO: review later
+		'vue/no-use-v-if-with-v-for': 2,
+		'vue/no-v-html': 1,
 
 		// Uncategorized
 		'vue/html-closing-bracket-newline': [
