@@ -60,6 +60,8 @@ module.exports = {
 		'vue/valid-v-pre': 2,
 		'vue/valid-v-show': 2,
 		'vue/valid-v-text': 2,
+		'vue/no-unused-components': 1,
+		'vue/require-prop-type-constructor': 2,
 
 		// Strongly recommended
 		'vue/attribute-hyphenation': [2, 'never'],
@@ -94,6 +96,7 @@ module.exports = {
 		'vue/require-prop-types': 1,
 		'vue/v-bind-style': [2, 'shorthand'],
 		'vue/v-on-style': [2, 'shorthand'],
+		'vue/no-template-shadow': 2,
 
 		// Recommended
 		'vue/attributes-order': 2,
@@ -128,7 +131,11 @@ module.exports = {
 				baseIndent: 1,
 				switchCase: 1
 			}
-		]
+		],
+		'vue/component-name-in-template-casing': [2, 'PascalCase'],
+		'vue/multiline-html-element-content-newline': 1,
+		'vue/singleline-html-element-content-newline': 0,
+		'vue/no-spaces-around-equal-signs-in-attribute': 2
 
 	},
 

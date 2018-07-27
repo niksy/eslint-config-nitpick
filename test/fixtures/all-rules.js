@@ -29,7 +29,12 @@ module.exports = {
 		'node/no-hide-core-modules': 0,
 		'node/no-extraneous-import': 0,
 		'node/no-extraneous-require': 0,
-		'node/no-unsupported-features': 0,
+		'node/no-unsupported-features/es-builtins': 0,
+		'node/no-unsupported-features/es-syntax': 0,
+		'node/no-unsupported-features/node-builtins': 0,
+		'node/prefer-global/buffer': 0,
+		'node/prefer-global/console': 0,
+		'node/prefer-global/process': 0,
 
 		'unicorn/escape-case': 0,
 		'unicorn/no-abusive-eslint-disable': 0,
@@ -62,6 +67,8 @@ module.exports = {
 		'import/max-dependencies': 0,
 		'import/no-named-default': 0,
 		'import/no-default-export': 0,
-		'import/no-anonymous-default-export': 0
+		'import/no-anonymous-default-export': 0,
+
+		'mocha/prefer-arrow-callback': 0
 	}
 };

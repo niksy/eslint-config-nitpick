@@ -52,6 +52,8 @@ module.exports = {
 		// Node
 		'node/exports-style': [1, 'module.exports'],
 		'node/process-exit-as-throw': 1,
+		'node/prefer-global/url': [1, 'never'],
+		'node/prefer-global/url-search-params': [1, 'never'],
 
 		// Unicorn
 		'unicorn/catch-error-name': 1,
@@ -124,6 +126,9 @@ module.exports = {
 		'no-unsafe-finally': 1,
 		'no-unsafe-negation': 2,
 		'no-prototype-builtins': 0,
+		'no-async-promise-executor': 2,
+		'no-misleading-character-class': 1,
+		'require-atomic-updates': 1,
 
 		// Best practices
 		'accessor-pairs': [
@@ -214,6 +219,8 @@ module.exports = {
 		'no-implicit-globals': 0,
 		'no-useless-escape': 1,
 		'for-direction': 2,
+		'max-classes-per-file': 0,
+		'require-unicode-regexp': 0,
 
 		// Strict mode
 		'strict': 0,
@@ -255,6 +262,7 @@ module.exports = {
 		'no-process-exit': 2,
 		'no-restricted-modules': 0,
 		'no-sync': 1,
+		'prefer-object-spread': 1,
 
 		// Stylistic issues
 		'switch-colon-spacing': [1, { before: false, after: true }],
@@ -504,7 +512,8 @@ module.exports = {
 		],
 		'unicode-bom': [2, 'never'],
 		'array-bracket-newline': [1, 'consistent'],
-		'array-element-newline': [1, { multiline: true, minItems: 3 }],
+		'array-element-newline': [1, 'consistent'],
+		'max-lines-per-function': 0,
 
 		// ES2015 (we want to use subset from ES2015)
 		'promise/catch-or-return': 1,

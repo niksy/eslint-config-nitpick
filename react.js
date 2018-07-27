@@ -2,6 +2,12 @@
 
 module.exports = {
 
+	settings: {
+		react: {
+			version: '16'
+		}
+	},
+
 	'extends': require.resolve('./lib/jsx'),
 
 	'plugins': ['react'],
