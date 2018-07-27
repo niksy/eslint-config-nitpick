@@ -7,7 +7,7 @@
 ## Install
 
 ```sh
-npm install eslint@4 --save-dev && npx install-peerdeps eslint-config-niksy --dev
+npm install eslint@5 --save-dev && npx install-peerdeps eslint-config-niksy --dev
 ```
 
 If you’re using npm <5, install this package and each peer dependancy manually or use [install-peerdeps][install-peerdeps] CLI.

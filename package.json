@@ -26,28 +26,28 @@
     "resolve-from": "^4.0.0"
   },
   "devDependencies": {
-    "eslint": "^4.19.1",
+    "eslint": "^5.2.0",
     "eslint-find-rules": "^3.2.3",
     "eslint-plugin-extend": "^0.1.1",
     "eslint-plugin-import": "^2.13.0",
-    "eslint-plugin-mocha": "^4.9.0",
-    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-mocha": "^5.1.0",
+    "eslint-plugin-node": "^7.0.1",
     "eslint-plugin-promise": "^3.8.0",
     "eslint-plugin-react": "^7.9.1",
     "eslint-plugin-unicorn": "^4.0.3",
-    "eslint-plugin-vue": "^4.5.0",
+    "eslint-plugin-vue": "^5.0.0-beta.1",
     "lodash": "^4.17.10",
     "mocha": "^4.1.0"
   },
   "peerDependencies": {
     "eslint-plugin-extend": "^0.1.1",
     "eslint-plugin-import": "^2.13.0",
-    "eslint-plugin-mocha": "^4.9.0",
-    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-mocha": "^5.1.0",
+    "eslint-plugin-node": "^7.0.1",
     "eslint-plugin-promise": "^3.8.0",
     "eslint-plugin-react": "^7.9.1",
     "eslint-plugin-unicorn": "^4.0.3",
-    "eslint-plugin-vue": "^4.5.0"
+    "eslint-plugin-vue": "^5.0.0-beta.1"
   },
   "engines": {
     "node": ">=4"
