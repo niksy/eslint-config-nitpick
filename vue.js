@@ -138,6 +138,12 @@ module.exports = {
 			rules: {
 				indent: 0
 			}
+		},
+		{
+			files: ['!*.vue'],
+			rules: {
+				'vue/script-indent': 0
+			}
 		}
 	]
 
