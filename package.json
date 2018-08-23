@@ -32,10 +32,10 @@
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-mocha": "^5.1.0",
     "eslint-plugin-node": "^7.0.1",
-    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-promise": "^4.0.0",
     "eslint-plugin-react": "^7.9.1",
-    "eslint-plugin-unicorn": "^4.0.3",
-    "eslint-plugin-vue": "^5.0.0-beta.1",
+    "eslint-plugin-unicorn": "^5.0.0",
+    "eslint-plugin-vue": "^5.0.0-beta.3",
     "lodash": "^4.17.10",
     "mocha": "^4.1.0"
   },
@@ -44,10 +44,10 @@
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-mocha": "^5.1.0",
     "eslint-plugin-node": "^7.0.1",
-    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-promise": "^4.0.0",
     "eslint-plugin-react": "^7.9.1",
-    "eslint-plugin-unicorn": "^4.0.3",
-    "eslint-plugin-vue": "^5.0.0-beta.1"
+    "eslint-plugin-unicorn": "^5.0.0",
+    "eslint-plugin-vue": "^5.0.0-beta.3"
   },
   "engines": {
     "node": ">=4"
