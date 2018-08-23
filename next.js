@@ -11,6 +11,8 @@ module.exports = {
 
 	rules: {
 
+		'prefer-object-spread': 1,
+
 		// "import" and "require"
 		'import/no-absolute-path': 2,
 		'import/no-dynamic-require': 2,

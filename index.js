@@ -262,7 +262,6 @@ module.exports = {
 		'no-process-exit': 2,
 		'no-restricted-modules': 0,
 		'no-sync': 1,
-		'prefer-object-spread': 1,
 
 		// Stylistic issues
 		'switch-colon-spacing': [1, { before: false, after: true }],
