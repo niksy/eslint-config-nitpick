@@ -28,7 +28,8 @@ describe('Dependencies', function () {
 			'eslint',
 			'eslint-find-rules',
 			'lodash',
-			'mocha'
+			'mocha',
+			'np'
 		]), pkg.peerDependencies);
 	});
 

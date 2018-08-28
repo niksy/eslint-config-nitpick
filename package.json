@@ -20,6 +20,7 @@
     "test": "test"
   },
   "scripts": {
+    "release": "np",
     "test": "eslint '{index,browser,next,tests,react,vue,test/index}.js' && eslint-find-rules -u ./test/fixtures/all-rules.js && mocha 'test/index.js'"
   },
   "dependencies": {
@@ -37,7 +38,8 @@
     "eslint-plugin-unicorn": "^5.0.0",
     "eslint-plugin-vue": "^5.0.0-beta.3",
     "lodash": "^4.17.10",
-    "mocha": "^4.1.0"
+    "mocha": "^4.1.0",
+    "np": "^3.0.4"
   },
   "peerDependencies": {
     "eslint-plugin-extend": "^0.1.1",
@@ -50,7 +52,7 @@
     "eslint-plugin-vue": "^5.0.0-beta.3"
   },
   "engines": {
-    "node": ">=4"
+    "node": ">=8"
   },
   "keywords": [
     "eslint",
