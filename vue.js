@@ -33,7 +33,7 @@ module.exports = {
 		// Essential
 		'vue/no-async-in-computed-properties': 2,
 		'vue/no-dupe-keys': 2,
-		'vue/no-duplicate-attributes': [2, { allowCoexistClass: true, allowCoexistStyle: true }],
+		'vue/no-duplicate-attributes': [ 2, { allowCoexistClass: true, allowCoexistStyle: true }],
 		'vue/no-parsing-error': 2,
 		'vue/no-reserved-keys': 2,
 		'vue/no-shared-component-data': 2,
@@ -64,9 +64,9 @@ module.exports = {
 		'vue/require-prop-type-constructor': 2,
 
 		// Strongly recommended
-		'vue/attribute-hyphenation': [2, 'never'],
+		'vue/attribute-hyphenation': [ 2, 'never' ],
 		'vue/html-end-tags': 2,
-		'vue/html-indent': [2, 'tab'],
+		'vue/html-indent': [ 2, 'tab' ],
 		'vue/html-self-closing': [
 			2,
 			{
@@ -89,21 +89,21 @@ module.exports = {
 				}
 			}
 		],
-		'vue/mustache-interpolation-spacing': [2, 'always'],
-		'vue/name-property-casing': [2, 'PascalCase'],
+		'vue/mustache-interpolation-spacing': [ 2, 'always' ],
+		'vue/name-property-casing': [ 2, 'PascalCase' ],
 		'vue/no-multi-spaces': 2,
 		'vue/require-default-prop': 1,
 		'vue/require-prop-types': 1,
-		'vue/v-bind-style': [2, 'shorthand'],
-		'vue/v-on-style': [2, 'shorthand'],
+		'vue/v-bind-style': [ 2, 'shorthand' ],
+		'vue/v-on-style': [ 2, 'shorthand' ],
 		'vue/no-template-shadow': 2,
 
 		// Recommended
 		'vue/attributes-order': 2,
-		'vue/html-quotes': [2, 'double'],
+		'vue/html-quotes': [ 2, 'double' ],
 		'vue/no-confusing-v-for-v-if': 2,
 		'vue/order-in-components': 2,
-		'vue/this-in-template': [1, 'never'], // TODO: review later
+		'vue/this-in-template': [ 1, 'never' ], // TODO: review later
 		'vue/no-use-v-if-with-v-for': 2,
 		'vue/no-v-html': 1,
 
@@ -123,7 +123,7 @@ module.exports = {
 				selfClosingTag: 'always'
 			}
 		],
-		'vue/prop-name-casing': [2, 'camelCase'],
+		'vue/prop-name-casing': [ 2, 'camelCase' ],
 		'vue/script-indent': [
 			2,
 			'tab',
@@ -132,7 +132,7 @@ module.exports = {
 				switchCase: 1
 			}
 		],
-		'vue/component-name-in-template-casing': [2, 'PascalCase'],
+		'vue/component-name-in-template-casing': [ 2, 'PascalCase' ],
 		'vue/multiline-html-element-content-newline': 1,
 		'vue/singleline-html-element-content-newline': 0,
 		'vue/no-spaces-around-equal-signs-in-attribute': 2

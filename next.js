@@ -24,7 +24,7 @@ module.exports = {
 		'import/no-amd': 1,
 		'import/exports-last': 2,
 		'import/no-namespace': 1,
-		'import/order': [1, { 'newlines-between': 'never' }],
+		'import/order': [ 1, { 'newlines-between': 'never' }],
 		'import/prefer-default-export': 1,
 		'import/no-unassigned-import': 1,
 		'import/group-exports': 1,

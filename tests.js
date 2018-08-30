@@ -20,7 +20,7 @@ module.exports = {
 		'mocha/no-global-tests': 0,
 		'mocha/no-return-and-callback': 2,
 		'mocha/valid-test-description': 1,
-		'mocha/valid-suite-description': [1, '^[A-Z]'],
+		'mocha/valid-suite-description': [ 1, '^[A-Z]' ],
 		'mocha/no-sibling-hooks': 1,
 		'mocha/no-mocha-arrows': 2,
 		'mocha/no-hooks': 0,
@@ -35,6 +35,6 @@ module.exports = {
 		'no-invalid-this': 0,
 
 		// Stylistic issues
-		'max-nested-callbacks': [1, 5]
+		'max-nested-callbacks': [ 1, 5 ]
 	}
 };
