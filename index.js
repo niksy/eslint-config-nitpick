@@ -595,6 +595,6 @@ module.exports = {
 		'no-return-await': 2,
 		'no-await-in-loop': 1,
 		'prefer-destructuring': 0,
-		'require-await': 1
+		'require-await': 0
 	}
 };
