@@ -594,16 +594,7 @@ module.exports = {
 		'prefer-numeric-literals': 0,
 		'no-return-await': 2,
 		'no-await-in-loop': 1,
-		'prefer-destructuring': [
-			1,
-			{
-				array: true,
-				object: true
-			},
-			{
-				enforceForRenamedProperties: true
-			}
-		],
+		'prefer-destructuring': 0,
 		'require-await': 1
 	}
 };
