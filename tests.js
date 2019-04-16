@@ -30,6 +30,7 @@ module.exports = {
 		'mocha/max-top-level-suites': 0,
 		'mocha/no-nested-tests': 2,
 		'mocha/no-setup-in-describe': 0,
+		'mocha/no-async-describe': 2,
 
 		// Best practices
 		'no-invalid-this': 0,

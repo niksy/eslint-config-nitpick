@@ -12,6 +12,7 @@ module.exports = {
 	rules: {
 
 		'prefer-object-spread': 1,
+		'prefer-named-capture-group': 1,
 
 		// "import" and "require"
 		'import/no-absolute-path': 2,

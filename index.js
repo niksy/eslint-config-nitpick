@@ -80,6 +80,11 @@ module.exports = {
 		'unicorn/prefer-spread': 1,
 		'unicorn/regex-shorthand': 1,
 		'unicorn/error-message': 1,
+		'unicorn/no-unreadable-array-destructuring': 1,
+		'unicorn/no-zero-fractions': 1,
+		'unicorn/prefer-query-selector': 1,
+		'unicorn/prefer-text-content': 1,
+		'unicorn/prevent-abbreviations': 1,
 
 		// Possible errors
 		'getter-return': [ 2, { allowImplicit: true }],
@@ -221,6 +226,7 @@ module.exports = {
 		'for-direction': 2,
 		'max-classes-per-file': 0,
 		'require-unicode-regexp': 0,
+		'no-useless-catch': 1,
 
 		// Strict mode
 		'strict': 0,
