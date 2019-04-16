@@ -113,6 +113,16 @@ describe('React config', function () {
 			'extends': [ '../', '../react' ].map(require.resolve)
 		});
 		assert.notEqual(errors.indexOf('react/react-in-jsx-scope'), -1);
+	});
+
+});
+
+describe('JSX config', function () {
+
+	it('should return proper validation errors for linted code', function () {
+		const errors = runEslint('./fixtures/jsx.config.js', {
+			'extends': [ '../', '../jsx' ].map(require.resolve)
+		});
 		assert.notEqual(errors.indexOf('react/jsx-no-undef'), -1);
 	});
 

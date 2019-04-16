@@ -9,6 +9,7 @@ module.exports = {
 		'./next',
 		'./tests',
 		'./react',
+		'./jsx',
 		'./vue'
 	].map(( m ) => {
 		return require.resolve(path.resolve(process.cwd(), m));

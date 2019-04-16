@@ -5,15 +5,7 @@ const resolveFrom = require('resolve-from');
 
 module.exports = {
 
-	'settings': {
-		react: {
-			version: '16'
-		}
-	},
-
 	'parser': resolveFrom(path.dirname(require.resolve('eslint-plugin-vue')), 'vue-eslint-parser'),
-
-	'extends': require.resolve('./lib/jsx'),
 
 	'parserOptions': {
 		sourceType: 'module'

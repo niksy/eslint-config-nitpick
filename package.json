@@ -6,13 +6,7 @@
   "author": "Ivan Nikolić <niksy5@gmail.com> (http://ivannikolic.com)",
   "license": "MIT",
   "files": [
-    "index.js",
-    "browser.js",
-    "next.js",
-    "tests.js",
-    "react.js",
-    "vue.js",
-    "lib/",
+    "{index,browser,next,tests,react,jsx,vue}.js",
     "LICENSE.md",
     "README.md"
   ],
@@ -21,7 +15,7 @@
   },
   "scripts": {
     "release": "np",
-    "test": "eslint '{index,browser,next,tests,react,vue,test/index}.js' && eslint-find-rules -u ./test/fixtures/all-rules.js && mocha 'test/index.js'"
+    "test": "eslint '{index,browser,next,tests,react,jsx,vue,test/index}.js' && eslint-find-rules -u ./test/fixtures/all-rules.js && mocha 'test/index.js'"
   },
   "dependencies": {
     "resolve-from": "^5.0.0"

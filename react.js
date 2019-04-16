@@ -2,15 +2,21 @@
 
 module.exports = {
 
+	parserOptions: {
+		ecmaFeatures: {
+			jsx: true
+		}
+	},
+
 	'settings': {
 		react: {
 			version: '16'
 		}
 	},
 
-	'extends': require.resolve('./lib/jsx'),
-
-	'plugins': ['react'],
+	plugins: [
+		'react'
+	],
 
 	'rules': {
 

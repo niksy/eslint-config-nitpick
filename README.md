@@ -78,23 +78,37 @@ Rules for testing frameworks (e.g. Mocha).
 
 ### React
 
-React (JSX) specific rules.
+React specific rules.
 
 ```json
 {
 	"extends": [
+		"niksy/jsx", // For JSX rules
 		"niksy/react"
+	]
+}
+```
+
+### JSX
+
+JSX specific rules.
+
+```json
+{
+	"extends": [
+		"niksy/jsx"
 	]
 }
 ```
 
 ### Vue
 
-Vue (JSX) specific rules.
+Vue specific rules.
 
 ```json
 {
 	"extends": [
+		"niksy/jsx", // If you use JSX
 		"niksy/vue"
 	]
 }
