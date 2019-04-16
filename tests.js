@@ -32,6 +32,9 @@ module.exports = {
 		'mocha/no-setup-in-describe': 0,
 		'mocha/no-async-describe': 2,
 
+		// Possible errors
+		'no-console': 0,
+
 		// Best practices
 		'no-invalid-this': 0,
 
