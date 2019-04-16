@@ -138,7 +138,16 @@ module.exports = {
 				switchCase: 1
 			}
 		],
-		'vue/component-name-in-template-casing': [ 2, 'PascalCase' ],
+		'vue/component-name-in-template-casing': [
+			2,
+			'PascalCase',
+			{
+				ignores: [
+					'svg',
+					'rect'
+				]
+			}
+		],
 		'vue/multiline-html-element-content-newline': 1,
 		'vue/singleline-html-element-content-newline': 0,
 		'vue/no-spaces-around-equal-signs-in-attribute': 2
