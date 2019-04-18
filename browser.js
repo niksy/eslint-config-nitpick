@@ -1,7 +1,6 @@
 'use strict';
 
 module.exports = {
-
 	env: {
 		node: false,
 		browser: true,
@@ -9,7 +8,6 @@ module.exports = {
 	},
 
 	rules: {
-
 		// Possible errors
 		'no-console': 2,
 

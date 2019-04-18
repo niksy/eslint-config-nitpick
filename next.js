@@ -1,7 +1,6 @@
 'use strict';
 
 module.exports = {
-
 	parserOptions: {
 		ecmaVersion: 2018,
 		sourceType: 'module'
@@ -10,7 +9,6 @@ module.exports = {
 	plugins: ['import'],
 
 	rules: {
-
 		'prefer-object-spread': 1,
 		'prefer-named-capture-group': 1,
 
@@ -25,7 +23,7 @@ module.exports = {
 		'import/no-amd': 1,
 		'import/exports-last': 2,
 		'import/no-namespace': 1,
-		'import/order': [ 1, { 'newlines-between': 'never' }],
+		'import/order': [1, { 'newlines-between': 'never' }],
 		'import/prefer-default-export': 1,
 		'import/no-unassigned-import': 1,
 		'import/group-exports': 1,

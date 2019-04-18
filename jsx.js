@@ -1,26 +1,22 @@
 'use strict';
 
 module.exports = {
-
 	parserOptions: {
 		ecmaFeatures: {
 			jsx: true
 		}
 	},
 
-	'settings': {
+	settings: {
 		react: {
 			version: '16'
 		}
 	},
 
-	plugins: [
-		'react'
-	],
+	plugins: ['react'],
 
 	rules: {
-
-		'jsx-quotes': [ 2, 'prefer-double' ],
+		'jsx-quotes': [2, 'prefer-double'],
 
 		// JSX
 		'react/no-array-index-key': 2,
@@ -48,28 +44,37 @@ module.exports = {
 		'react/jsx-indent-props': [2, 'tab'],
 		'react/jsx-key': 2,
 		'react/jsx-max-props-per-line': [1, { maximum: 5 }],
-		'react/jsx-no-bind': [1, {
-			ignoreRefs: true,
-			allowArrowFunctions: true
-		}],
+		'react/jsx-no-bind': [
+			1,
+			{
+				ignoreRefs: true,
+				allowArrowFunctions: true
+			}
+		],
 		'react/jsx-no-comment-textnodes': 1,
 		'react/jsx-no-duplicate-props': 1,
 		'react/jsx-no-literals': 0,
 		'react/jsx-no-target-blank': 1,
 		'react/jsx-no-undef': 1,
 		'react/jsx-pascal-case': 2,
-		'react/jsx-sort-props': [1, {
-			ignoreCase: true,
-			callbacksLast: true,
-			shorthandFirst: true,
-			noSortAlphabetically: true,
-			reservedFirst: true
-		}],
-		'react/jsx-tag-spacing': [1, {
-			closingSlash: 'never',
-			beforeSelfClosing: 'always',
-			afterOpening: 'never'
-		}],
+		'react/jsx-sort-props': [
+			1,
+			{
+				ignoreCase: true,
+				callbacksLast: true,
+				shorthandFirst: true,
+				noSortAlphabetically: true,
+				reservedFirst: true
+			}
+		],
+		'react/jsx-tag-spacing': [
+			1,
+			{
+				closingSlash: 'never',
+				beforeSelfClosing: 'always',
+				afterOpening: 'never'
+			}
+		],
 		'react/jsx-uses-vars': 1,
 		'react/jsx-wrap-multilines': 2
 	}
