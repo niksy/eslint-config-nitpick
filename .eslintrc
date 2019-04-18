@@ -5,9 +5,23 @@
 		"prettier"
 	],
 	"plugins": [
-		"prettier"
+		"prettier",
+		"unicorn"
 	],
 	"rules": {
 		"prettier/prettier": 1
-	}
+	},
+	"overrides": [{
+		"files": "*.js",
+		"rules": {
+			"unicorn/prevent-abbreviations": [1, {
+				"whitelist": {
+					"env": true,
+					"props": true,
+					"prev": true,
+					"ignoreRefs": true
+				}
+			}]
+		}
+	}]
 }
