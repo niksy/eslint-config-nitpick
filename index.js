@@ -22,7 +22,8 @@ module.exports = {
 		'promise',
 		'node',
 		'extend',
-		'unicorn'
+		'unicorn',
+		'jsdoc'
 	],
 
 	rules: {
@@ -86,6 +87,30 @@ module.exports = {
 		'unicorn/prefer-text-content': 1,
 		'unicorn/prevent-abbreviations': 1,
 
+		// JSDoc
+		'jsdoc/check-alignment': 1,
+		'jsdoc/check-examples': 1,
+		'jsdoc/check-indentation': 1,
+		'jsdoc/check-param-names': 1,
+		'jsdoc/check-syntax': 2,
+		'jsdoc/check-tag-names': 1,
+		'jsdoc/check-types': 2,
+		'jsdoc/newline-after-description': [2, 'always'],
+		'jsdoc/no-undefined-types': 2,
+		'jsdoc/require-description-complete-sentence': 1,
+		'jsdoc/require-description': 0,
+		'jsdoc/require-example': 0,
+		'jsdoc/require-hyphen-before-param-description': [2, 'always'],
+		'jsdoc/require-param-description': 0,
+		'jsdoc/require-param-name': 2,
+		'jsdoc/require-param-type': 2,
+		'jsdoc/require-param': 1,
+		'jsdoc/require-returns-description': 0,
+		'jsdoc/require-returns-type': 2,
+		'jsdoc/require-returns-check': 1,
+		'jsdoc/require-returns': 1,
+		'jsdoc/valid-types': 1,
+
 		// Possible errors
 		'getter-return': [ 2, { allowImplicit: true }],
 		'no-compare-neg-zero': 2,
@@ -115,18 +140,7 @@ module.exports = {
 		'no-unexpected-multiline': 2,
 		'no-unreachable': 2,
 		'use-isnan': 2,
-		'valid-jsdoc': [
-			1,
-			{
-				prefer: {
-					'return': 'return'
-				},
-				requireReturn: false,
-				requireParamDescription: false,
-				requireReturnDescription: false,
-				requireReturnType: true
-			}
-		],
+		'valid-jsdoc': 0,
 		'valid-typeof': 2,
 		'no-unsafe-finally': 1,
 		'no-unsafe-negation': 2,
