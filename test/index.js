@@ -31,7 +31,10 @@ describe('Dependencies', function() {
 				'eslint-find-rules',
 				'lodash',
 				'mocha',
-				'np'
+				'np',
+				'prettier',
+				'eslint-plugin-prettier',
+				'eslint-config-prettier'
 			]),
 			pkg.peerDependencies
 		);
