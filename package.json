@@ -14,27 +14,32 @@
     "test": "test"
   },
   "scripts": {
+    "lint": "eslint '{index,browser,next,tests,react,jsx,vue,test/index}.js'",
     "release": "np",
-    "test": "eslint '{index,browser,next,tests,react,jsx,vue,test/index}.js' && eslint-find-rules -u ./test/fixtures/all-rules.js && mocha 'test/index.js'"
+    "test": "npm run lint && eslint-find-rules -u ./test/fixtures/all-rules.js && mocha 'test/index.js'",
+    "test:watch": "npm test -- --watch"
   },
   "dependencies": {
     "resolve-from": "^5.0.0"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.1.0",
     "eslint-find-rules": "^3.2.3",
     "eslint-plugin-extend": "^0.1.1",
     "eslint-plugin-import": "^2.17.1",
     "eslint-plugin-jsdoc": "^4.8.3",
     "eslint-plugin-mocha": "^5.3.0",
     "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-promise": "^4.1.1",
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-unicorn": "^8.0.2",
     "eslint-plugin-vue": "^5.2.2",
     "lodash": "^4.17.10",
     "mocha": "^4.1.0",
-    "np": "^3.0.4"
+    "np": "^3.0.4",
+    "prettier": "^1.17.0"
   },
   "peerDependencies": {
     "eslint-plugin-extend": "^0.1.1",
