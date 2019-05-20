@@ -138,7 +138,17 @@ module.exports = {
 			2,
 			'PascalCase',
 			{
-				ignores: ['svg', 'rect']
+				ignores: [
+					'svg',
+					'rect',
+					'router-view',
+					'router-link',
+					'component',
+					'transition',
+					'transition-group',
+					'keep-alive',
+					'slot'
+				]
 			}
 		],
 		'vue/multiline-html-element-content-newline': 1,
