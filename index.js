@@ -94,6 +94,7 @@ module.exports = {
 		'jsdoc/require-returns-check': 1,
 		'jsdoc/require-returns': 1,
 		'jsdoc/valid-types': 1,
+		'jsdoc/require-jsdoc': 0,
 
 		// Possible errors
 		'getter-return': [2, { allowImplicit: true }],

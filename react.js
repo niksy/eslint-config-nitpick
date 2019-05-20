@@ -61,6 +61,10 @@ module.exports = {
 		'react/sort-prop-types': 0,
 		'react/jsx-uses-react': 1,
 		'react/no-unsafe': 2,
-		'react/jsx-fragments': 0
+		'react/jsx-fragments': 0,
+		'react/jsx-props-no-spreading': 0,
+		'react/prefer-read-only-props': 0,
+		'react/state-in-constructor': [1, 'never'],
+		'react/static-property-placement': [1, 'static public field']
 	}
 };
