@@ -133,8 +133,12 @@ module.exports = {
 		'no-async-promise-executor': 2,
 		'no-misleading-character-class': 1,
 		'require-atomic-updates': 1,
+		'no-dupe-else-if': 2,
+		'no-import-assign': 2,
+		'no-setter-return': 2,
 
 		// Best practices
+		'prefer-regex-literals': 1,
 		'accessor-pairs': [
 			2,
 			{
@@ -226,6 +230,9 @@ module.exports = {
 		'max-classes-per-file': 0,
 		'require-unicode-regexp': 0,
 		'no-useless-catch': 1,
+		'default-param-last': 1,
+		'grouped-accessor-pairs': [1, 'getBeforeSet'],
+		'no-constructor-return': 2,
 
 		// Strict mode
 		strict: 0,
@@ -269,6 +276,7 @@ module.exports = {
 		'no-sync': 1,
 
 		// Stylistic issues
+		'prefer-exponentiation-operator': 0,
 		'switch-colon-spacing': [1, { before: false, after: true }],
 		'semi-style': [2, 'last'],
 		'padding-line-between-statements': [
@@ -546,6 +554,7 @@ module.exports = {
 		'array-bracket-newline': [1, 'consistent'],
 		'array-element-newline': [1, 'consistent'],
 		'max-lines-per-function': 0,
+		'function-call-argument-newline': 0,
 
 		// ES2015 (we want to use subset from ES2015)
 		'promise/catch-or-return': 1,
