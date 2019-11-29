@@ -38,6 +38,9 @@ module.exports = {
 		'node/prefer-global/process': 0,
 		'node/prefer-global/text-decoder': 0,
 		'node/prefer-global/text-encoder': 0,
+		'node/file-extension-in-import': 0,
+		'node/prefer-promises/dns': 0,
+		'node/prefer-promises/fs': 0,
 
 		'unicorn/escape-case': 0,
 		'unicorn/no-abusive-eslint-disable': 0,
@@ -54,6 +57,11 @@ module.exports = {
 		'unicorn/prefer-includes': 0,
 		'unicorn/prefer-node-append': 0,
 		'unicorn/prefer-node-remove': 0,
+		'unicorn/consistent-function-scoping': 0,
+		'unicorn/expiring-todo-comments': 0,
+		'unicorn/no-nested-ternary': 0,
+		'unicorn/prefer-event-key': 0,
+		'unicorn/prefer-reflect-apply': 0,
 
 		'import/no-unresolved': 0,
 		'import/named': 0,

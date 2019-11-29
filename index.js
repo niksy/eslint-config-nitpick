@@ -35,6 +35,8 @@ module.exports = {
 		],
 
 		// Node
+		'node/no-callback-literal': 2,
+		'node/no-exports-assign': 2,
 		'node/exports-style': [1, 'module.exports'],
 		'node/process-exit-as-throw': 1,
 		'node/prefer-global/url': [1, 'never'],
@@ -70,8 +72,20 @@ module.exports = {
 		'unicorn/prefer-query-selector': 1,
 		'unicorn/prefer-text-content': 1,
 		'unicorn/prevent-abbreviations': 1,
+		'unicorn/no-keyword-prefix': 1,
+		'unicorn/prefer-dataset': 1,
+		'unicorn/prefer-flat-map': 1,
+		'unicorn/prefer-negative-index': 1,
+		'unicorn/prefer-string-slice': 1,
+		'unicorn/prefer-trim-start-end': 1,
 
 		// JSDoc
+		'jsdoc/check-access': 1,
+		'jsdoc/check-values': 0,
+		'jsdoc/empty-tags': 1,
+		'jsdoc/implements-on-classes': 1,
+		'jsdoc/match-description': 0,
+		'jsdoc/no-types': 0,
 		'jsdoc/check-alignment': 1,
 		'jsdoc/check-examples': 1,
 		'jsdoc/check-indentation': 1,

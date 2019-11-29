@@ -65,6 +65,8 @@ module.exports = {
 		'react/jsx-props-no-spreading': 0,
 		'react/prefer-read-only-props': 0,
 		'react/state-in-constructor': [1, 'never'],
-		'react/static-property-placement': [1, 'static public field']
+		'react/static-property-placement': [1, 'static public field'],
+		'react/jsx-curly-newline': 0,
+		'react/jsx-no-useless-fragment': 0
 	}
 };

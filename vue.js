@@ -110,6 +110,25 @@ module.exports = {
 		'vue/no-v-html': 1,
 
 		// Uncategorized
+		'vue/valid-v-slot': 2,
+		'vue/v-slot-style': [
+			2,
+			{
+				atComponent: 'v-slot',
+				default: 'v-slot',
+				named: 'longform'
+			}
+		],
+		'vue/no-deprecated-scope-attribute': 2,
+		'vue/no-empty-pattern': 2,
+		'vue/dot-location': [1, 'property'],
+		'vue/keyword-spacing': [
+			2,
+			{
+				before: true,
+				after: true
+			}
+		],
 		'vue/html-closing-bracket-newline': [
 			2,
 			{

@@ -29,6 +29,7 @@ module.exports = {
 		'mocha/no-nested-tests': 2,
 		'mocha/no-setup-in-describe': 0,
 		'mocha/no-async-describe': 2,
+		'mocha/no-return-from-async': 1,
 
 		// Possible errors
 		'no-console': 0,
