@@ -23,10 +23,10 @@ function runEslint(file, config) {
 
 describe('Dependencies', function() {
 	it('should have all "dependencies" defined in "peerDependencies"', function() {
-		const pkg = require('../package.json');
+		const package_ = require('../package.json');
 
 		assert.deepStrictEqual(
-			_.omit(pkg.devDependencies, [
+			_.omit(package_.devDependencies, [
 				'eslint',
 				'eslint-find-rules',
 				'lodash',
@@ -34,9 +34,11 @@ describe('Dependencies', function() {
 				'np',
 				'prettier',
 				'eslint-plugin-prettier',
-				'eslint-config-prettier'
+				'eslint-config-prettier',
+				'husky',
+				'lint-staged'
 			]),
-			pkg.peerDependencies
+			package_.peerDependencies
 		);
 	});
 });
