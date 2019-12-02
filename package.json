@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-niksy",
-  "version": "7.1.0",
+  "version": "8.0.0",
   "description": "ESLint config for my projects.",
   "main": "index.js",
   "author": "Ivan Nikolić <niksy5@gmail.com> (http://ivannikolic.com)",
