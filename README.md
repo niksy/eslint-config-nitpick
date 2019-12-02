@@ -10,11 +10,14 @@
 npm install eslint@6 --save-dev && npx install-peerdeps eslint-config-niksy --dev
 ```
 
-If you’re using npm <5, install this package and each peer dependancy manually or use [install-peerdeps][install-peerdeps] CLI.
+If you’re using npm <5, install this package and each peer dependancy manually
+or use [install-peerdeps][install-peerdeps] CLI.
 
 ## Usage
 
 Add this config to your `.eslintrc`:
+
+<!-- prettier-ignore-start -->
 
 ```json
 {
@@ -24,7 +27,12 @@ Add this config to your `.eslintrc`:
 }
 ```
 
-If you’re using [presets](#presets), **it’s highly recommended to apply default preset:**
+<!-- prettier-ignore-end -->
+
+If you’re using [presets](#presets), **it’s highly recommended to apply default
+preset:**
+
+<!-- prettier-ignore-start -->
 
 ```json
 {
@@ -35,6 +43,8 @@ If you’re using [presets](#presets), **it’s highly recommended to apply defa
 }
 ```
 
+<!-- prettier-ignore-end -->
+
 ## Presets
 
 In addition to default preset, there are also specific presets. You can apply
@@ -44,6 +54,8 @@ multiple presets with [ESLint `extends` option][eslint-extends].
 
 Browser specific rules.
 
+<!-- prettier-ignore-start -->
+
 ```json
 {
 	"extends": [
@@ -52,9 +64,14 @@ Browser specific rules.
 }
 ```
 
+<!-- prettier-ignore-end -->
+
 ### Next
 
-Features usually available in next major Node.js version or [latest proposals][tc39-proposals].
+Features usually available in next major Node.js version or [latest
+proposals][tc39-proposals].
+
+<!-- prettier-ignore-start -->
 
 ```json
 {
@@ -64,9 +81,13 @@ Features usually available in next major Node.js version or [latest proposals][t
 }
 ```
 
+<!-- prettier-ignore-end -->
+
 ### Testing
 
 Rules for testing frameworks (e.g. Mocha).
+
+<!-- prettier-ignore-start -->
 
 ```json
 {
@@ -76,9 +97,13 @@ Rules for testing frameworks (e.g. Mocha).
 }
 ```
 
+<!-- prettier-ignore-end -->
+
 ### React
 
 React specific rules.
+
+<!-- prettier-ignore-start -->
 
 ```json
 {
@@ -89,9 +114,13 @@ React specific rules.
 }
 ```
 
+<!-- prettier-ignore-end -->
+
 ### JSX
 
 JSX specific rules.
+
+<!-- prettier-ignore-start -->
 
 ```json
 {
@@ -101,9 +130,13 @@ JSX specific rules.
 }
 ```
 
+<!-- prettier-ignore-end -->
+
 ### Vue
 
 Vue specific rules.
+
+<!-- prettier-ignore-start -->
 
 ```json
 {
@@ -114,9 +147,13 @@ Vue specific rules.
 }
 ```
 
+<!-- prettier-ignore-end -->
+
 ## License
 
 MIT © [Ivan Nikolić](http://ivannikolic.com)
+
+<!-- prettier-ignore-start -->
 
 [ci]: https://travis-ci.org/niksy/eslint-config-niksy
 [ci-img]: https://travis-ci.org/niksy/eslint-config-niksy.svg?branch=master
@@ -124,3 +161,5 @@ MIT © [Ivan Nikolić](http://ivannikolic.com)
 [eslint-extends]: http://eslint.org/docs/user-guide/configuring#extending-configuration-files
 [tc39-proposals]: https://github.com/tc39/proposals#active-proposals
 [install-peerdeps]: https://www.npmjs.com/package/install-peerdeps
+
+<!-- prettier-ignore-end -->
