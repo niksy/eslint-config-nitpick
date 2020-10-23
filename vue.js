@@ -28,8 +28,78 @@ module.exports = {
 		// Base rules
 		'vue/comment-directive': 2,
 		'vue/jsx-uses-vars': 2,
+		'vue/experimental-script-setup-vars': 0,
+
+		// Extension rules
+		'vue/array-bracket-newline': [1, 'consistent'],
+		'vue/comma-spacing': [
+			2,
+			{
+				before: false,
+				after: true
+			}
+		],
+		'vue/comma-style': [2, 'last'],
+		'vue/dot-notation': 1,
+		'vue/func-call-spacing': [2, 'never'],
+		'vue/max-len': 0,
+		'vue/no-extra-parens': 0,
+		'vue/no-irregular-whitespace': 2,
+		'vue/no-sparse-arrays': 2,
+		'vue/no-useless-concat': 1,
+		'vue/object-curly-newline': [
+			1,
+			{
+				consistent: true
+			}
+		],
+		'vue/object-property-newline': [
+			1,
+			{ allowAllPropertiesOnSameLine: true }
+		],
+		'vue/operator-linebreak': [2, 'after'],
+		'vue/prefer-template': 1,
+		'vue/space-in-parens': 0,
+		'vue/template-curly-spacing': [2, 'never'],
 
 		// Essential
+		'vue/valid-v-bind-sync': 2,
+		'vue/no-setup-props-destructure': 2,
+		'vue/no-ref-as-operand': 2,
+		'vue/no-mutating-props': 2,
+		'vue/no-multiple-template-root': 2,
+		'vue/no-custom-modifiers-on-v-model': 2,
+		'vue/no-deprecated-data-object-declaration': 2,
+		'vue/no-deprecated-filter': 2,
+		'vue/no-deprecated-html-element-is': 2,
+		'vue/no-deprecated-inline-template': 2,
+		'vue/no-deprecated-slot-attribute': 2,
+		'vue/no-deprecated-slot-scope-attribute': 2,
+		'vue/no-deprecated-v-bind-sync': 2,
+		'vue/no-deprecated-vue-config-keycodes': 2,
+		'vue/no-dupe-v-else-if': 2,
+		'vue/no-lifecycle-after-await': 2,
+		'vue/no-watch-after-await': 2,
+		'vue/no-v-for-template-key': 2,
+		'vue/no-v-model-argument': 2,
+		'vue/return-in-emits-validator': 2,
+
+		// -- Activate for Vue 3
+		'vue/no-deprecated-destroyed-lifecycle': 0,
+		'vue/no-deprecated-dollar-listeners-api': 0,
+		'vue/no-deprecated-dollar-scopedslots-api': 0,
+		'vue/no-deprecated-events-api': 0,
+		'vue/no-deprecated-functional-template': 0,
+		'vue/no-deprecated-props-default-this': 0,
+		'vue/no-deprecated-v-on-native-modifier': 0,
+		'vue/no-deprecated-v-on-number-modifiers': 0,
+		'vue/no-v-for-template-key-on-child': 0,
+		'vue/require-slots-as-functions': 0,
+		'vue/require-toggle-inside-transition': 0,
+		'vue/valid-v-is': 0,
+
+		'vue/no-arrow-functions-in-watch': 2,
+		'vue/custom-event-name-casing': 2,
 		'vue/no-async-in-computed-properties': 2,
 		'vue/no-dupe-keys': 2,
 		'vue/no-duplicate-attributes': [
@@ -66,6 +136,9 @@ module.exports = {
 		'vue/require-prop-type-constructor': 2,
 
 		// Strongly recommended
+		'vue/require-explicit-emits': 2,
+		'vue/one-component-per-file': 2,
+		'vue/component-definition-name-casing': [2, 'PascalCase'],
 		'vue/attribute-hyphenation': [2, 'never'],
 		'vue/html-end-tags': 2,
 		'vue/html-indent': [2, 'tab'],
@@ -101,6 +174,12 @@ module.exports = {
 		'vue/no-template-shadow': 2,
 
 		// Recommended
+		'vue/no-multiple-slot-args': 2,
+		'vue/no-lone-template': 1,
+		'vue/component-tags-order': [
+			2,
+			{ 'order': ['template', 'script', 'style'] }
+		],
 		'vue/attributes-order': 2,
 		'vue/html-quotes': [2, 'double'],
 		'vue/no-confusing-v-for-v-if': 2,
@@ -110,6 +189,31 @@ module.exports = {
 		'vue/no-v-html': 1,
 
 		// Uncategorized
+		'vue/block-tag-newline': 0,
+		'vue/v-for-delimiter-style': [2, 'in'],
+		'vue/static-class-names-order': 0,
+		'vue/sort-keys': 0,
+		'vue/require-name-property': 0,
+		'vue/padding-line-between-blocks': [1, 'never'],
+		'vue/no-useless-v-bind': 1,
+		'vue/no-useless-mustaches': 2,
+		'vue/no-unused-properties': 1,
+		'vue/no-unsupported-features': 0,
+		'vue/no-unregistered-components': 2,
+		'vue/no-template-target-blank': 2,
+		'vue/no-static-inline-styles': 2,
+		'vue/no-reserved-component-names': 2,
+		'vue/no-restricted-component-options': 0,
+		'vue/no-restricted-static-attribute': 0,
+		'vue/no-restricted-v-bind': 0,
+		'vue/no-potential-component-option-typo': 0,
+		'vue/no-multiple-objects-in-class': 1,
+		'vue/no-duplicate-attr-inheritance': 2,
+		'vue/no-empty-component-block': 1,
+		'vue/no-bare-strings-in-template': 0,
+		'vue/html-comment-content-newline': 0,
+		'vue/html-comment-content-spacing': 0,
+		'vue/html-comment-indent': 0,
 		'vue/valid-v-slot': 2,
 		'vue/v-slot-style': [
 			2,

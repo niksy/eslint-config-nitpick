@@ -67,6 +67,9 @@ module.exports = {
 		'react/state-in-constructor': [1, 'never'],
 		'react/static-property-placement': [1, 'static public field'],
 		'react/jsx-curly-newline': 0,
-		'react/jsx-no-useless-fragment': 0
+		'react/jsx-no-useless-fragment': 0,
+		'react/function-component-definition': 0,
+		'react/jsx-no-script-url': 1,
+		'react/no-adjacent-inline-elements': 1
 	}
 };

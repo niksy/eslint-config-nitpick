@@ -35,6 +35,22 @@ module.exports = {
 		],
 
 		// Node
+		'node/no-sync': 1,
+		'node/no-restricted-require': 0,
+		'node/no-restricted-import': 0,
+		'node/no-process-exit': 2,
+		'node/no-process-env': 1,
+		'node/no-path-concat': 2,
+		'node/no-new-require': 2,
+		'node/no-mixed-requires': [
+			1,
+			{
+				grouping: true
+			}
+		],
+		'node/callback-return': 1,
+		'node/global-require': 0,
+		'node/handle-callback-err': 1,
 		'node/no-callback-literal': 2,
 		'node/no-exports-assign': 2,
 		'node/exports-style': [1, 'module.exports'],
@@ -43,6 +59,22 @@ module.exports = {
 		'node/prefer-global/url-search-params': [1, 'never'],
 
 		// Unicorn
+		'unicorn/better-regex': 1,
+		'unicorn/import-style': 1,
+		'unicorn/no-null': 0,
+		'unicorn/no-object-as-default-parameter': 2,
+		'unicorn/no-reduce': 0,
+		'unicorn/no-useless-undefined': 0,
+		'unicorn/numeric-separators-style': 1,
+		'unicorn/prefer-array-find': 1,
+		'unicorn/prefer-math-trunc': 0,
+		'unicorn/prefer-modern-dom-apis': 1,
+		'unicorn/prefer-number-properties': 0,
+		'unicorn/prefer-optional-catch-binding': 1,
+		'unicorn/prefer-replace-all': 0,
+		'unicorn/prefer-set-has': 0,
+		'unicorn/prefer-ternary': 0,
+		'unicorn/string-content': 0,
 		'unicorn/catch-error-name': 1,
 		'unicorn/explicit-length-check': [
 			1,
@@ -80,6 +112,16 @@ module.exports = {
 		'unicorn/prefer-trim-start-end': 1,
 
 		// JSDoc
+		'jsdoc/check-line-alignment': 1,
+		'jsdoc/require-property': 0,
+		'jsdoc/check-property-names': 0,
+		'jsdoc/require-property-description': 0,
+		'jsdoc/no-bad-blocks': 1,
+		'jsdoc/require-property-name': 1,
+		'jsdoc/no-defaults': 0,
+		'jsdoc/require-property-type': 1,
+		'jsdoc/require-file-overview': 0,
+		'jsdoc/require-throws': 1,
 		'jsdoc/check-access': 1,
 		'jsdoc/check-values': 0,
 		'jsdoc/empty-tags': 1,
@@ -111,6 +153,10 @@ module.exports = {
 		'jsdoc/require-jsdoc': 0,
 
 		// Possible errors
+		'no-unreachable-loop': 2,
+		'no-useless-backreference': 1,
+		'no-loss-of-precision': 1,
+		'no-promise-executor-return': 2,
 		'getter-return': [2, { allowImplicit: true }],
 		'no-compare-neg-zero': 2,
 		'comma-dangle': [1, 'never'],
@@ -152,6 +198,7 @@ module.exports = {
 		'no-setter-return': 2,
 
 		// Best practices
+		'default-case-last': 2,
 		'prefer-regex-literals': 1,
 		'accessor-pairs': [
 			2,
@@ -207,7 +254,6 @@ module.exports = {
 		'no-octal-escape': 2,
 		'no-octal': 2,
 		'no-param-reassign': [1, { props: true }],
-		'no-process-env': 1,
 		'no-proto': 2,
 		'no-redeclare': [
 			2,
@@ -274,22 +320,9 @@ module.exports = {
 
 		// Node.js and CommonJS
 		'no-buffer-constructor': 2,
-		'callback-return': 0,
-		'global-require': 0,
-		'handle-callback-err': 1,
-		'no-mixed-requires': [
-			1,
-			{
-				grouping: true
-			}
-		],
-		'no-new-require': 2,
-		'no-path-concat': 2,
-		'no-process-exit': 2,
-		'no-restricted-modules': 0,
-		'no-sync': 1,
 
 		// Stylistic issues
+		'id-denylist': 0,
 		'prefer-exponentiation-operator': 0,
 		'switch-colon-spacing': [1, { before: false, after: true }],
 		'semi-style': [2, 'last'],
@@ -641,6 +674,7 @@ module.exports = {
 		'no-return-await': 2,
 		'no-await-in-loop': 1,
 		'prefer-destructuring': 0,
-		'require-await': 0
+		'require-await': 0,
+		'no-restricted-exports': 0
 	}
 };

@@ -136,7 +136,7 @@ describe('Vue config', function() {
 		const errors = runEslint('./fixtures/vue.config.vue', {
 			extends: ['../', '../vue'].map(require.resolve)
 		});
-		assert.notEqual(errors.indexOf('vue/valid-template-root'), -1);
+		assert.notEqual(errors.indexOf('vue/no-multiple-template-root'), -1);
 		assert.notEqual(errors.indexOf('vue/script-indent'), -1);
 	});
 });
