@@ -70,7 +70,7 @@ module.exports = {
 		'unicorn/prefer-math-trunc': 0,
 		'unicorn/prefer-modern-dom-apis': 1,
 		'unicorn/prefer-number-properties': 0,
-		'unicorn/prefer-optional-catch-binding': 1,
+		'unicorn/prefer-optional-catch-binding': 0,
 		'unicorn/prefer-replace-all': 0,
 		'unicorn/prefer-set-has': 0,
 		'unicorn/prefer-ternary': 0,
