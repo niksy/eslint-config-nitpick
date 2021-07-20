@@ -1,27 +1,26 @@
 {
 	"root": true,
-	"extends": [
-		"./index.js",
-		"prettier"
-	],
-	"plugins": [
-		"prettier",
-		"unicorn"
-	],
+	"extends": ["./index.js", "prettier"],
+	"plugins": ["prettier", "unicorn"],
 	"rules": {
 		"prettier/prettier": 1
 	},
-	"overrides": [{
-		"files": "*.js",
-		"rules": {
-			"unicorn/prevent-abbreviations": [1, {
-				"whitelist": {
-					"env": true,
-					"props": true,
-					"prev": true,
-					"ignoreRefs": true
-				}
-			}]
+	"overrides": [
+		{
+			"files": "*.js",
+			"rules": {
+				"unicorn/prevent-abbreviations": [
+					1,
+					{
+						"allowList": {
+							"env": true,
+							"props": true,
+							"prev": true,
+							"ignoreRefs": true
+						}
+					}
+				]
+			}
 		}
-	}]
+	]
 }
