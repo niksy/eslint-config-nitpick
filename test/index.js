@@ -58,12 +58,6 @@ describe('Default config', function () {
 		const errors = runEslint('./fixtures/default.config.js', {
 			extends: require.resolve('../')
 		});
-		const errorsNonStrict = runEslint(
-			'./fixtures/default-non-strict.config.js',
-			{
-				extends: require.resolve('../')
-			}
-		);
 		assert.notEqual(errors.indexOf('quotes'), -1);
 		assert.notEqual(errors.indexOf('semi'), -1);
 		assert.notEqual(errors.indexOf('promise/param-names'), -1);
@@ -79,7 +73,6 @@ describe('Default config', function () {
 		assert.notEqual(errors.indexOf('no-const-assign'), -1);
 		assert.notEqual(errors.indexOf('prefer-template'), -1);
 		assert.notEqual(errors.indexOf('rest-spread-spacing'), -1);
-		assert.notEqual(errorsNonStrict.indexOf('parsing error'), -1);
 	});
 });
 

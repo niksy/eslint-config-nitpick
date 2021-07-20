@@ -7,10 +7,7 @@ module.exports = {
 	},
 
 	parserOptions: {
-		ecmaVersion: 2017,
-		ecmaFeatures: {
-			impliedStrict: true
-		}
+		ecmaVersion: 2017
 	},
 
 	globals: {
@@ -378,7 +375,7 @@ module.exports = {
 		'no-nonoctal-decimal-escape': 0,
 
 		// Strict mode
-		strict: 0,
+		strict: [2, 'global'],
 
 		// Variables
 		'init-declarations': 0,
