@@ -699,7 +699,7 @@ module.exports = {
 		'promise/no-return-in-finally': 1,
 		'promise/valid-params': 2,
 
-		'arrow-body-style': [1, 'as-needed'],
+		'arrow-body-style': 0,
 		'arrow-parens': [2, 'always'],
 		'arrow-spacing': [
 			2,
