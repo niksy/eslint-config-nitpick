@@ -70,6 +70,9 @@ module.exports = {
 		'react/jsx-no-useless-fragment': 0,
 		'react/function-component-definition': 0,
 		'react/jsx-no-script-url': 1,
-		'react/no-adjacent-inline-elements': 1
+		'react/no-adjacent-inline-elements': 1,
+		'react/jsx-newline': 0,
+		'react/jsx-no-constructed-context-values': 0,
+		'react/no-unstable-nested-components': 1
 	}
 };

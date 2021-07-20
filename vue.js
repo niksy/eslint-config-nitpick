@@ -61,6 +61,19 @@ module.exports = {
 		'vue/prefer-template': 1,
 		'vue/space-in-parens': 0,
 		'vue/template-curly-spacing': [2, 'never'],
+		'vue/no-constant-condition': 2,
+		'vue/arrow-spacing': 0,
+		'vue/block-spacing': 0,
+		'vue/brace-style': 0,
+		'vue/camelcase': 0,
+		'vue/comma-dangle': 0,
+		'vue/eqeqeq': 0,
+		'vue/key-spacing': 0,
+		'vue/space-infix-ops': 0,
+		'vue/space-unary-ops': 0,
+		'vue/object-curly-spacing': 0,
+		'vue/array-bracket-spacing': 0,
+		'vue/no-restricted-syntax': 0,
 
 		// Essential
 		'vue/valid-v-bind-sync': 2,
@@ -83,6 +96,7 @@ module.exports = {
 		'vue/no-v-for-template-key': 2,
 		'vue/no-v-model-argument': 2,
 		'vue/return-in-emits-validator': 2,
+		'vue/use-v-on-exact': 2,
 
 		// -- Activate for Vue 3
 		'vue/no-deprecated-destroyed-lifecycle': 0,
@@ -97,6 +111,11 @@ module.exports = {
 		'vue/require-slots-as-functions': 0,
 		'vue/require-toggle-inside-transition': 0,
 		'vue/valid-v-is': 0,
+		'vue/no-deprecated-v-is': 0,
+		'vue/require-expose': 0,
+		'vue/script-setup-uses-vars': 0,
+		'vue/valid-define-emits': 0,
+		'vue/valid-define-props': 0,
 
 		'vue/no-arrow-functions-in-watch': 2,
 		'vue/custom-event-name-casing': 2,
@@ -276,7 +295,25 @@ module.exports = {
 		],
 		'vue/multiline-html-element-content-newline': 1,
 		'vue/singleline-html-element-content-newline': 0,
-		'vue/no-spaces-around-equal-signs-in-attribute': 2
+		'vue/no-spaces-around-equal-signs-in-attribute': 2,
+		'vue/html-button-has-type': 2,
+		'vue/new-line-between-multi-line-property': 1,
+		'vue/next-tick-style': [2, 'promise'],
+		'vue/no-export-in-script-setup': 2,
+		'vue/no-invalid-model-keys': 2,
+		'vue/no-restricted-block': 0,
+		'vue/no-restricted-call-after-await': 0,
+		'vue/no-restricted-custom-event': 0,
+		'vue/no-restricted-props': 0,
+		'vue/no-this-in-before-route-enter': 2,
+		'vue/no-unused-refs': 1,
+		'vue/require-emit-validator': 1,
+		'vue/v-on-event-hyphenation': 2,
+		'vue/valid-next-tick': 2,
+		'vue/match-component-file-name': 0,
+		'vue/no-boolean-default': 0,
+		'vue/require-direct-export': 2,
+		'vue/v-on-function-call': [2, 'never']
 	},
 
 	overrides: [

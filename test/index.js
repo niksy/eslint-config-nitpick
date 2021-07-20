@@ -21,8 +21,8 @@ function runEslint(file, config) {
 		});
 }
 
-describe('Dependencies', function() {
-	it('should have all "dependencies" defined in "peerDependencies"', function() {
+describe('Dependencies', function () {
+	it('should have all "dependencies" defined in "peerDependencies"', function () {
 		const package_ = require('../package.json');
 
 		assert.deepStrictEqual(
@@ -43,18 +43,18 @@ describe('Dependencies', function() {
 	});
 });
 
-describe('Config format', function() {
+describe('Config format', function () {
 	const config = require('../');
 
-	it('should have config objects which are plain objects', function() {
+	it('should have config objects which are plain objects', function () {
 		assert.ok(isPlainObject(config));
 		assert.ok(isPlainObject(config.env));
 		assert.ok(isPlainObject(config.rules));
 	});
 });
 
-describe('Default config', function() {
-	it('should return proper validation errors for linted code', function() {
+describe('Default config', function () {
+	it('should return proper validation errors for linted code', function () {
 		const errors = runEslint('./fixtures/default.config.js', {
 			extends: require.resolve('../')
 		});
@@ -83,29 +83,31 @@ describe('Default config', function() {
 	});
 });
 
-describe('Browser config', function() {
-	it('should return proper validation errors for linted code', function() {
+describe('Browser config', function () {
+	it('should return proper validation errors for linted code', function () {
 		const errors = runEslint('./fixtures/browser.config.js', {
-			extends: ['../', '../browser'].map(require.resolve)
+			extends: ['../', '../browser'].map((entry) =>
+				require.resolve(entry)
+			)
 		});
 		assert.notEqual(errors.indexOf('no-console'), -1);
 	});
 });
 
-describe('Next config', function() {
-	it('should return proper validation errors for linted code', function() {
+describe('Next config', function () {
+	it('should return proper validation errors for linted code', function () {
 		const errors = runEslint('./fixtures/next.config.js', {
-			extends: ['../', '../next'].map(require.resolve)
+			extends: ['../', '../next'].map((entry) => require.resolve(entry))
 		});
 		assert.notEqual(errors.indexOf('import/exports-last'), -1);
 		assert.notEqual(errors.indexOf('import/no-mutable-exports'), -1);
 	});
 });
 
-describe('Tests config', function() {
-	it('should return proper validation errors for linted code', function() {
+describe('Tests config', function () {
+	it('should return proper validation errors for linted code', function () {
 		const errors = runEslint('./fixtures/tests.config.js', {
-			extends: ['../', '../tests'].map(require.resolve)
+			extends: ['../', '../tests'].map((entry) => require.resolve(entry))
 		});
 		assert.notEqual(errors.indexOf('max-nested-callbacks'), -1);
 		assert.notEqual(errors.indexOf('mocha/no-mocha-arrows'), -1);
@@ -113,28 +115,28 @@ describe('Tests config', function() {
 	});
 });
 
-describe('React config', function() {
-	it('should return proper validation errors for linted code', function() {
+describe('React config', function () {
+	it('should return proper validation errors for linted code', function () {
 		const errors = runEslint('./fixtures/react.config.js', {
-			extends: ['../', '../react'].map(require.resolve)
+			extends: ['../', '../react'].map((entry) => require.resolve(entry))
 		});
 		assert.notEqual(errors.indexOf('react/react-in-jsx-scope'), -1);
 	});
 });
 
-describe('JSX config', function() {
-	it('should return proper validation errors for linted code', function() {
+describe('JSX config', function () {
+	it('should return proper validation errors for linted code', function () {
 		const errors = runEslint('./fixtures/jsx.config.js', {
-			extends: ['../', '../jsx'].map(require.resolve)
+			extends: ['../', '../jsx'].map((entry) => require.resolve(entry))
 		});
 		assert.notEqual(errors.indexOf('react/jsx-no-undef'), -1);
 	});
 });
 
-describe('Vue config', function() {
-	it('should return proper validation errors for linted code', function() {
+describe('Vue config', function () {
+	it('should return proper validation errors for linted code', function () {
 		const errors = runEslint('./fixtures/vue.config.vue', {
-			extends: ['../', '../vue'].map(require.resolve)
+			extends: ['../', '../vue'].map((entry) => require.resolve(entry))
 		});
 		assert.notEqual(errors.indexOf('vue/no-multiple-template-root'), -1);
 		assert.notEqual(errors.indexOf('vue/script-indent'), -1);

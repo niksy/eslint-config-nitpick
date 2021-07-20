@@ -31,6 +31,7 @@ module.exports = {
 		'mocha/no-async-describe': 2,
 		'mocha/no-return-from-async': 1,
 		'mocha/no-exports': 2,
+		'mocha/prefer-arrow-callback': 0,
 
 		// Possible errors
 		'no-console': 0,
