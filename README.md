@@ -155,8 +155,8 @@ MIT © [Ivan Nikolić](http://ivannikolic.com)
 
 <!-- prettier-ignore-start -->
 
-[ci]: https://travis-ci.org/niksy/eslint-config-niksy
-[ci-img]: https://travis-ci.org/niksy/eslint-config-niksy.svg?branch=master
+[ci]: https://travis-ci.com/niksy/eslint-config-niksy
+[ci-img]: https://travis-ci.com/niksy/eslint-config-niksy.svg?branch=master
 [eslint]: http://eslint.org/
 [eslint-extends]: http://eslint.org/docs/user-guide/configuring#extending-configuration-files
 [tc39-proposals]: https://github.com/tc39/proposals#active-proposals
