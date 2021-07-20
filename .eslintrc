@@ -5,6 +5,7 @@
 	"rules": {
 		"prettier/prettier": 1
 	},
+	"ignorePatterns": ["test/fixtures/*.config.*"],
 	"overrides": [
 		{
 			"files": "*.js",
