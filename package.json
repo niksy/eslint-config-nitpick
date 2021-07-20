@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-niksy",
-  "version": "9.0.1",
+  "version": "10.0.0",
   "description": "ESLint config for my projects.",
   "license": "MIT",
   "author": "Ivan Nikolić <niksy5@gmail.com> (http://ivannikolic.com)",
