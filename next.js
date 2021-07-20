@@ -6,7 +6,7 @@ module.exports = {
 		sourceType: 'module'
 	},
 
-	plugins: ['import'],
+	plugins: ['eslint-plugin-import'],
 
 	rules: {
 		'prefer-object-spread': 1,

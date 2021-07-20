@@ -17,7 +17,13 @@ module.exports = {
 		Promise: false
 	},
 
-	plugins: ['promise', 'node', 'extend', 'unicorn', 'jsdoc'],
+	plugins: [
+		'eslint-plugin-promise',
+		'eslint-plugin-node',
+		'eslint-plugin-extend',
+		'eslint-plugin-unicorn',
+		'eslint-plugin-jsdoc'
+	],
 
 	rules: {
 		// Extend

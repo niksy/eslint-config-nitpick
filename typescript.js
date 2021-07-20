@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-	plugins: ['jsdoc'],
+	plugins: ['eslint-plugin-jsdoc'],
 
 	settings: {
 		jsdoc: {

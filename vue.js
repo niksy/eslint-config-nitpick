@@ -13,7 +13,7 @@ module.exports = {
 		sourceType: 'module'
 	},
 
-	plugins: ['vue'],
+	plugins: ['eslint-plugin-vue'],
 
 	rules: {
 		// Other

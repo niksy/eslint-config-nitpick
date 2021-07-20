@@ -5,7 +5,7 @@ module.exports = {
 		mocha: true
 	},
 
-	plugins: ['mocha'],
+	plugins: ['eslint-plugin-mocha', 'eslint-plugin-promise'],
 
 	rules: {
 		'promise/always-return': 0,

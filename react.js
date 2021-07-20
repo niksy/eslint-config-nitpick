@@ -13,7 +13,7 @@ module.exports = {
 		}
 	},
 
-	plugins: ['react'],
+	plugins: ['eslint-plugin-react'],
 
 	rules: {
 		// React
