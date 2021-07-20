@@ -149,6 +149,22 @@ Vue specific rules.
 
 <!-- prettier-ignore-end -->
 
+### TypeScript
+
+TypeScript specific rules.
+
+<!-- prettier-ignore-start -->
+
+```json
+{
+	"extends": [
+		"niksy/typescript"
+	]
+}
+```
+
+<!-- prettier-ignore-end -->
+
 ## License
 
 MIT © [Ivan Nikolić](http://ivannikolic.com)

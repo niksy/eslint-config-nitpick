@@ -10,7 +10,8 @@ module.exports = {
 		'./tests',
 		'./react',
 		'./jsx',
-		'./vue'
+		'./vue',
+		'./typescript'
 	].map((m) => {
 		return require.resolve(path.resolve(process.cwd(), m));
 	})

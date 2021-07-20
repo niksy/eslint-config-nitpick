@@ -142,3 +142,15 @@ describe('Vue config', function () {
 		assert.notEqual(errors.indexOf('vue/script-indent'), -1);
 	});
 });
+
+describe('TypeScript config', function () {
+	it('should return proper validation errors for linted code', function () {
+		const errors = runEslint('./fixtures/typescript.config.js', {
+			extends: ['../', '../typescript'].map((entry) =>
+				require.resolve(entry)
+			)
+		});
+		assert.notEqual(errors.indexOf('jsdoc/check-line-alignment'), -1);
+		assert.notEqual(errors.indexOf('jsdoc/check-syntax'), -1);
+	});
+});
