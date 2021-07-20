@@ -17,26 +17,11 @@ module.exports = {
 	plugins: [
 		'eslint-plugin-promise',
 		'eslint-plugin-node',
-		'eslint-plugin-extend',
 		'eslint-plugin-unicorn',
 		'eslint-plugin-jsdoc'
 	],
 
 	rules: {
-		// Extend
-		'extend/no-unsafe-extend-inside-call': [
-			2,
-			{
-				libraryNames: ['_', 'jQuery', '$']
-			}
-		],
-		'extend/no-unsafe-extend-inside-assignment': [
-			2,
-			{
-				libraryNames: ['_', 'jQuery', '$']
-			}
-		],
-
 		// Node
 		'node/no-sync': 1,
 		'node/no-restricted-require': 0,

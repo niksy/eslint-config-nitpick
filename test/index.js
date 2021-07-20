@@ -61,14 +61,6 @@ describe('Default config', function () {
 		assert.notEqual(errors.indexOf('quotes'), -1);
 		assert.notEqual(errors.indexOf('semi'), -1);
 		assert.notEqual(errors.indexOf('promise/param-names'), -1);
-		assert.notEqual(
-			errors.indexOf('extend/no-unsafe-extend-inside-call'),
-			-1
-		);
-		assert.notEqual(
-			errors.indexOf('extend/no-unsafe-extend-inside-assignment'),
-			-1
-		);
 		assert.notEqual(errors.indexOf('unicorn/throw-new-error'), -1);
 		assert.notEqual(errors.indexOf('no-const-assign'), -1);
 		assert.notEqual(errors.indexOf('prefer-template'), -1);
