@@ -177,10 +177,7 @@ module.exports = {
 			2,
 			{
 				singleline: 3,
-				multiline: {
-					max: 1,
-					allowFirstLine: false
-				}
+				multiline: 1
 			}
 		],
 		'vue/mustache-interpolation-spacing': [2, 'always'],
