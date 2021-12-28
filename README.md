@@ -7,11 +7,8 @@
 ## Install
 
 ```sh
-npm install eslint@7 --save-dev && npx install-peerdeps eslint-config-nitpick --dev
+npm install eslint eslint-config-nitpick --save-dev
 ```
-
-If you’re using npm <5, install this package and each peer dependancy manually
-or use [install-peerdeps][install-peerdeps] CLI.
 
 ## Usage
 
@@ -176,6 +173,5 @@ MIT © [Ivan Nikolić](http://ivannikolic.com)
 [eslint]: http://eslint.org/
 [eslint-extends]: http://eslint.org/docs/user-guide/configuring#extending-configuration-files
 [tc39-proposals]: https://github.com/tc39/proposals#active-proposals
-[install-peerdeps]: https://www.npmjs.com/package/install-peerdeps
 
 <!-- prettier-ignore-end -->

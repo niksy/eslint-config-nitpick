@@ -4,7 +4,6 @@ const path = require('path');
 const assert = require('assert');
 const isPlainObject = require('lodash/isPlainObject');
 const eslint = require('eslint');
-const _ = require('lodash');
 
 function runEslint(file, config) {
 	const linter = new eslint.CLIEngine({
@@ -20,28 +19,6 @@ function runEslint(file, config) {
 			return error.ruleId;
 		});
 }
-
-describe('Dependencies', function () {
-	it('should have all "dependencies" defined in "peerDependencies"', function () {
-		const package_ = require('../package.json');
-
-		assert.deepStrictEqual(
-			_.omit(package_.devDependencies, [
-				'eslint',
-				'eslint-find-rules',
-				'lodash',
-				'mocha',
-				'np',
-				'prettier',
-				'eslint-plugin-prettier',
-				'eslint-config-prettier',
-				'husky',
-				'lint-staged'
-			]),
-			package_.peerDependencies
-		);
-	});
-});
 
 describe('Config format', function () {
 	const config = require('../');
