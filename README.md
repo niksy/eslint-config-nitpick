@@ -168,8 +168,8 @@ MIT © [Ivan Nikolić](http://ivannikolic.com)
 
 <!-- prettier-ignore-start -->
 
-[ci]: https://travis-ci.com/nitpick/eslint-config-nitpick
-[ci-img]: https://travis-ci.com/nitpick/eslint-config-nitpick.svg?branch=master
+[ci]: https://github.com/niksy/eslint-config-nitpick/actions?query=workflow%3ACI
+[ci-img]: https://github.com/niksy/eslint-config-nitpick/workflows/CI/badge.svg?branch=master
 [eslint]: http://eslint.org/
 [eslint-extends]: http://eslint.org/docs/user-guide/configuring#extending-configuration-files
 [tc39-proposals]: https://github.com/tc39/proposals#active-proposals
