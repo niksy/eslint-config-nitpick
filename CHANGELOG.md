@@ -6,6 +6,10 @@
 
 -   ESLint to peer dependencies
 
+### Changed
+
+-   Use `2022` for `parserOptions.ecmaVersion`
+
 ## [11.0.0][] - 2021-12-28
 
 ### Changed
