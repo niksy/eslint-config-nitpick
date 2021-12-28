@@ -11,6 +11,12 @@ module.exports = {
 	rules: {
 		'prefer-object-spread': 1,
 		'prefer-named-capture-group': 1,
+		'no-unused-private-class-members': 1,
+		'prefer-object-has-own': 1,
+		'unicorn/prefer-object-has-own': 1,
+		'unicorn/prefer-at': 1,
+		'unicorn/prefer-object-from-entries': 1,
+		'unicorn/prefer-top-level-await': 0,
 
 		// "import" and "require"
 		'import/no-absolute-path': 2,
@@ -54,6 +60,7 @@ module.exports = {
 		'import/no-default-export': 0,
 		'import/no-anonymous-default-export': 0,
 		'import/no-named-export': 0,
-		'import/no-unused-modules': 0
+		'import/no-unused-modules': 0,
+		'unicorn/prefer-export-from': 0
 	}
 };

@@ -73,6 +73,11 @@ module.exports = {
 		'react/no-adjacent-inline-elements': 1,
 		'react/jsx-newline': 0,
 		'react/jsx-no-constructed-context-values': 0,
-		'react/no-unstable-nested-components': 1
+		'react/no-unstable-nested-components': 1,
+		'react/no-arrow-function-lifecycle': 1,
+		'react/no-invalid-html-attribute': 1,
+		'react/no-namespace': 1,
+		'react/no-unused-class-component-methods': 1,
+		'react/prefer-exact-props': 0
 	}
 };

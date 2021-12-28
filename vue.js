@@ -31,6 +31,7 @@ module.exports = {
 		'vue/experimental-script-setup-vars': 0,
 
 		// Extension rules
+		'vue/no-loss-of-precision': 1,
 		'vue/array-bracket-newline': [1, 'consistent'],
 		'vue/comma-spacing': [
 			2,
@@ -76,6 +77,10 @@ module.exports = {
 		'vue/no-restricted-syntax': 0,
 
 		// Essential
+		'vue/no-useless-template-attributes': 2,
+		'vue/no-reserved-props': 2,
+		'vue/no-computed-properties-in-data': 2,
+		'vue/multi-word-component-names': 0,
 		'vue/valid-v-bind-sync': 2,
 		'vue/no-setup-props-destructure': 2,
 		'vue/no-ref-as-operand': 2,
@@ -99,6 +104,7 @@ module.exports = {
 		'vue/use-v-on-exact': 2,
 
 		// -- Activate for Vue 3
+		'vue/valid-v-memo': 0,
 		'vue/no-deprecated-destroyed-lifecycle': 0,
 		'vue/no-deprecated-dollar-listeners-api': 0,
 		'vue/no-deprecated-dollar-scopedslots-api': 0,
@@ -116,6 +122,8 @@ module.exports = {
 		'vue/script-setup-uses-vars': 0,
 		'vue/valid-define-emits': 0,
 		'vue/valid-define-props': 0,
+		'vue/no-deprecated-router-link-tag-prop': 0,
+		'vue/no-expose-after-await': 0,
 
 		'vue/no-arrow-functions-in-watch': 2,
 		'vue/custom-event-name-casing': 2,
@@ -155,6 +163,10 @@ module.exports = {
 		'vue/require-prop-type-constructor': 2,
 
 		// Strongly recommended
+		'vue/first-attribute-linebreak': [
+			2,
+			{ singleline: 'ignore', multiline: 'below' }
+		],
 		'vue/require-explicit-emits': 2,
 		'vue/one-component-per-file': 2,
 		'vue/component-definition-name-casing': [2, 'PascalCase'],
@@ -205,6 +217,11 @@ module.exports = {
 		'vue/no-v-html': 1,
 
 		// Uncategorized
+		'vue/prefer-separate-static-class': 0,
+		'vue/no-v-text': 2,
+		'vue/no-use-computed-property-like-method': 1,
+		'vue/no-undef-properties': 1,
+		'vue/no-restricted-class': 0,
 		'vue/block-tag-newline': 0,
 		'vue/v-for-delimiter-style': [2, 'in'],
 		'vue/static-class-names-order': 0,
@@ -310,7 +327,11 @@ module.exports = {
 		'vue/match-component-file-name': 0,
 		'vue/no-boolean-default': 0,
 		'vue/require-direct-export': 2,
-		'vue/v-on-function-call': [2, 'never']
+		'vue/v-on-function-call': [2, 'never'],
+		'vue/block-lang': 0,
+		'vue/component-api-style': 0,
+		'vue/component-options-name-casing': [2, 'PascalCase'],
+		'vue/no-child-content': 2
 	},
 
 	overrides: [

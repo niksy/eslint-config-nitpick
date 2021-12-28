@@ -168,6 +168,18 @@ module.exports = {
 		'unicorn/no-nested-ternary': 0,
 		'unicorn/prefer-event-key': 0,
 		'unicorn/prefer-reflect-apply': 0,
+		'unicorn/no-array-method-this-argument': 2,
+		'unicorn/no-await-expression-member': 2,
+		'unicorn/no-empty-file': 0,
+		'unicorn/no-invalid-remove-event-listener': 2,
+		'unicorn/no-useless-fallback-in-spread': 1,
+		'unicorn/no-useless-length-check': 1,
+		'unicorn/no-useless-spread': 1,
+		'unicorn/prefer-code-point': 1,
+		'unicorn/prefer-prototype-methods': 1,
+		'unicorn/require-array-join-separator': 2,
+		'unicorn/require-number-to-fixed-digits-argument': 2,
+		'unicorn/template-indent': 0,
 
 		// JSDoc
 		'jsdoc/check-line-alignment': 1,
@@ -214,6 +226,10 @@ module.exports = {
 		'jsdoc/require-asterisk-prefix': 2,
 		'jsdoc/require-yields': 1,
 		'jsdoc/require-yields-check': 1,
+		'jsdoc/match-name': 0,
+		'jsdoc/multiline-blocks': 0,
+		'jsdoc/no-multi-asterisks': 1,
+		'jsdoc/tag-lines': 0,
 
 		// Possible errors
 		'no-unreachable-loop': 2,
