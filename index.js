@@ -42,7 +42,10 @@ module.exports = {
 		'node/no-callback-literal': 2,
 		'node/no-exports-assign': 2,
 		'node/exports-style': [1, 'module.exports'],
-		'node/process-exit-as-throw': 1,
+
+		// Ref. https://github.com/mysticatea/eslint-plugin-node/issues/301
+		'node/process-exit-as-throw': 0,
+
 		'node/prefer-global/url': [1, 'never'],
 		'node/prefer-global/url-search-params': [1, 'never'],
 		'node/no-deprecated-api': 0,
