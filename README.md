@@ -1,4 +1,4 @@
-# eslint-config-niksy
+# eslint-config-nitpick
 
 [![Build Status][ci-img]][ci]
 
@@ -7,7 +7,7 @@
 ## Install
 
 ```sh
-npm install eslint@7 --save-dev && npx install-peerdeps eslint-config-niksy --dev
+npm install eslint@7 --save-dev && npx install-peerdeps eslint-config-nitpick --dev
 ```
 
 If you’re using npm <5, install this package and each peer dependancy manually
@@ -22,7 +22,7 @@ Add this config to your `.eslintrc`:
 ```json
 {
 	"extends": [
-		"niksy"
+		"eslint-config-nitpick"
 	]
 }
 ```
@@ -37,8 +37,8 @@ preset:**
 ```json
 {
 	"extends": [
-		"niksy",
-		"niksy/other-preset"
+		"eslint-config-nitpick",
+		"eslint-config-nitpick/other-preset"
 	]
 }
 ```
@@ -59,7 +59,7 @@ Browser specific rules.
 ```json
 {
 	"extends": [
-		"niksy/browser"
+		"eslint-config-nitpick/browser"
 	]
 }
 ```
@@ -76,7 +76,7 @@ proposals][tc39-proposals].
 ```json
 {
 	"extends": [
-		"niksy/next"
+		"eslint-config-nitpick/next"
 	]
 }
 ```
@@ -92,7 +92,7 @@ Rules for testing frameworks (e.g. Mocha).
 ```json
 {
 	"extends": [
-		"niksy/tests"
+		"eslint-config-nitpick/tests"
 	]
 }
 ```
@@ -108,8 +108,8 @@ React specific rules.
 ```json
 {
 	"extends": [
-		"niksy/jsx", // For JSX rules
-		"niksy/react"
+		"eslint-config-nitpick/jsx", // For JSX rules
+		"eslint-config-nitpick/react"
 	]
 }
 ```
@@ -125,7 +125,7 @@ JSX specific rules.
 ```json
 {
 	"extends": [
-		"niksy/jsx"
+		"eslint-config-nitpick/jsx"
 	]
 }
 ```
@@ -141,8 +141,8 @@ Vue specific rules.
 ```json
 {
 	"extends": [
-		"niksy/jsx", // If you use JSX
-		"niksy/vue"
+		"eslint-config-nitpick/jsx", // If you use JSX
+		"eslint-config-nitpick/vue"
 	]
 }
 ```
@@ -158,7 +158,7 @@ TypeScript specific rules.
 ```json
 {
 	"extends": [
-		"niksy/typescript"
+		"eslint-config-nitpick/typescript"
 	]
 }
 ```
@@ -171,8 +171,8 @@ MIT © [Ivan Nikolić](http://ivannikolic.com)
 
 <!-- prettier-ignore-start -->
 
-[ci]: https://travis-ci.com/niksy/eslint-config-niksy
-[ci-img]: https://travis-ci.com/niksy/eslint-config-niksy.svg?branch=master
+[ci]: https://travis-ci.com/nitpick/eslint-config-nitpick
+[ci-img]: https://travis-ci.com/nitpick/eslint-config-nitpick.svg?branch=master
 [eslint]: http://eslint.org/
 [eslint-extends]: http://eslint.org/docs/user-guide/configuring#extending-configuration-files
 [tc39-proposals]: https://github.com/tc39/proposals#active-proposals
