@@ -113,6 +113,5 @@ describe('TypeScript config', function () {
 			)
 		});
 		assert.notEqual(errors.indexOf('jsdoc/check-line-alignment'), -1);
-		assert.notEqual(errors.indexOf('jsdoc/check-syntax'), -1);
 	});
 });

@@ -199,7 +199,7 @@ module.exports = {
 		'jsdoc/match-description': 0,
 		'jsdoc/no-types': 0,
 		'jsdoc/check-alignment': 1,
-		'jsdoc/check-examples': 1,
+		'jsdoc/check-examples': 0,
 		'jsdoc/check-indentation': 1,
 		'jsdoc/check-param-names': 1,
 		'jsdoc/check-syntax': 2,
