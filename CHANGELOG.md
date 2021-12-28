@@ -2,6 +2,10 @@
 
 ## [Unreleased][]
 
+### Added
+
+-   ESLint to peer dependencies
+
 ## [11.0.0][] - 2021-12-28
 
 ### Changed
