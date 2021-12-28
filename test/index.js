@@ -3,21 +3,21 @@
 const path = require('path');
 const assert = require('assert');
 const isPlainObject = require('lodash/isPlainObject');
-const eslint = require('eslint');
+const { ESLint } = require('eslint');
 
-function runEslint(file, config) {
-	const linter = new eslint.CLIEngine({
+async function runEslint(file, config) {
+	const linter = new ESLint({
 		useEslintrc: false,
 		baseConfig: config
 	});
-	return linter
-		.executeOnFiles([path.join(__dirname, file)])
-		.results[0].messages.map((error) => {
-			if (error.ruleId === null && error.fatal === true) {
-				return 'parsing error';
-			}
-			return error.ruleId;
-		});
+	const [results] = await linter.lintFiles([path.join(__dirname, file)]);
+
+	return results.messages.map((error) => {
+		if (error.ruleId === null && error.fatal === true) {
+			return 'parsing error';
+		}
+		return error.ruleId;
+	});
 }
 
 describe('Config format', function () {
@@ -31,8 +31,8 @@ describe('Config format', function () {
 });
 
 describe('Default config', function () {
-	it('should return proper validation errors for linted code', function () {
-		const errors = runEslint('./fixtures/default.config.js', {
+	it('should return proper validation errors for linted code', async function () {
+		const errors = await runEslint('./fixtures/default.config.js', {
 			extends: require.resolve('../')
 		});
 		assert.notEqual(errors.indexOf('quotes'), -1);
@@ -46,8 +46,8 @@ describe('Default config', function () {
 });
 
 describe('Browser config', function () {
-	it('should return proper validation errors for linted code', function () {
-		const errors = runEslint('./fixtures/browser.config.js', {
+	it('should return proper validation errors for linted code', async function () {
+		const errors = await runEslint('./fixtures/browser.config.js', {
 			extends: ['../', '../browser'].map((entry) =>
 				require.resolve(entry)
 			)
@@ -57,8 +57,8 @@ describe('Browser config', function () {
 });
 
 describe('Next config', function () {
-	it('should return proper validation errors for linted code', function () {
-		const errors = runEslint('./fixtures/next.config.js', {
+	it('should return proper validation errors for linted code', async function () {
+		const errors = await runEslint('./fixtures/next.config.js', {
 			extends: ['../', '../next'].map((entry) => require.resolve(entry))
 		});
 		assert.notEqual(errors.indexOf('import/exports-last'), -1);
@@ -67,8 +67,8 @@ describe('Next config', function () {
 });
 
 describe('Tests config', function () {
-	it('should return proper validation errors for linted code', function () {
-		const errors = runEslint('./fixtures/tests.config.js', {
+	it('should return proper validation errors for linted code', async function () {
+		const errors = await runEslint('./fixtures/tests.config.js', {
 			extends: ['../', '../tests'].map((entry) => require.resolve(entry))
 		});
 		assert.notEqual(errors.indexOf('max-nested-callbacks'), -1);
@@ -78,8 +78,8 @@ describe('Tests config', function () {
 });
 
 describe('React config', function () {
-	it('should return proper validation errors for linted code', function () {
-		const errors = runEslint('./fixtures/react.config.js', {
+	it('should return proper validation errors for linted code', async function () {
+		const errors = await runEslint('./fixtures/react.config.js', {
 			extends: ['../', '../react'].map((entry) => require.resolve(entry))
 		});
 		assert.notEqual(errors.indexOf('react/react-in-jsx-scope'), -1);
@@ -87,8 +87,8 @@ describe('React config', function () {
 });
 
 describe('JSX config', function () {
-	it('should return proper validation errors for linted code', function () {
-		const errors = runEslint('./fixtures/jsx.config.js', {
+	it('should return proper validation errors for linted code', async function () {
+		const errors = await runEslint('./fixtures/jsx.config.js', {
 			extends: ['../', '../jsx'].map((entry) => require.resolve(entry))
 		});
 		assert.notEqual(errors.indexOf('react/jsx-no-undef'), -1);
@@ -96,8 +96,8 @@ describe('JSX config', function () {
 });
 
 describe('Vue config', function () {
-	it('should return proper validation errors for linted code', function () {
-		const errors = runEslint('./fixtures/vue.config.vue', {
+	it('should return proper validation errors for linted code', async function () {
+		const errors = await runEslint('./fixtures/vue.config.vue', {
 			extends: ['../', '../vue'].map((entry) => require.resolve(entry))
 		});
 		assert.notEqual(errors.indexOf('vue/no-multiple-template-root'), -1);
@@ -106,8 +106,8 @@ describe('Vue config', function () {
 });
 
 describe('TypeScript config', function () {
-	it('should return proper validation errors for linted code', function () {
-		const errors = runEslint('./fixtures/typescript.config.js', {
+	it('should return proper validation errors for linted code', async function () {
+		const errors = await runEslint('./fixtures/typescript.config.js', {
 			extends: ['../', '../typescript'].map((entry) =>
 				require.resolve(entry)
 			)
