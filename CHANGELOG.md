@@ -9,6 +9,7 @@
 ### Changed
 
 -   Use `2022` for `parserOptions.ecmaVersion`
+-   Set Node version to minimum 12.22
 
 ## [11.0.0][] - 2021-12-28
 
