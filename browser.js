@@ -18,6 +18,11 @@ module.exports = {
 
 		// Unicorn
 		'unicorn/no-document-cookie': 2,
-		'unicorn/require-post-message-target-origin': 2
+		'unicorn/require-post-message-target-origin': 2,
+		'unicorn/prefer-dom-node-append': 0,
+		'unicorn/prefer-dom-node-remove': 0,
+		'unicorn/prefer-dom-node-dataset': 1,
+		'unicorn/prefer-dom-node-text-content': 1,
+		'unicorn/prefer-modern-dom-apis': 1
 	}
 };
