@@ -7,7 +7,7 @@
 ## Install
 
 ```sh
-npm install eslint eslint-config-nitpick --save-dev
+npm install eslint@8 eslint-config-nitpick --save-dev
 ```
 
 ## Usage
