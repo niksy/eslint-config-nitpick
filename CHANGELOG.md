@@ -2,6 +2,8 @@
 
 ## [Unreleased][]
 
+## [11.1.0][] - 2021-12-29
+
 ### Added
 
 -   ESLint to peer dependencies
@@ -21,6 +23,10 @@
 -   **Breaking**: Supports ESLint >= 8
 -   Upgrade package
 
+        https://github.com/niksy/eslint-config-nitpick/compare/v11.0.0...HEAD
+
+    [11.0.0]: https://github.com/niksy/eslint-config-nitpick/tree/v11.0.0
+
 [unreleased]:
-	https://github.com/niksy/eslint-config-nitpick/compare/v11.0.0...HEAD
-[11.0.0]: https://github.com/niksy/eslint-config-nitpick/tree/v11.0.0
+	https://github.com/niksy/eslint-config-nitpick/compare/v11.1.0...HEAD
+[11.1.0]: https://github.com/niksy/eslint-config-nitpick/tree/v11.1.0

@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-nitpick",
-  "version": "11.0.0",
+  "version": "11.1.0",
   "description": "ESLint config for my projects.",
   "license": "MIT",
   "author": "Ivan Nikolić <niksy5@gmail.com> (http://ivannikolic.com)",
