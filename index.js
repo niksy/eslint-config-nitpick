@@ -66,7 +66,6 @@ module.exports = {
 		'node/prefer-global/process': 0,
 		'node/prefer-global/text-decoder': 0,
 		'node/prefer-global/text-encoder': 0,
-		'node/file-extension-in-import': 0,
 		'node/prefer-promises/dns': 0,
 		'node/prefer-promises/fs': 0,
 
@@ -138,7 +137,6 @@ module.exports = {
 		'unicorn/prefer-date-now': 1,
 		'unicorn/prefer-default-parameters': 1,
 		'unicorn/prefer-keyboard-event-key': 0,
-		'unicorn/prefer-module': 0,
 		'unicorn/prefer-node-protocol': 0,
 		'unicorn/prefer-regexp-test': 1,
 		'unicorn/prefer-string-replace-all': 0,

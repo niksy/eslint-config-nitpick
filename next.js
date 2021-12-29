@@ -53,7 +53,6 @@ module.exports = {
 		'import/no-nodejs-modules': 0,
 		'import/first': 0,
 		'import/no-duplicates': 0,
-		'import/extensions': 0,
 		'import/newline-after-import': 0,
 		'import/max-dependencies': 0,
 		'import/no-named-default': 0,
@@ -61,6 +60,9 @@ module.exports = {
 		'import/no-anonymous-default-export': 0,
 		'import/no-named-export': 0,
 		'import/no-unused-modules': 0,
-		'unicorn/prefer-export-from': 0
+		'unicorn/prefer-export-from': 0,
+		'unicorn/prefer-module': 1,
+		'node/file-extension-in-import': [2, 'always'],
+		'import/extensions': [2, 'always', { ignorePackages: true }]
 	}
 };
