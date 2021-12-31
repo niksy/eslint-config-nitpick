@@ -2,6 +2,11 @@
 
 ## [Unreleased][]
 
+### Changed
+
+-   Downgrade `eslint-plugin-mocha` version since latest version drops Node 12
+    support
+
 ## [11.1.0][] - 2021-12-29
 
 ### Added
