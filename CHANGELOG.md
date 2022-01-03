@@ -2,6 +2,10 @@
 
 ## [Unreleased][]
 
+### Changed
+
+-   Disable Node plugin file extension resolver
+
 ## [11.1.1][] - 2021-12-31
 
 ### Changed

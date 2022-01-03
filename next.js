@@ -62,7 +62,7 @@ module.exports = {
 		'import/no-unused-modules': 0,
 		'unicorn/prefer-export-from': 0,
 		'unicorn/prefer-module': 1,
-		'node/file-extension-in-import': [2, 'always'],
+		'node/file-extension-in-import': 0,
 		'import/extensions': [2, 'always', { ignorePackages: true }]
 	}
 };
