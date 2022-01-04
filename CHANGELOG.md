@@ -2,6 +2,8 @@
 
 ## [Unreleased][]
 
+## [11.1.2][] - 2022-01-04
+
 ### Changed
 
 -   Disable Node plugin file extension resolver
@@ -34,14 +36,18 @@
 -   **Breaking**: Supports ESLint >= 8
 -   Upgrade package
 
-            https://github.com/niksy/eslint-config-nitpick/compare/v11.0.0...HEAD
+                https://github.com/niksy/eslint-config-nitpick/compare/v11.0.0...HEAD
 
-        [11.0.0]: https://github.com/niksy/eslint-config-nitpick/tree/v11.0.0
+            [11.0.0]: https://github.com/niksy/eslint-config-nitpick/tree/v11.0.0
 
-        https://github.com/niksy/eslint-config-nitpick/compare/v11.1.0...HEAD
+            https://github.com/niksy/eslint-config-nitpick/compare/v11.1.0...HEAD
 
-    [11.1.0]: https://github.com/niksy/eslint-config-nitpick/tree/v11.1.0
+        [11.1.0]: https://github.com/niksy/eslint-config-nitpick/tree/v11.1.0
+
+        https://github.com/niksy/eslint-config-nitpick/compare/v11.1.1...HEAD
+
+    [11.1.1]: https://github.com/niksy/eslint-config-nitpick/tree/v11.1.1
 
 [unreleased]:
-	https://github.com/niksy/eslint-config-nitpick/compare/v11.1.1...HEAD
-[11.1.1]: https://github.com/niksy/eslint-config-nitpick/tree/v11.1.1
+	https://github.com/niksy/eslint-config-nitpick/compare/v11.1.2...HEAD
+[11.1.2]: https://github.com/niksy/eslint-config-nitpick/tree/v11.1.2
