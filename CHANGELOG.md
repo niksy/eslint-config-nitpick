@@ -2,6 +2,8 @@
 
 ## [Unreleased][]
 
+## [12.0.0][] - 2022-11-16
+
 ### Changed
 
 -   Set Node version to minimum 16
@@ -45,10 +47,13 @@
 
 <!-- prettier-ignore-start -->
 
-[unreleased]: https://github.com/niksy/eslint-config-nitpick/compare/v11.1.2...HEAD
 [11.1.2]: https://github.com/niksy/eslint-config-nitpick/tree/v11.1.2
 [11.1.1]: https://github.com/niksy/eslint-config-nitpick/tree/v11.1.1
 [11.1.0]: https://github.com/niksy/eslint-config-nitpick/tree/v11.1.0
 [11.0.0]: https://github.com/niksy/eslint-config-nitpick/tree/v11.0.0
 
 <!-- prettier-ignore-end -->
+
+[unreleased]:
+	https://github.com/niksy/eslint-config-nitpick/compare/v12.0.0...HEAD
+[12.0.0]: https://github.com/niksy/eslint-config-nitpick/tree/v12.0.0
