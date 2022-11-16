@@ -2,6 +2,13 @@
 
 ## [Unreleased][]
 
+### Changed
+
+-   Set Node version to minimum 16
+-   Activate Vue 3 rules
+-   Update rules
+-   Upgrade dependencies
+
 ## [11.1.2][] - 2022-01-04
 
 ### Changed
