@@ -2,9 +2,11 @@
 
 ## [Unreleased][]
 
+## [12.0.2][] - 2022-11-16
+
 ### Changed
 
-- Update rules
+-   Update rules
 
 ## [12.0.1][] - 2022-11-16
 
@@ -67,6 +69,10 @@
     https://github.com/niksy/eslint-config-nitpick/compare/v12.0.0...HEAD
 
 [12.0.0]: https://github.com/niksy/eslint-config-nitpick/tree/v12.0.0
-[unreleased]:
-	https://github.com/niksy/eslint-config-nitpick/compare/v12.0.1...HEAD
+
+    https://github.com/niksy/eslint-config-nitpick/compare/v12.0.1...HEAD
+
 [12.0.1]: https://github.com/niksy/eslint-config-nitpick/tree/v12.0.1
+[unreleased]:
+	https://github.com/niksy/eslint-config-nitpick/compare/v12.0.2...HEAD
+[12.0.2]: https://github.com/niksy/eslint-config-nitpick/tree/v12.0.2
