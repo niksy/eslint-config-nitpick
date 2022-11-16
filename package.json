@@ -23,12 +23,12 @@
     "prerelease": "npm run lint"
   },
   "dependencies": {
-    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsdoc": "^39.6.2",
     "eslint-plugin-mocha": "^10.1.0",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^6.0.0",
-    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.31.10",
     "eslint-plugin-unicorn": "^44.0.2",
     "eslint-plugin-vue": "^9.7.0",
     "resolve-from": "^5.0.0"
