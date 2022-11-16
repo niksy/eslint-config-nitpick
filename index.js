@@ -184,7 +184,7 @@ module.exports = {
 		'unicorn/prefer-json-parse-buffer': 0,
 		'unicorn/prefer-logical-operator-over-ternary': 1,
 		'unicorn/prefer-modern-math-apis': 0,
-		'unicorn/prefer-native-coercion-functions': 1,
+		'unicorn/prefer-native-coercion-functions': 0,
 		'unicorn/relative-url-style': 0,
 		'unicorn/switch-case-braces': [1, 'always'],
 		'unicorn/text-encoding-identifier-case': 2,
