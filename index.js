@@ -175,6 +175,19 @@ module.exports = {
 		'unicorn/require-array-join-separator': 2,
 		'unicorn/require-number-to-fixed-digits-argument': 2,
 		'unicorn/template-indent': 0,
+		'unicorn/no-thenable': 1,
+		'unicorn/no-unnecessary-await': 1,
+		'unicorn/no-unreadable-iife': 1,
+		'unicorn/no-useless-promise-resolve-reject': 1,
+		'unicorn/no-useless-switch-case': 1,
+		'unicorn/prefer-event-target': 1,
+		'unicorn/prefer-json-parse-buffer': 0,
+		'unicorn/prefer-logical-operator-over-ternary': 1,
+		'unicorn/prefer-modern-math-apis': 0,
+		'unicorn/prefer-native-coercion-functions': 1,
+		'unicorn/relative-url-style': 0,
+		'unicorn/switch-case-braces': [1, 'always'],
+		'unicorn/text-encoding-identifier-case': 2,
 
 		// JSDoc
 		'jsdoc/check-line-alignment': 1,
@@ -225,6 +238,8 @@ module.exports = {
 		'jsdoc/multiline-blocks': 0,
 		'jsdoc/no-multi-asterisks': 1,
 		'jsdoc/tag-lines': 0,
+		'jsdoc/sort-tags': 0,
+		'jsdoc/text-escaping': 0,
 
 		// Possible errors
 		'no-unreachable-loop': 2,
@@ -271,6 +286,8 @@ module.exports = {
 		'no-import-assign': 2,
 		'no-setter-return': 2,
 		'no-unsafe-optional-chaining': 1,
+		'no-constant-binary-expression': 2,
+		'no-new-native-nonconstructor': 1,
 
 		// Best practices
 		'default-case-last': 2,
@@ -369,6 +386,8 @@ module.exports = {
 		'grouped-accessor-pairs': [1, 'getBeforeSet'],
 		'no-constructor-return': 2,
 		'no-nonoctal-decimal-escape': 0,
+		'logical-assignment-operators': 0,
+		'no-empty-static-block': 1,
 
 		// Strict mode
 		strict: [2, 'global'],
@@ -695,6 +714,7 @@ module.exports = {
 		'promise/no-new-statics': 2,
 		'promise/no-return-in-finally': 1,
 		'promise/valid-params': 2,
+		'promise/no-multiple-resolved': 2,
 
 		'arrow-body-style': 0,
 		'arrow-parens': [2, 'always'],

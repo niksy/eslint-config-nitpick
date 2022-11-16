@@ -78,6 +78,9 @@ module.exports = {
 		'react/no-invalid-html-attribute': 1,
 		'react/no-namespace': 1,
 		'react/no-unused-class-component-methods': 1,
-		'react/prefer-exact-props': 0
+		'react/prefer-exact-props': 0,
+		'react/hook-use-state': 1,
+		'react/iframe-missing-sandbox': 1,
+		'react/jsx-no-leaked-render': 1
 	}
 };

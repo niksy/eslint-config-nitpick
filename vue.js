@@ -28,7 +28,6 @@ module.exports = {
 		// Base rules
 		'vue/comment-directive': 2,
 		'vue/jsx-uses-vars': 2,
-		'vue/experimental-script-setup-vars': 0,
 
 		// Extension rules
 		'vue/no-loss-of-precision': 1,
@@ -75,6 +74,15 @@ module.exports = {
 		'vue/object-curly-spacing': 0,
 		'vue/array-bracket-spacing': 0,
 		'vue/no-restricted-syntax': 0,
+		'vue/multiline-ternary': 0,
+		'vue/object-shorthand': [1, 'consistent-as-needed'],
+		'vue/quote-props': [
+			1,
+			'consistent-as-needed',
+			{
+				keywords: true
+			}
+		],
 
 		// Essential
 		'vue/no-useless-template-attributes': 2,
@@ -102,6 +110,9 @@ module.exports = {
 		'vue/no-v-model-argument': 2,
 		'vue/return-in-emits-validator': 2,
 		'vue/use-v-on-exact': 2,
+		'vue/no-v-text-v-html-on-component': 2,
+		'vue/valid-attribute-name': 2,
+		'vue/valid-model-definition': 2,
 
 		// -- Activate for Vue 3
 		'vue/valid-v-memo': 0,
@@ -119,11 +130,11 @@ module.exports = {
 		'vue/valid-v-is': 0,
 		'vue/no-deprecated-v-is': 0,
 		'vue/require-expose': 0,
-		'vue/script-setup-uses-vars': 0,
 		'vue/valid-define-emits': 0,
 		'vue/valid-define-props': 0,
 		'vue/no-deprecated-router-link-tag-prop': 0,
 		'vue/no-expose-after-await': 0,
+		'vue/prefer-import-from-vue': 0,
 
 		'vue/no-arrow-functions-in-watch': 2,
 		'vue/custom-event-name-casing': 2,
@@ -193,7 +204,6 @@ module.exports = {
 			}
 		],
 		'vue/mustache-interpolation-spacing': [2, 'always'],
-		'vue/name-property-casing': [2, 'PascalCase'],
 		'vue/no-multi-spaces': 2,
 		'vue/require-default-prop': 1,
 		'vue/require-prop-types': 1,
@@ -210,7 +220,6 @@ module.exports = {
 		],
 		'vue/attributes-order': 2,
 		'vue/html-quotes': [2, 'double'],
-		'vue/no-confusing-v-for-v-if': 2,
 		'vue/order-in-components': 2,
 		'vue/this-in-template': [1, 'never'], // TODO: review later
 		'vue/no-use-v-if-with-v-for': 2,
@@ -232,7 +241,6 @@ module.exports = {
 		'vue/no-useless-mustaches': 2,
 		'vue/no-unused-properties': 1,
 		'vue/no-unsupported-features': 0,
-		'vue/no-unregistered-components': 2,
 		'vue/no-template-target-blank': 2,
 		'vue/no-static-inline-styles': 2,
 		'vue/no-reserved-component-names': 2,
@@ -314,7 +322,6 @@ module.exports = {
 		'vue/new-line-between-multi-line-property': 1,
 		'vue/next-tick-style': [2, 'promise'],
 		'vue/no-export-in-script-setup': 2,
-		'vue/no-invalid-model-keys': 2,
 		'vue/no-restricted-block': 0,
 		'vue/no-restricted-call-after-await': 0,
 		'vue/no-restricted-custom-event': 0,
@@ -331,7 +338,19 @@ module.exports = {
 		'vue/block-lang': 0,
 		'vue/component-api-style': 0,
 		'vue/component-options-name-casing': [2, 'PascalCase'],
-		'vue/no-child-content': 2
+		'vue/no-child-content': 2,
+		'vue/define-emits-declaration': 0,
+		'vue/define-macros-order': 1,
+		'vue/define-props-declaration': 0,
+		'vue/match-component-import-name': 0,
+		'vue/no-ref-object-destructure': 2,
+		'vue/no-required-prop-with-default': 0,
+		'vue/no-restricted-html-elements': 0,
+		'vue/no-undef-components': 2,
+		'vue/padding-line-between-tags': 0,
+		'vue/prefer-prop-type-boolean-first': 2,
+		'vue/prefer-true-attribute-shorthand': 0,
+		'vue/v-on-handler-style': 0
 	},
 
 	overrides: [
