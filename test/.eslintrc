@@ -1,5 +1,7 @@
 {
-	"extends": [
-		"../tests.js"
-	]
+	"extends": ["../tests.js"],
+	"parserOptions": {
+		"ecmaVersion": 2022,
+		"sourceType": "module"
+	}
 }
