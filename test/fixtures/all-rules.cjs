@@ -6,7 +6,6 @@ module.exports = {
 	'extends': [
 		'./index.js',
 		'./browser.js',
-		'./next.js',
 		'./tests.js',
 		'./react.js',
 		'./jsx.js',

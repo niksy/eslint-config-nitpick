@@ -9,12 +9,12 @@
     "test": "test"
   },
   "files": [
-    "{index,browser,next,tests,react,jsx,vue,typescript}.js",
+    "{index,browser,tests,react,jsx,vue,typescript}.js",
     "LICENSE.md",
     "README.md"
   ],
   "scripts": {
-    "lint": "eslint '{index,browser,next,tests,react,jsx,vue,typescript,test/index}.js'",
+    "lint": "eslint '{index,browser,tests,react,jsx,vue,typescript,test/index}.js'",
     "release": "np --no-release-draft",
     "test": "npm run lint && eslint-find-rules -u ./test/fixtures/all-rules.cjs && mocha 'test/index.js'",
     "test:watch": "npm test -- --watch",
