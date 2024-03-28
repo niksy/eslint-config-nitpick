@@ -188,6 +188,11 @@ module.exports = {
 		'unicorn/relative-url-style': 0,
 		'unicorn/switch-case-braces': [1, 'always'],
 		'unicorn/text-encoding-identifier-case': 2,
+		'unicorn/no-negated-condition': 0,
+		'unicorn/no-typeof-undefined': 0,
+		'unicorn/no-unnecessary-polyfills': 0,
+		'unicorn/prefer-blob-reading-methods': 1,
+		'unicorn/prefer-set-size': 1,
 
 		// JSDoc
 		'jsdoc/check-line-alignment': 1,
@@ -213,7 +218,6 @@ module.exports = {
 		'jsdoc/check-syntax': 2,
 		'jsdoc/check-tag-names': 1,
 		'jsdoc/check-types': 2,
-		'jsdoc/newline-after-description': [2, 'always'],
 		'jsdoc/no-undefined-types': 2,
 		'jsdoc/require-description-complete-sentence': 1,
 		'jsdoc/require-description': 0,
@@ -240,6 +244,10 @@ module.exports = {
 		'jsdoc/tag-lines': 0,
 		'jsdoc/sort-tags': 0,
 		'jsdoc/text-escaping': 0,
+		'jsdoc/imports-as-dependencies': 0,
+		'jsdoc/informative-docs': 0,
+		'jsdoc/no-blank-block-descriptions': 0,
+		'jsdoc/no-blank-blocks': 0,
 
 		// Possible errors
 		'no-unreachable-loop': 2,
