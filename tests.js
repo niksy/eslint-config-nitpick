@@ -33,6 +33,7 @@ module.exports = {
 		'mocha/no-exports': 2,
 		'mocha/prefer-arrow-callback': 0,
 		'mocha/no-empty-description': 2,
+		'mocha/consistent-spacing-between-blocks': 1,
 
 		// Possible errors
 		'no-console': 0,

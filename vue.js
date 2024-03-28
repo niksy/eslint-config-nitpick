@@ -347,7 +347,31 @@ module.exports = {
 		'vue/padding-line-between-tags': 0,
 		'vue/prefer-prop-type-boolean-first': 2,
 		'vue/prefer-true-attribute-shorthand': 0,
-		'vue/v-on-handler-style': 0
+		'vue/v-on-handler-style': 0,
+		'vue/block-order': [1, { 'order': ['template', 'script', 'style'] }],
+		'vue/enforce-style-attribute': 0,
+		'vue/max-lines-per-block': 0,
+		'vue/no-deprecated-model-definition': 2,
+		'vue/no-ref-object-reactivity-loss': 2,
+		'vue/no-restricted-component-names': 0,
+		'vue/no-restricted-v-on': 0,
+		'vue/no-root-v-if': 0,
+		'vue/no-setup-props-reactivity-loss': 2,
+		'vue/no-unused-emit-declarations': 1,
+		'vue/no-use-v-else-with-v-for': 2,
+		'vue/padding-lines-in-component-definition': 0,
+		'vue/prefer-define-options': 1,
+		'vue/require-explicit-slots': 1,
+		'vue/require-macro-variable-name': 1,
+		'vue/require-prop-comment': 0,
+		'vue/require-typed-object-prop': 0,
+		'vue/require-typed-ref': 1,
+		'vue/v-if-else-key': 2,
+		'vue/valid-define-options': 1,
+
+		// Extension rules
+		'vue/array-element-newline': [1, 'consistent'],
+		'vue/no-console': 2
 	},
 
 	overrides: [

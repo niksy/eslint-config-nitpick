@@ -63,6 +63,8 @@ module.exports = {
 		'unicorn/prefer-export-from': 0,
 		'unicorn/prefer-module': 1,
 		'node/file-extension-in-import': 0,
-		'import/extensions': [2, 'always', { ignorePackages: true }]
+		'import/extensions': [2, 'always', { ignorePackages: true }],
+		'import/consistent-type-specifier-style': 0,
+		'import/no-empty-named-blocks': 1
 	}
 };

@@ -772,6 +772,7 @@ module.exports = {
 		'no-await-in-loop': 1,
 		'prefer-destructuring': 0,
 		'require-await': 0,
-		'no-restricted-exports': 0
+		'no-restricted-exports': 0,
+		'no-object-constructor ': 0
 	}
 };
