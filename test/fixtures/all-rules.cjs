@@ -7,8 +7,6 @@ module.exports = {
 		'./index.js',
 		'./browser.js',
 		'./tests.js',
-		'./react.js',
-		'./jsx.js',
 		'./vue.js',
 		'./typescript.js'
 	].map((m) => {

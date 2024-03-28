@@ -71,28 +71,6 @@ describe('Tests config', function () {
 	});
 });
 
-describe('React config', function () {
-	it('should return proper validation errors for linted code', async function () {
-		const errors = await runEslint('./fixtures/react.config.js', {
-			extends: ['../index.js', '../react.js'].map((entry) =>
-				fileURLToPath(new URL(entry, import.meta.url))
-			)
-		});
-		assert.notEqual(errors.indexOf('react/react-in-jsx-scope'), -1);
-	});
-});
-
-describe('JSX config', function () {
-	it('should return proper validation errors for linted code', async function () {
-		const errors = await runEslint('./fixtures/jsx.config.js', {
-			extends: ['../index.js', '../jsx.js'].map((entry) =>
-				fileURLToPath(new URL(entry, import.meta.url))
-			)
-		});
-		assert.notEqual(errors.indexOf('react/jsx-no-undef'), -1);
-	});
-});
-
 describe('Vue config', function () {
 	it('should return proper validation errors for linted code', async function () {
 		const errors = await runEslint('./fixtures/vue.config.vue', {
