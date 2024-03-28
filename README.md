@@ -63,23 +63,6 @@ Browser specific rules.
 
 <!-- prettier-ignore-end -->
 
-### Next
-
-Features usually available in next major Node.js version or [latest
-proposals][tc39-proposals].
-
-<!-- prettier-ignore-start -->
-
-```json
-{
-	"extends": [
-		"eslint-config-nitpick/next"
-	]
-}
-```
-
-<!-- prettier-ignore-end -->
-
 ### Testing
 
 Rules for testing frameworks (e.g. Mocha).

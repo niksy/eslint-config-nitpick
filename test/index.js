@@ -58,18 +58,6 @@ describe('Browser config', function () {
 	});
 });
 
-describe('Next config', function () {
-	it('should return proper validation errors for linted code', async function () {
-		const errors = await runEslint('./fixtures/next.config.js', {
-			extends: ['../index.js', '../next.js'].map((entry) =>
-				fileURLToPath(new URL(entry, import.meta.url))
-			)
-		});
-		assert.notEqual(errors.indexOf('import/exports-last'), -1);
-		assert.notEqual(errors.indexOf('import/no-mutable-exports'), -1);
-	});
-});
-
 describe('Tests config', function () {
 	it('should return proper validation errors for linted code', async function () {
 		const errors = await runEslint('./fixtures/tests.config.js', {
