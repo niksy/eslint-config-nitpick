@@ -46,8 +46,8 @@ module.exports = {
 		// Ref. https://github.com/mysticatea/eslint-plugin-node/issues/301
 		'node/process-exit-as-throw': 0,
 
-		'node/prefer-global/url': [1, 'never'],
-		'node/prefer-global/url-search-params': [1, 'never'],
+		'node/prefer-global/url': [1, 'always'],
+		'node/prefer-global/url-search-params': [1, 'always'],
 		'node/no-deprecated-api': 0,
 		'node/no-missing-import': 0,
 		'node/no-missing-require': 0,
