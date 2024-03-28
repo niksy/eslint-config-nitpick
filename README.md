@@ -79,39 +79,6 @@ Rules for testing frameworks (e.g. Mocha).
 
 <!-- prettier-ignore-end -->
 
-### React
-
-React specific rules.
-
-<!-- prettier-ignore-start -->
-
-```json
-{
-	"extends": [
-		"eslint-config-nitpick/jsx", // For JSX rules
-		"eslint-config-nitpick/react"
-	]
-}
-```
-
-<!-- prettier-ignore-end -->
-
-### JSX
-
-JSX specific rules.
-
-<!-- prettier-ignore-start -->
-
-```json
-{
-	"extends": [
-		"eslint-config-nitpick/jsx"
-	]
-}
-```
-
-<!-- prettier-ignore-end -->
-
 ### Vue
 
 Vue specific rules.
@@ -121,7 +88,6 @@ Vue specific rules.
 ```json
 {
 	"extends": [
-		"eslint-config-nitpick/jsx", // If you use JSX
 		"eslint-config-nitpick/vue"
 	]
 }
