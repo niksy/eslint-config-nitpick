@@ -3,8 +3,7 @@
 module.exports = {
 	env: {
 		node: false,
-		browser: true,
-		commonjs: true
+		browser: true
 	},
 
 	plugins: ['eslint-plugin-unicorn'],
