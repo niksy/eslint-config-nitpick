@@ -2,6 +2,14 @@
 
 ## [Unreleased][]
 
+-   Incremental switch to ESM rules and behavior by default
+-   Remove React, JSX and Next configuration
+-   Use camel case for event naming in Vue
+-   Group stylistic rules in preparation for Stylistic plugin
+-   Use maintained version of Node plugin
+-   Update environment for configuration files
+-   Upgrade dependencies
+
 ## [12.0.2][] - 2022-11-16
 
 ### Changed
