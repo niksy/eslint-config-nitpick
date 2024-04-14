@@ -4,12 +4,9 @@ module.exports = {
 	env: {
 		mocha: true
 	},
-
 	plugins: ['eslint-plugin-mocha', 'eslint-plugin-promise'],
-
 	rules: {
 		'promise/always-return': 0,
-
 		'mocha/no-exclusive-tests': 1,
 		'mocha/no-skipped-tests': 1,
 		'mocha/no-pending-tests': 1,
@@ -34,14 +31,8 @@ module.exports = {
 		'mocha/prefer-arrow-callback': 0,
 		'mocha/no-empty-description': 2,
 		'mocha/consistent-spacing-between-blocks': 1,
-
-		// Possible errors
 		'no-console': 0,
-
-		// Best practices
 		'no-invalid-this': 0,
-
-		// Stylistic issues
 		'max-nested-callbacks': [1, 5]
 	}
 };

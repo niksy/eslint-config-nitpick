@@ -1,6 +1,6 @@
 'use strict';
 
-const path = require('path');
+const path = require('node:path');
 const resolveFrom = require('resolve-from');
 
 module.exports = {
@@ -8,15 +8,11 @@ module.exports = {
 		path.dirname(require.resolve('eslint-plugin-vue')),
 		'vue-eslint-parser'
 	),
-
 	parserOptions: {
 		sourceType: 'module'
 	},
-
 	plugins: ['eslint-plugin-vue'],
-
 	rules: {
-		// Other
 		'no-param-reassign': [
 			1,
 			{
@@ -24,12 +20,8 @@ module.exports = {
 				ignorePropertyModificationsFor: ['state']
 			}
 		],
-
-		// Base rules
 		'vue/comment-directive': 2,
 		'vue/jsx-uses-vars': 2,
-
-		// Extension rules
 		'vue/no-loss-of-precision': 1,
 		'vue/array-bracket-newline': [1, 'consistent'],
 		'vue/comma-spacing': [
@@ -83,8 +75,6 @@ module.exports = {
 				keywords: true
 			}
 		],
-
-		// Essential
 		'vue/no-useless-template-attributes': 2,
 		'vue/no-reserved-props': 2,
 		'vue/no-computed-properties-in-data': 2,
@@ -169,8 +159,6 @@ module.exports = {
 		'vue/valid-v-text': 2,
 		'vue/no-unused-components': 1,
 		'vue/require-prop-type-constructor': 2,
-
-		// Strongly recommended
 		'vue/first-attribute-linebreak': [
 			2,
 			{ singleline: 'ignore', multiline: 'below' }
@@ -207,8 +195,6 @@ module.exports = {
 		'vue/v-bind-style': [2, 'shorthand'],
 		'vue/v-on-style': [2, 'shorthand'],
 		'vue/no-template-shadow': 2,
-
-		// Recommended
 		'vue/no-multiple-slot-args': 2,
 		'vue/no-lone-template': 1,
 		'vue/component-tags-order': [
@@ -218,11 +204,9 @@ module.exports = {
 		'vue/attributes-order': 2,
 		'vue/html-quotes': [2, 'double'],
 		'vue/order-in-components': 2,
-		'vue/this-in-template': [1, 'never'], // TODO: review later
+		'vue/this-in-template': [1, 'never'],
 		'vue/no-use-v-if-with-v-for': 2,
 		'vue/no-v-html': 1,
-
-		// Uncategorized
 		'vue/prefer-separate-static-class': 0,
 		'vue/no-v-text': 2,
 		'vue/no-use-computed-property-like-method': 1,
@@ -368,12 +352,9 @@ module.exports = {
 		'vue/require-typed-ref': 1,
 		'vue/v-if-else-key': 2,
 		'vue/valid-define-options': 1,
-
-		// Extension rules
 		'vue/array-element-newline': [1, 'consistent'],
 		'vue/no-console': 2
 	},
-
 	overrides: [
 		{
 			files: ['*.vue'],
