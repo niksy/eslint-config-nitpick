@@ -124,7 +124,7 @@ module.exports = {
 		'vue/no-expose-after-await': 2,
 		'vue/prefer-import-from-vue': 2,
 		'vue/no-arrow-functions-in-watch': 2,
-		'vue/custom-event-name-casing': 2,
+		'vue/custom-event-name-casing': [2, 'camelCase'],
 		'vue/no-async-in-computed-properties': 2,
 		'vue/no-dupe-keys': 2,
 		'vue/no-duplicate-attributes': [
@@ -310,7 +310,7 @@ module.exports = {
 		'vue/no-this-in-before-route-enter': 2,
 		'vue/no-unused-refs': 1,
 		'vue/require-emit-validator': 1,
-		'vue/v-on-event-hyphenation': 2,
+		'vue/v-on-event-hyphenation': [2, 'never'],
 		'vue/valid-next-tick': 2,
 		'vue/match-component-file-name': 0,
 		'vue/no-boolean-default': 0,
