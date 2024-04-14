@@ -3,5 +3,10 @@
 	"parserOptions": {
 		"ecmaVersion": 2022,
 		"sourceType": "module"
+	},
+	"plugins": ["eslint-plugin-unicorn", "eslint-plugin-import"],
+	"rules": {
+		"unicorn/prefer-module": 2,
+		"import/no-commonjs": 2
 	}
 }
