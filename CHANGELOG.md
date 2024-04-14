@@ -2,6 +2,8 @@
 
 ## [Unreleased][]
 
+## [13.0.0][] - 2024-04-14
+
 -   Incremental switch to ESM rules and behavior by default
 -   Remove React, JSX and Next configuration
 -   Use camel case for event naming in Vue
@@ -81,6 +83,10 @@
     https://github.com/niksy/eslint-config-nitpick/compare/v12.0.1...HEAD
 
 [12.0.1]: https://github.com/niksy/eslint-config-nitpick/tree/v12.0.1
-[unreleased]:
-	https://github.com/niksy/eslint-config-nitpick/compare/v12.0.2...HEAD
+
+    https://github.com/niksy/eslint-config-nitpick/compare/v12.0.2...HEAD
+
 [12.0.2]: https://github.com/niksy/eslint-config-nitpick/tree/v12.0.2
+[Unreleased]:
+	https://github.com/niksy/eslint-config-nitpick/compare/v13.0.0...HEAD
+[13.0.0]: https://github.com/niksy/eslint-config-nitpick/tree/v13.0.0
