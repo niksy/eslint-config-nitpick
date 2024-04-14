@@ -1,6 +1,9 @@
 {
 	"root": true,
 	"extends": ["./index.js", "eslint-config-prettier"],
+	"parserOptions": {
+		"sourceType": "commonjs"
+	},
 	"plugins": [
 		"eslint-plugin-prettier",
 		"eslint-plugin-unicorn",

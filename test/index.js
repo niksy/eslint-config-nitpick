@@ -15,7 +15,7 @@ async function runEslint(file, config) {
 
 	return results.messages.map((error) => {
 		if (error.ruleId === null && error.fatal === true) {
-			return 'parsing error';
+			return error.message ?? 'Parsing error';
 		}
 		return error.ruleId;
 	});

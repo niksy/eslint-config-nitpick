@@ -6,7 +6,8 @@ module.exports = {
 		es2022: true
 	},
 	parserOptions: {
-		ecmaVersion: 2022
+		ecmaVersion: 2022,
+		sourceType: 'module'
 	},
 	plugins: [
 		'eslint-plugin-promise',
@@ -15,7 +16,6 @@ module.exports = {
 		'eslint-plugin-jsdoc',
 		'eslint-plugin-import'
 	],
-
 	rules: {
 		'n/no-sync': 1,
 		'n/no-restricted-require': 0,

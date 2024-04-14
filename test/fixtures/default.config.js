@@ -2,7 +2,7 @@ let a = 1;
 const b = 2;
 b = 3;
 
-function foo () {
+function foo1 () {
 	var bar = {
 		bad: () => {
 			var a = `a b c ${d} e`;
@@ -15,7 +15,7 @@ function foo () {
 	bar.catch = function () {};
 }
 
-var foo = {};
+var foo2 = {};
 var bar = {};
 
 fn(_.extend(foo, bar));
@@ -27,4 +27,4 @@ var p = new Promise(function ( r1, r2 ) {})
 
 throw Error();
 
-var [foo, ... bar] = [1, 2];
+var [foo3, ... bar] = [1, 2];
