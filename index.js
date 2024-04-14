@@ -534,7 +534,7 @@ module.exports = {
 		'import/prefer-default-export': 1,
 		'import/no-unassigned-import': 1,
 		'import/group-exports': 1,
-		'import/dynamic-import-chunkname': 2,
+		'import/dynamic-import-chunkname': 0,
 		'import/no-import-module-exports': 2,
 		'import/no-relative-packages': 0,
 		'import/no-unresolved': 0,

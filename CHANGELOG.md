@@ -2,6 +2,8 @@
 
 ## [Unreleased][]
 
+-   Update rules
+
 ## [13.0.0][] - 2024-04-14
 
 -   Incremental switch to ESM rules and behavior by default
