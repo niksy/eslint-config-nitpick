@@ -23,58 +23,16 @@ module.exports = {
 		'vue/comment-directive': 2,
 		'vue/jsx-uses-vars': 2,
 		'vue/no-loss-of-precision': 1,
-		'vue/array-bracket-newline': [1, 'consistent'],
-		'vue/comma-spacing': [
-			2,
-			{
-				before: false,
-				after: true
-			}
-		],
-		'vue/comma-style': [2, 'last'],
 		'vue/dot-notation': 1,
-		'vue/func-call-spacing': [2, 'never'],
-		'vue/max-len': 0,
-		'vue/no-extra-parens': 0,
 		'vue/no-irregular-whitespace': 2,
 		'vue/no-sparse-arrays': 2,
 		'vue/no-useless-concat': 1,
-		'vue/object-curly-newline': [
-			1,
-			{
-				consistent: true
-			}
-		],
-		'vue/object-property-newline': [
-			1,
-			{ allowAllPropertiesOnSameLine: true }
-		],
-		'vue/operator-linebreak': [2, 'after'],
 		'vue/prefer-template': 1,
-		'vue/space-in-parens': 0,
-		'vue/template-curly-spacing': [2, 'never'],
 		'vue/no-constant-condition': 2,
-		'vue/arrow-spacing': 0,
-		'vue/block-spacing': 0,
-		'vue/brace-style': 0,
 		'vue/camelcase': 0,
-		'vue/comma-dangle': 0,
 		'vue/eqeqeq': 0,
-		'vue/key-spacing': 0,
-		'vue/space-infix-ops': 0,
-		'vue/space-unary-ops': 0,
-		'vue/object-curly-spacing': 0,
-		'vue/array-bracket-spacing': 0,
 		'vue/no-restricted-syntax': 0,
-		'vue/multiline-ternary': 0,
 		'vue/object-shorthand': [1, 'consistent-as-needed'],
-		'vue/quote-props': [
-			1,
-			'consistent-as-needed',
-			{
-				keywords: true
-			}
-		],
 		'vue/no-useless-template-attributes': 2,
 		'vue/no-reserved-props': 2,
 		'vue/no-computed-properties-in-data': 2,
@@ -167,29 +125,6 @@ module.exports = {
 		'vue/one-component-per-file': 2,
 		'vue/component-definition-name-casing': [2, 'PascalCase'],
 		'vue/attribute-hyphenation': [2, 'never'],
-		'vue/html-end-tags': 2,
-		'vue/html-indent': [2, 'tab'],
-		'vue/html-self-closing': [
-			2,
-			{
-				html: {
-					void: 'always',
-					normal: 'never',
-					component: 'always'
-				},
-				svg: 'always',
-				math: 'always'
-			}
-		],
-		'vue/max-attributes-per-line': [
-			2,
-			{
-				singleline: 3,
-				multiline: 1
-			}
-		],
-		'vue/mustache-interpolation-spacing': [2, 'always'],
-		'vue/no-multi-spaces': 2,
 		'vue/require-default-prop': 1,
 		'vue/require-prop-types': 1,
 		'vue/v-bind-style': [2, 'shorthand'],
@@ -202,7 +137,6 @@ module.exports = {
 			{ 'order': ['template', 'script', 'style'] }
 		],
 		'vue/attributes-order': 2,
-		'vue/html-quotes': [2, 'double'],
 		'vue/order-in-components': 2,
 		'vue/this-in-template': [1, 'never'],
 		'vue/no-use-v-if-with-v-for': 2,
@@ -212,7 +146,6 @@ module.exports = {
 		'vue/no-use-computed-property-like-method': 1,
 		'vue/no-undef-properties': 1,
 		'vue/no-restricted-class': 0,
-		'vue/block-tag-newline': 0,
 		'vue/v-for-delimiter-style': [2, 'in'],
 		'vue/static-class-names-order': 0,
 		'vue/sort-keys': 0,
@@ -247,38 +180,7 @@ module.exports = {
 		],
 		'vue/no-deprecated-scope-attribute': 2,
 		'vue/no-empty-pattern': 2,
-		'vue/dot-location': [1, 'property'],
-		'vue/keyword-spacing': [
-			2,
-			{
-				before: true,
-				after: true
-			}
-		],
-		'vue/html-closing-bracket-newline': [
-			2,
-			{
-				singleline: 'never',
-				multiline: 'always'
-			}
-		],
-		'vue/html-closing-bracket-spacing': [
-			2,
-			{
-				startTag: 'never',
-				endTag: 'never',
-				selfClosingTag: 'always'
-			}
-		],
 		'vue/prop-name-casing': [2, 'camelCase'],
-		'vue/script-indent': [
-			2,
-			'tab',
-			{
-				baseIndent: 1,
-				switchCase: 1
-			}
-		],
 		'vue/component-name-in-template-casing': [
 			2,
 			'PascalCase',
@@ -296,9 +198,6 @@ module.exports = {
 				]
 			}
 		],
-		'vue/multiline-html-element-content-newline': 1,
-		'vue/singleline-html-element-content-newline': 0,
-		'vue/no-spaces-around-equal-signs-in-attribute': 2,
 		'vue/html-button-has-type': 2,
 		'vue/new-line-between-multi-line-property': 1,
 		'vue/next-tick-style': [2, 'promise'],
@@ -352,8 +251,111 @@ module.exports = {
 		'vue/require-typed-ref': 1,
 		'vue/v-if-else-key': 2,
 		'vue/valid-define-options': 1,
+		'vue/no-console': 2,
+
+		// Stylistic rules
+		'vue/array-bracket-newline': [1, 'consistent'],
+		'vue/array-bracket-spacing': 0,
 		'vue/array-element-newline': [1, 'consistent'],
-		'vue/no-console': 2
+		'vue/arrow-spacing': 0,
+		'vue/block-spacing': 0,
+		'vue/brace-style': 0,
+		'vue/comma-dangle': 0,
+		'vue/comma-spacing': [
+			2,
+			{
+				before: false,
+				after: true
+			}
+		],
+		'vue/comma-style': [2, 'last'],
+		'vue/dot-location': [1, 'property'],
+		'vue/func-call-spacing': [2, 'never'],
+		'vue/key-spacing': 0,
+		'vue/keyword-spacing': [
+			2,
+			{
+				before: true,
+				after: true
+			}
+		],
+		'vue/max-len': 0,
+		'vue/multiline-ternary': 0,
+		'vue/no-extra-parens': 0,
+		'vue/no-multi-spaces': 2,
+		'vue/object-curly-newline': [
+			1,
+			{
+				consistent: true
+			}
+		],
+		'vue/object-curly-spacing': 0,
+		'vue/object-property-newline': [
+			1,
+			{ allowAllPropertiesOnSameLine: true }
+		],
+		'vue/operator-linebreak': [2, 'after'],
+		'vue/quote-props': [
+			1,
+			'consistent-as-needed',
+			{
+				keywords: true
+			}
+		],
+		'vue/space-in-parens': 0,
+		'vue/space-infix-ops': 0,
+		'vue/space-unary-ops': 0,
+		'vue/template-curly-spacing': [2, 'never'],
+		'vue/block-tag-newline': 0,
+		'vue/html-closing-bracket-newline': [
+			2,
+			{
+				singleline: 'never',
+				multiline: 'always'
+			}
+		],
+		'vue/html-closing-bracket-spacing': [
+			2,
+			{
+				startTag: 'never',
+				endTag: 'never',
+				selfClosingTag: 'always'
+			}
+		],
+		'vue/html-end-tags': 2,
+		'vue/html-indent': [2, 'tab'],
+		'vue/html-quotes': [2, 'double'],
+		'vue/max-attributes-per-line': [
+			2,
+			{
+				singleline: 3,
+				multiline: 1
+			}
+		],
+		'vue/multiline-html-element-content-newline': 1,
+		'vue/mustache-interpolation-spacing': [2, 'always'],
+		'vue/no-spaces-around-equal-signs-in-attribute': 2,
+		'vue/script-indent': [
+			2,
+			'tab',
+			{
+				baseIndent: 1,
+				switchCase: 1
+			}
+		],
+		'vue/singleline-html-element-content-newline': 0,
+		'vue/html-self-closing': [
+			2,
+			{
+				html: {
+					void: 'always',
+					normal: 'never',
+					component: 'always'
+				},
+				svg: 'always',
+				math: 'always'
+			}
+		]
 	},
 	overrides: [
 		{

@@ -568,7 +568,7 @@ module.exports = {
 		'import/consistent-type-specifier-style': 0,
 		'import/no-empty-named-blocks': 1,
 
-		// Stylistic rules - deprecated
+		// Stylistic rules
 		'array-bracket-newline': [1, 'consistent'],
 		'array-bracket-spacing': [
 			1,
