@@ -185,7 +185,7 @@ module.exports = {
 		'unicorn/no-unnecessary-polyfills': 0,
 		'unicorn/prefer-blob-reading-methods': 1,
 		'unicorn/prefer-set-size': 1,
-		'jsdoc/check-line-alignment': 1,
+		'jsdoc/check-line-alignment': 0,
 		'jsdoc/require-property': 0,
 		'jsdoc/check-property-names': 0,
 		'jsdoc/require-property-description': 0,
@@ -396,14 +396,7 @@ module.exports = {
 				properties: 'always'
 			}
 		],
-		'capitalized-comments': [
-			1,
-			'always',
-			{
-				ignoreInlineComments: true,
-				ignoreConsecutiveComments: true
-			}
-		],
+		'capitalized-comments': 0,
 		'consistent-this': [2, 'self'],
 		'func-name-matching': 0,
 		'func-names': 0,
