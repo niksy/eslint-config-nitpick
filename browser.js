@@ -1,11 +1,20 @@
-'use strict';
+import globals from 'globals';
+import pluginUnicorn from 'eslint-plugin-unicorn';
 
-module.exports = {
-	env: {
-		node: false,
-		browser: true
+const nodeGlobalsDisabled = Object.fromEntries(
+	Object.entries(globals.node).map(([key]) => [key, 'off'])
+);
+
+export default {
+	languageOptions: {
+		globals: {
+			...nodeGlobalsDisabled,
+			...globals.browser
+		}
 	},
-	plugins: ['eslint-plugin-unicorn'],
+	plugins: {
+		unicorn: pluginUnicorn
+	},
 	rules: {
 		'no-console': 2,
 		'no-implicit-globals': 2,

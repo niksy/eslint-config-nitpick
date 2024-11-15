@@ -1,10 +1,17 @@
-'use strict';
+import globals from 'globals';
+import pluginMocha from 'eslint-plugin-mocha';
+import pluginPromise from 'eslint-plugin-promise';
 
-module.exports = {
-	env: {
-		mocha: true
+export default {
+	languageOptions: {
+		globals: {
+			...globals.mocha
+		}
 	},
-	plugins: ['eslint-plugin-mocha', 'eslint-plugin-promise'],
+	plugins: {
+		mocha: pluginMocha,
+		promise: pluginPromise
+	},
 	rules: {
 		'promise/always-return': 0,
 		'mocha/no-exclusive-tests': 1,
