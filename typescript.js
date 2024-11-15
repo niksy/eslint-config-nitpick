@@ -1,7 +1,9 @@
-'use strict';
+import pluginJsdoc from 'eslint-plugin-jsdoc';
 
-module.exports = {
-	plugins: ['eslint-plugin-jsdoc'],
+export default {
+	plugins: {
+		jsdoc: pluginJsdoc
+	},
 	settings: {
 		jsdoc: {
 			mode: 'typescript'
