@@ -1,21 +1,26 @@
-'use strict';
+import globals from 'globals';
+import pluginPromise from 'eslint-plugin-promise';
+import pluginNode from 'eslint-plugin-n';
+import pluginUnicorn from 'eslint-plugin-unicorn';
+import pluginJsdoc from 'eslint-plugin-jsdoc';
+import pluginImport from 'eslint-plugin-import';
 
-module.exports = {
-	env: {
-		node: true,
-		es2022: true
-	},
-	parserOptions: {
+export default {
+	languageOptions: {
 		ecmaVersion: 2022,
-		sourceType: 'module'
+		sourceType: 'module',
+		globals: {
+			...globals.node,
+			...globals.es2022
+		}
 	},
-	plugins: [
-		'eslint-plugin-promise',
-		'eslint-plugin-n',
-		'eslint-plugin-unicorn',
-		'eslint-plugin-jsdoc',
-		'eslint-plugin-import'
-	],
+	plugins: {
+		promise: pluginPromise,
+		n: pluginNode,
+		unicorn: pluginUnicorn,
+		jsdoc: pluginJsdoc,
+		import: pluginImport
+	},
 	rules: {
 		'n/no-sync': 1,
 		'n/no-restricted-require': 0,
@@ -267,7 +272,6 @@ module.exports = {
 		'no-unexpected-multiline': 2,
 		'no-unreachable': 2,
 		'use-isnan': 2,
-		'valid-jsdoc': 0,
 		'valid-typeof': 2,
 		'no-unsafe-finally': 1,
 		'no-unsafe-negation': 2,
@@ -445,7 +449,6 @@ module.exports = {
 			}
 		],
 		'operator-assignment': 0,
-		'require-jsdoc': 0,
 		'sort-keys': 0,
 		'sort-vars': 0,
 		'line-comment-position': 0,

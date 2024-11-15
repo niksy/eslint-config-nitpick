@@ -1,11 +1,15 @@
-'use strict';
+import globals from 'globals';
+import pluginUnicorn from 'eslint-plugin-unicorn';
 
-module.exports = {
-	env: {
-		node: false,
-		browser: true
+export default {
+	languageOptions: {
+		globals: {
+			...globals.browser
+		}
 	},
-	plugins: ['eslint-plugin-unicorn'],
+	plugins: {
+		unicorn: pluginUnicorn
+	},
 	rules: {
 		'no-console': 2,
 		'no-implicit-globals': 2,
