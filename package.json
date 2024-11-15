@@ -24,7 +24,7 @@
   "scripts": {
     "lint": "eslint '{index,browser,tests,vue,typescript,test/index}.js'",
     "release": "np --no-release-draft",
-    "test": "npm run lint && mocha 'test/index.js'",
+    "test": "npm run lint && eslint-find-rules --flatConfig -u ./test/fixtures/all-rules.js && mocha 'test/index.js'",
     "test:watch": "npm test -- --watch",
     "version": "if [ $(git rev-parse --abbrev-ref HEAD) == 'master' ]; then sed -i '' '/\\[unreleased\\]:/d' CHANGELOG.md && version-changelog CHANGELOG.md && changelog-verify CHANGELOG.md && git add CHANGELOG.md; else echo; fi",
     "postpublish": "GITHUB_TOKEN=$GITHUB_RELEASE_TOKEN github-release-from-changelog",
@@ -45,6 +45,7 @@
     "changelog-verify": "^1.1.2",
     "eslint": "^9.15.0",
     "eslint-config-prettier": "^9.1.0",
+    "eslint-find-rules": "^5.0.0",
     "eslint-plugin-prettier": "^5.2.1",
     "github-release-from-changelog": "^2.1.1",
     "husky": "^4.3.8",
