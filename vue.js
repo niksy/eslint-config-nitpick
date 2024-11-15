@@ -355,7 +355,12 @@ module.exports = {
 				svg: 'always',
 				math: 'always'
 			}
-		]
+		],
+		'vue/max-props': 0,
+		'vue/max-template-depth': 0,
+		'vue/no-deprecated-delete-set': 2,
+		'vue/prefer-use-template-ref': 1,
+		'vue/require-default-export': 1
 	},
 	overrides: [
 		{

@@ -807,6 +807,9 @@ module.exports = {
 		'template-tag-spacing': [2, 'never'],
 		'wrap-iife': [2, 'inside'],
 		'wrap-regex': 0,
-		'yield-star-spacing': [1, 'after']
+		'yield-star-spacing': [1, 'after'],
+		'jsdoc/check-template-names': 0,
+		'jsdoc/convert-to-jsdoc-comments': 0,
+		'jsdoc/require-template': 0
 	}
 };
