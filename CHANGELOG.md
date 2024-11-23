@@ -2,6 +2,8 @@
 
 ## [Unreleased][]
 
+## [14.0.1][] - 2024-11-23
+
 ### Fixed
 
 -   Peer dependencies and engines version
@@ -107,7 +109,11 @@
 
 [12.0.2]: https://github.com/niksy/eslint-config-nitpick/tree/v12.0.2
 [Unreleased]:
-	https://github.com/niksy/eslint-config-nitpick/compare/v14.0.0...HEAD
+	https://github.com/niksy/eslint-config-nitpick/compare/v14.0.1...HEAD
+[14.0.1]: https://github.com/niksy/eslint-config-nitpick/tree/v14.0.1
+
+    https://github.com/niksy/eslint-config-nitpick/compare/v14.0.0...HEAD
+
 [14.0.0]: https://github.com/niksy/eslint-config-nitpick/tree/v14.0.0
 
     https://github.com/niksy/eslint-config-nitpick/compare/v13.0.2...HEAD
