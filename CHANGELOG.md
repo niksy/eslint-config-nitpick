@@ -2,6 +2,11 @@
 
 ## [Unreleased][]
 
+### Changed
+
+-   **Breaking**: Supports Node >= 18
+-   **Breaking**: Supports ESLint >= 9
+
 ## [13.0.2][] - 2024-04-18
 
 -   Update rules
