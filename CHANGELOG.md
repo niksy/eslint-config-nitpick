@@ -2,6 +2,8 @@
 
 ## [Unreleased][]
 
+## [14.0.2][] - 2024-11-23
+
 ### Changed
 
 -   Vue parser and processor options
@@ -113,7 +115,11 @@
 
 [12.0.2]: https://github.com/niksy/eslint-config-nitpick/tree/v12.0.2
 [Unreleased]:
-	https://github.com/niksy/eslint-config-nitpick/compare/v14.0.1...HEAD
+	https://github.com/niksy/eslint-config-nitpick/compare/v14.0.2...HEAD
+[14.0.2]: https://github.com/niksy/eslint-config-nitpick/tree/v14.0.2
+
+    https://github.com/niksy/eslint-config-nitpick/compare/v14.0.1...HEAD
+
 [14.0.1]: https://github.com/niksy/eslint-config-nitpick/tree/v14.0.1
 
     https://github.com/niksy/eslint-config-nitpick/compare/v14.0.0...HEAD
