@@ -2,6 +2,10 @@
 
 ## [Unreleased][]
 
+### Fixed
+
+-   Peer dependencies and engines version
+
 ## [14.0.0][] - 2024-11-23
 
 ### Changed
