@@ -1,11 +1,18 @@
 import pluginVue from 'eslint-plugin-vue';
-import parserVueEslint from 'vue-eslint-parser';
+
+const parserVueEslint = []
+	.concat(pluginVue.configs['flat/base'])
+	.reduce((parser, config) => {
+		if (
+			config.languageOptions?.parser?.meta?.name === 'vue-eslint-parser'
+		) {
+			parser = config.languageOptions.parser;
+		}
+		return parser;
+	}, null);
 
 export default [
 	{
-		languageOptions: {
-			parser: parserVueEslint
-		},
 		plugins: {
 			vue: pluginVue
 		},
@@ -358,6 +365,10 @@ export default [
 	},
 	{
 		files: ['**/*.vue'],
+		languageOptions: {
+			parser: parserVueEslint
+		},
+		processor: pluginVue.processors.vue,
 		plugins: {
 			vue: pluginVue
 		},

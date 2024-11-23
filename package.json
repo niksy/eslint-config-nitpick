@@ -39,8 +39,7 @@
     "eslint-plugin-unicorn": "^56.0.0",
     "eslint-plugin-vue": "^9.31.0",
     "globals": "^15.12.0",
-    "resolve-from": "^5.0.0",
-    "vue-eslint-parser": "^9.4.3"
+    "resolve-from": "^5.0.0"
   },
   "devDependencies": {
     "changelog-verify": "^1.1.2",

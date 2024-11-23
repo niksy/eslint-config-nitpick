@@ -2,6 +2,10 @@
 
 ## [Unreleased][]
 
+### Changed
+
+-   Vue parser and processor options
+
 ## [14.0.1][] - 2024-11-23
 
 ### Fixed
