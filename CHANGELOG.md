@@ -2,6 +2,8 @@
 
 ## [Unreleased][]
 
+## [14.0.0][] - 2024-11-23
+
 ### Changed
 
 -   **Breaking**: Supports Node >= 18
@@ -101,7 +103,11 @@
 
 [12.0.2]: https://github.com/niksy/eslint-config-nitpick/tree/v12.0.2
 [Unreleased]:
-	https://github.com/niksy/eslint-config-nitpick/compare/v13.0.2...HEAD
+	https://github.com/niksy/eslint-config-nitpick/compare/v14.0.0...HEAD
+[14.0.0]: https://github.com/niksy/eslint-config-nitpick/tree/v14.0.0
+
+    https://github.com/niksy/eslint-config-nitpick/compare/v13.0.2...HEAD
+
 [13.0.2]: https://github.com/niksy/eslint-config-nitpick/tree/v13.0.2
 
     https://github.com/niksy/eslint-config-nitpick/compare/v13.0.1...HEAD
