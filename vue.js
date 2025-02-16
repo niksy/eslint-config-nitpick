@@ -360,7 +360,9 @@ export default [
 			'vue/no-deprecated-delete-set': 2,
 			'vue/prefer-use-template-ref': 1,
 			'vue/require-default-export': 1,
-			'vue/script-indent': 0
+			'vue/script-indent': 0,
+			'vue/restricted-component-names': 0,
+			'vue/slot-name-casing': 0
 		}
 	},
 	{
