@@ -2,6 +2,8 @@
 
 ## [Unreleased][]
 
+## [14.1.0][] - 2025-02-16
+
 ### Changed
 
 - Upgrade to ESLint 9 compatible version of eslint-find-rules
@@ -99,7 +101,8 @@
 - **Breaking**: Supports ESLint >= 8
 - Upgrade package
 
-[Unreleased]:
+[Unreleased]: https://github.com/niksy/eslint-config-nitpick/compare/v14.1.0...HEAD
+[14.1.0]: https://github.com/niksy/eslint-config-nitpick/tree/v14.1.0
 	https://github.com/niksy/eslint-config-nitpick/compare/v14.0.2...HEAD
 [14.0.2]: https://github.com/niksy/eslint-config-nitpick/tree/v14.0.2
 [14.0.1]: https://github.com/niksy/eslint-config-nitpick/tree/v14.0.1
