@@ -813,6 +813,23 @@ export default {
 		'yield-star-spacing': [1, 'after'],
 		'jsdoc/check-template-names': 0,
 		'jsdoc/convert-to-jsdoc-comments': 0,
-		'jsdoc/require-template': 0
+		'jsdoc/require-template': 0,
+		'jsdoc/lines-before-block': 0,
+		'no-useless-assignment': 1,
+		'promise/spec-only': 2,
+		'unicorn/consistent-empty-array-spread': 1,
+		'unicorn/consistent-existence-index-check': 1,
+		'unicorn/no-anonymous-default-export': 1,
+		'unicorn/no-await-in-promise-methods': 2,
+		'unicorn/no-invalid-fetch-options': 2,
+		'unicorn/no-length-as-slice-end': 1,
+		'unicorn/no-magic-array-flat-depth': 1,
+		'unicorn/no-negation-in-equality-check': 1,
+		'unicorn/no-single-promise-in-promise-methods': 0,
+		'unicorn/prefer-global-this': 0,
+		'unicorn/prefer-math-min-max': 0,
+		'unicorn/prefer-string-raw': 0,
+		'unicorn/prefer-structured-clone': 0,
+		'promise/prefer-catch': 2
 	}
 };
