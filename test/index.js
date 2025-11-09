@@ -25,23 +25,28 @@ async function runEslint(file, config) {
 }
 
 describe('Config format', function () {
-	it('should have config objects which are plain objects', async function () {
-		assert.ok(configBase.length === 1);
+	it('should have base configuration defined', async function () {
+		assert.ok(configBase.length === 2);
 		assert.ok(isPlainObject(configBase[0]));
 		assert.ok(isPlainObject(configBase[0].rules));
 	});
 });
 
 describe('Default config', function () {
-	it('should return proper validation errors for linted code', async function () {
+	it('should return proper validation errors for linted code, .js file', async function () {
 		const errors = await runEslint('./fixtures/default.config.js', defineConfig(configBase));
-		assert.notEqual(errors.indexOf('quotes'), -1);
-		assert.notEqual(errors.indexOf('semi'), -1);
-		assert.notEqual(errors.indexOf('promise/param-names'), -1);
-		assert.notEqual(errors.indexOf('unicorn/throw-new-error'), -1);
-		assert.notEqual(errors.indexOf('no-const-assign'), -1);
-		assert.notEqual(errors.indexOf('prefer-template'), -1);
-		assert.notEqual(errors.indexOf('rest-spread-spacing'), -1);
+		assert.ok(errors.includes('quotes'));
+		assert.ok(errors.includes('semi'));
+		assert.ok(errors.includes('promise/param-names'));
+		assert.ok(errors.includes('unicorn/throw-new-error'));
+		assert.ok(errors.includes('no-const-assign'));
+		assert.ok(errors.includes('prefer-template'));
+		assert.ok(errors.includes('rest-spread-spacing'));
+	});
+
+	it('should return proper validation errors for linted code, .cjs file', async function () {
+		const errors = await runEslint('./fixtures/default.config.cjs', defineConfig(configBase));
+		assert.ok(!errors.includes('import/no-commonjs'));
 	});
 });
 
@@ -51,8 +56,8 @@ describe('Browser config', function () {
 			'./fixtures/browser.config.js',
 			defineConfig([configBase, configBrowser])
 		);
-		assert.notEqual(errors.indexOf('no-undef'), -1);
-		assert.notEqual(errors.indexOf('no-console'), -1);
+		assert.ok(errors.includes('no-undef'));
+		assert.ok(errors.includes('no-console'));
 	});
 });
 
@@ -62,9 +67,9 @@ describe('Tests config', function () {
 			'./fixtures/tests.config.js',
 			defineConfig([configBase, configTest])
 		);
-		assert.notEqual(errors.indexOf('max-nested-callbacks'), -1);
-		assert.notEqual(errors.indexOf('mocha/no-mocha-arrows'), -1);
-		assert.equal(errors.indexOf('promise/always-return'), -1);
+		assert.ok(errors.includes('max-nested-callbacks'));
+		assert.ok(errors.includes('mocha/no-mocha-arrows'));
+		assert.ok(!errors.includes('promise/always-return'));
 	});
 });
 
@@ -74,8 +79,8 @@ describe('Vue config', function () {
 			'./fixtures/vue.config.vue',
 			defineConfig([configBase, configVue])
 		);
-		assert.notEqual(errors.indexOf('vue/no-multiple-template-root'), -1);
-		assert.notEqual(errors.indexOf('vue/script-indent'), -1);
+		assert.ok(errors.includes('vue/no-multiple-template-root'));
+		assert.ok(errors.includes('vue/script-indent'));
 	});
 });
 
