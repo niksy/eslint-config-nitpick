@@ -36,6 +36,7 @@
     "version": "version-changelog CHANGELOG.md && changelog-verify CHANGELOG.md && git add CHANGELOG.md"
   },
   "dependencies": {
+    "@typescript-eslint/parser": "^8.46.3",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-jsdoc": "^50.8.0",
     "eslint-plugin-mocha": "^10.5.0",

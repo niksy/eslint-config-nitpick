@@ -14,7 +14,7 @@ async function runEslint(file, config) {
 		overrideConfigFile: true,
 		overrideConfig: config
 	});
-	const [results] = await linter.lintFiles([fileURLToPath(new URL(file, import.meta.url))]);
+	const [results] = await linter.lintFiles(fileURLToPath(new URL(file, import.meta.url)));
 
 	return results.messages.map((error) => {
 		if (error.ruleId === null && error.fatal === true) {
@@ -80,11 +80,19 @@ describe('Vue config', function () {
 });
 
 describe('TypeScript config', function () {
-	it('should return proper validation errors for linted code', async function () {
+	it('should return proper validation errors for linted code, .js file', async function () {
 		const errors = await runEslint(
 			'./fixtures/typescript.config.js',
 			defineConfig([configBase, configTypescript])
 		);
-		assert.notEqual(errors.length, 0);
+		assert.ok(errors.includes('no-unused-vars'));
+	});
+
+	it('should return proper validation errors for linted code, .ts file', async function () {
+		const errors = await runEslint(
+			'./fixtures/typescript.config.ts',
+			defineConfig([configBase, configTypescript])
+		);
+		assert.ok(errors.includes('no-unused-vars'));
 	});
 });
