@@ -17,28 +17,29 @@ Add this config to your `eslint.config.js`:
 <!-- prettier-ignore-start -->
 
 ```js
+import { defineConfig } from 'eslint/config';
 import configNitpick from 'eslint-config-nitpick';
 
-export default [
+export default defineConfig([
 	configNitpick
-];
+]);
 ```
 
 <!-- prettier-ignore-end -->
 
-If you’re using [presets](#presets), **it’s highly recommended to apply default
-preset:**
+If you’re using [presets](#presets), **it’s highly recommended to apply default preset:**
 
 <!-- prettier-ignore-start -->
 
 ```js
+import { defineConfig } from 'eslint/config';
 import configNitpick from 'eslint-config-nitpick';
 import configPreset from 'eslint-config-nitpick/other-preset';
 
-export default [
+export default defineConfig([
 	configNitpick,
 	configPreset
-];
+]);
 ```
 
 <!-- prettier-ignore-end -->
@@ -54,11 +55,12 @@ Browser specific rules.
 <!-- prettier-ignore-start -->
 
 ```js
+import { defineConfig } from 'eslint/config';
 import configBrowser from 'eslint-config-nitpick/browser';
 
-export default [
+export default defineConfig([
 	configBrowser
-];
+]);
 ```
 
 <!-- prettier-ignore-end -->
@@ -70,11 +72,12 @@ Rules for testing frameworks (e.g. Mocha).
 <!-- prettier-ignore-start -->
 
 ```js
+import { defineConfig } from 'eslint/config';
 import configTest from 'eslint-config-nitpick/tests';
 
-export default [
+export default defineConfig([
 	configTest
-];
+]);
 ```
 
 <!-- prettier-ignore-end -->
@@ -86,11 +89,12 @@ Vue specific rules.
 <!-- prettier-ignore-start -->
 
 ```js
+import { defineConfig } from 'eslint/config';
 import configVue from 'eslint-config-nitpick/vue';
 
-export default [
-	...configVue
-];
+export default defineConfig([
+	configVue
+]);
 ```
 
 <!-- prettier-ignore-end -->
@@ -102,11 +106,12 @@ TypeScript specific rules.
 <!-- prettier-ignore-start -->
 
 ```js
+import { defineConfig } from 'eslint/config';
 import configTypescript from 'eslint-config-nitpick/typescript';
 
-export default [
+export default defineConfig([
 	configTypescript
-];
+]);
 ```
 
 <!-- prettier-ignore-end -->
@@ -118,7 +123,6 @@ MIT © [Ivan Nikolić](http://ivannikolic.com)
 <!-- prettier-ignore-start -->
 
 [ci]: https://github.com/niksy/eslint-config-nitpick/actions?query=workflow%3ACI
-[ci-img]: https://github.com/niksy/eslint-config-nitpick/workflows/CI/badge.svg?branch=master
-[eslint]: http://eslint.org/
+[ci-img]: https://github.com/niksy/eslint-config-nitpick/actions/workflows/ci.yml/badge.svg?branch=master
 
 <!-- prettier-ignore-end -->

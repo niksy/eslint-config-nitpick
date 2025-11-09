@@ -4,8 +4,9 @@ import pluginNode from 'eslint-plugin-n';
 import pluginUnicorn from 'eslint-plugin-unicorn';
 import pluginJsdoc from 'eslint-plugin-jsdoc';
 import pluginImport from 'eslint-plugin-import';
+import { defineConfig } from 'eslint/config';
 
-export default {
+export default defineConfig({
 	languageOptions: {
 		ecmaVersion: 2022,
 		sourceType: 'module',
@@ -830,6 +831,10 @@ export default {
 		'unicorn/prefer-math-min-max': 0,
 		'unicorn/prefer-string-raw': 0,
 		'unicorn/prefer-structured-clone': 0,
-		'promise/prefer-catch': 2
+		'promise/prefer-catch': 2,
+		'import/enforce-node-protocol-usage': [2, 'always'],
+		'n/no-top-level-await': 0,
+		'no-unassigned-vars': 1,
+		'preserve-caught-error': 2
 	}
-};
+});

@@ -1,11 +1,12 @@
 import globals from 'globals';
 import pluginUnicorn from 'eslint-plugin-unicorn';
+import { defineConfig } from 'eslint/config';
 
 const nodeGlobalsDisabled = Object.fromEntries(
 	Object.entries(globals.node).map(([key]) => [key, 'off'])
 );
 
-export default {
+export default defineConfig({
 	languageOptions: {
 		globals: {
 			...nodeGlobalsDisabled,
@@ -26,4 +27,4 @@ export default {
 		'unicorn/prefer-dom-node-text-content': 1,
 		'unicorn/prefer-modern-dom-apis': 1
 	}
-};
+});

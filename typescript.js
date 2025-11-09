@@ -1,6 +1,7 @@
 import pluginJsdoc from 'eslint-plugin-jsdoc';
+import { defineConfig } from 'eslint/config';
 
-export default {
+export default defineConfig({
 	plugins: {
 		jsdoc: pluginJsdoc
 	},
@@ -15,4 +16,4 @@ export default {
 		'jsdoc/require-hyphen-before-param-description': 0,
 		'jsdoc/check-syntax': 0
 	}
-};
+});

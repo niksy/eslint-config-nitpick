@@ -1,8 +1,9 @@
 import globals from 'globals';
 import pluginMocha from 'eslint-plugin-mocha';
 import pluginPromise from 'eslint-plugin-promise';
+import { defineConfig } from 'eslint/config';
 
-export default {
+export default defineConfig({
 	languageOptions: {
 		globals: {
 			...globals.mocha
@@ -42,4 +43,4 @@ export default {
 		'no-invalid-this': 0,
 		'max-nested-callbacks': [1, 5]
 	}
-};
+});

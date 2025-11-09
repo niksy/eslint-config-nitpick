@@ -1,17 +1,14 @@
 import pluginVue from 'eslint-plugin-vue';
+import { defineConfig } from 'eslint/config';
 
-const parserVueEslint = []
-	.concat(pluginVue.configs['flat/base'])
-	.reduce((parser, config) => {
-		if (
-			config.languageOptions?.parser?.meta?.name === 'vue-eslint-parser'
-		) {
-			parser = config.languageOptions.parser;
-		}
-		return parser;
-	}, null);
+const parserVueEslint = [].concat(pluginVue.configs['flat/base']).reduce((parser, config) => {
+	if (config.languageOptions?.parser?.meta?.name === 'vue-eslint-parser') {
+		parser = config.languageOptions.parser;
+	}
+	return parser;
+}, null);
 
-export default [
+export default defineConfig([
 	{
 		plugins: {
 			vue: pluginVue
@@ -121,10 +118,7 @@ export default [
 			'vue/valid-v-text': 2,
 			'vue/no-unused-components': 1,
 			'vue/require-prop-type-constructor': 2,
-			'vue/first-attribute-linebreak': [
-				2,
-				{ singleline: 'ignore', multiline: 'below' }
-			],
+			'vue/first-attribute-linebreak': [2, { singleline: 'ignore', multiline: 'below' }],
 			'vue/require-explicit-emits': 2,
 			'vue/one-component-per-file': 2,
 			'vue/component-definition-name-casing': [2, 'PascalCase'],
@@ -136,10 +130,7 @@ export default [
 			'vue/no-template-shadow': 2,
 			'vue/no-multiple-slot-args': 2,
 			'vue/no-lone-template': 1,
-			'vue/component-tags-order': [
-				2,
-				{ 'order': ['template', 'script', 'style'] }
-			],
+			'vue/component-tags-order': [2, { 'order': ['template', 'script', 'style'] }],
 			'vue/attributes-order': 2,
 			'vue/order-in-components': 2,
 			'vue/this-in-template': [1, 'never'],
@@ -235,10 +226,7 @@ export default [
 			'vue/prefer-prop-type-boolean-first': 2,
 			'vue/prefer-true-attribute-shorthand': 0,
 			'vue/v-on-handler-style': 0,
-			'vue/block-order': [
-				1,
-				{ 'order': ['template', 'script', 'style'] }
-			],
+			'vue/block-order': [1, { 'order': ['template', 'script', 'style'] }],
 			'vue/enforce-style-attribute': 0,
 			'vue/max-lines-per-block': 0,
 			'vue/no-deprecated-model-definition': 2,
@@ -297,10 +285,7 @@ export default [
 				}
 			],
 			'vue/object-curly-spacing': 0,
-			'vue/object-property-newline': [
-				1,
-				{ allowAllPropertiesOnSameLine: true }
-			],
+			'vue/object-property-newline': [1, { allowAllPropertiesOnSameLine: true }],
 			'vue/operator-linebreak': [2, 'after'],
 			'vue/quote-props': [
 				1,
@@ -362,7 +347,8 @@ export default [
 			'vue/require-default-export': 1,
 			'vue/script-indent': 0,
 			'vue/restricted-component-names': 0,
-			'vue/slot-name-casing': 0
+			'vue/slot-name-casing': 0,
+			'vue/no-implicit-coercion': 2
 		}
 	},
 	{
@@ -386,4 +372,4 @@ export default [
 			]
 		}
 	}
-];
+]);
