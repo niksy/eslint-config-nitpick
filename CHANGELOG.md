@@ -2,6 +2,12 @@
 
 ## [Unreleased][]
 
+### Changed
+
+- Allow CommonJS for `.cjs` files
+- Use TypeScript parser for TypeScript files
+- Upgrade package
+
 ## [14.1.0][] - 2025-02-16
 
 ### Changed
@@ -77,8 +83,7 @@
 
 ### Changed
 
-- Downgrade `eslint-plugin-mocha` version since latest version drops Node 12
-  support
+- Downgrade `eslint-plugin-mocha` version since latest version drops Node 12 support
 
 ## [11.1.0][] - 2021-12-29
 
@@ -101,9 +106,10 @@
 - **Breaking**: Supports ESLint >= 8
 - Upgrade package
 
+<!-- prettier-ignore-start -->
+
 [Unreleased]: https://github.com/niksy/eslint-config-nitpick/compare/v14.1.0...HEAD
 [14.1.0]: https://github.com/niksy/eslint-config-nitpick/tree/v14.1.0
-	https://github.com/niksy/eslint-config-nitpick/compare/v14.0.2...HEAD
 [14.0.2]: https://github.com/niksy/eslint-config-nitpick/tree/v14.0.2
 [14.0.1]: https://github.com/niksy/eslint-config-nitpick/tree/v14.0.1
 [14.0.0]: https://github.com/niksy/eslint-config-nitpick/tree/v14.0.0
