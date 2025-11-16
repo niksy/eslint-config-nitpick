@@ -13,6 +13,7 @@ export default defineConfig([
 			}
 		},
 		rules: {
+			'dot-notation': 0,
 			'jsdoc/require-returns': 0,
 			'jsdoc/require-throws': 0,
 			'jsdoc/require-hyphen-before-param-description': 0,
