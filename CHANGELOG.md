@@ -2,6 +2,8 @@
 
 ## [Unreleased][]
 
+## [14.2.1][] - 2025-11-16
+
 ### Added
 
 - Add types
@@ -114,7 +116,8 @@
 
 <!-- prettier-ignore-start -->
 
-[Unreleased]: https://github.com/niksy/eslint-config-nitpick/compare/v14.2.0...HEAD
+[Unreleased]: https://github.com/niksy/eslint-config-nitpick/compare/v14.2.1...HEAD
+[14.2.1]: https://github.com/niksy/eslint-config-nitpick/compare/v14.2.0...v14.2.1
 [14.2.0]: https://github.com/niksy/eslint-config-nitpick/compare/v14.1.0...v14.2.0
 [14.1.0]: https://github.com/niksy/eslint-config-nitpick/tree/v14.1.0
 [14.0.2]: https://github.com/niksy/eslint-config-nitpick/tree/v14.0.2
