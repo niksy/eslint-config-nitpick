@@ -2,6 +2,10 @@
 
 ## [Unreleased][]
 
+### Added
+
+- Add types
+
 ## [14.2.0][] - 2025-11-10
 
 ### Changed

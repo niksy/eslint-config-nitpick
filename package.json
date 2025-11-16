@@ -7,12 +7,25 @@
   "type": "module",
   "exports": {
     ".": {
+      "types": "./index.d.ts",
       "import": "./index.js"
     },
-    "./browser": "./browser.js",
-    "./tests": "./tests.js",
-    "./vue": "./vue.js",
-    "./typescript": "./typescript.js",
+    "./browser": {
+      "types": "./index.d.ts",
+      "import": "./browser.js"
+    },
+    "./tests": {
+      "types": "./index.d.ts",
+      "import": "./tests.js"
+    },
+    "./vue": {
+      "types": "./index.d.ts",
+      "import": "./vue.js"
+    },
+    "./typescript": {
+      "types": "./index.d.ts",
+      "import": "./typescript.js"
+    },
     "./package.json": "./package.json"
   },
   "main": "index.js",
@@ -21,12 +34,13 @@
   },
   "files": [
     "{index,browser,tests,vue,typescript}.js",
+    "index.d.ts",
     "CHANGELOG.md",
     "LICENSE.md",
     "README.md"
   ],
   "scripts": {
-    "lint": "eslint '{index,browser,tests,vue,typescript,test/index}.js'",
+    "lint": "eslint '{index,browser,tests,vue,typescript,test/index}.{js,d.ts}'",
     "prepare": "if [[ -x \"$(command -v husky)\" ]]; then husky; fi",
     "postpublish": "GITHUB_TOKEN=$GITHUB_RELEASE_TOKEN github-release-from-changelog",
     "prerelease": "npm run lint",
