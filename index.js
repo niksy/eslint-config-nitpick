@@ -65,6 +65,8 @@ export default defineConfig([
 			'n/prefer-global/process': 0,
 			'n/prefer-global/text-decoder': 0,
 			'n/prefer-global/text-encoder': 0,
+			'n/prefer-global/crypto': 0,
+			'n/prefer-global/timers': 0,
 			'n/prefer-promises/dns': 0,
 			'n/prefer-promises/fs': 1,
 			'n/hashbang': 1,
