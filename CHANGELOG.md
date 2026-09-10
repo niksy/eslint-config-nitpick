@@ -2,6 +2,11 @@
 
 ## [Unreleased][]
 
+### Changed
+
+- **Breaking**: Supports Node >= 20.19
+- Update rules
+
 ## [14.2.1][] - 2025-11-16
 
 ### Added
