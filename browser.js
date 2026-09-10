@@ -24,7 +24,16 @@ export default defineConfig({
 		'unicorn/prefer-dom-node-append': 0,
 		'unicorn/prefer-dom-node-remove': 0,
 		'unicorn/prefer-dom-node-dataset': 1,
+		'unicorn/dom-node-dataset': 1,
 		'unicorn/prefer-dom-node-text-content': 1,
-		'unicorn/prefer-modern-dom-apis': 1
+		'unicorn/prefer-modern-dom-apis': 1,
+		'unicorn/better-dom-traversing': 1,
+		'unicorn/no-canvas-to-image': 0,
+		'unicorn/no-incorrect-query-selector': 1,
+		'unicorn/no-invalid-file-input-accept': 1,
+		'unicorn/no-late-current-target-access': 1,
+		'unicorn/prefer-classlist-toggle': 1,
+		'unicorn/require-css-escape': 0,
+		'unicorn/require-passive-events': 1
 	}
 });
