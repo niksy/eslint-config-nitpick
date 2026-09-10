@@ -2,6 +2,8 @@
 
 ## [Unreleased][]
 
+## [15.0.1][] - 2026-09-10
+
 ### Changed
 
 - Update package
@@ -127,7 +129,8 @@
 
 <!-- prettier-ignore-start -->
 
-[Unreleased]: https://github.com/niksy/eslint-config-nitpick/compare/v15.0.0...HEAD
+[Unreleased]: https://github.com/niksy/eslint-config-nitpick/compare/v15.0.1...HEAD
+[15.0.1]: https://github.com/niksy/eslint-config-nitpick/compare/v15.0.0...v15.0.1
 [15.0.0]: https://github.com/niksy/eslint-config-nitpick/compare/v14.2.1...v15.0.0
 [14.2.1]: https://github.com/niksy/eslint-config-nitpick/compare/v14.2.0...v14.2.1
 [14.2.0]: https://github.com/niksy/eslint-config-nitpick/compare/v14.1.0...v14.2.0
