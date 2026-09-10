@@ -2,6 +2,8 @@
 
 ## [Unreleased][]
 
+## [15.0.0][] - 2026-09-10
+
 ### Changed
 
 - **Breaking**: Supports Node >= 20.19
@@ -121,7 +123,8 @@
 
 <!-- prettier-ignore-start -->
 
-[Unreleased]: https://github.com/niksy/eslint-config-nitpick/compare/v14.2.1...HEAD
+[Unreleased]: https://github.com/niksy/eslint-config-nitpick/compare/v15.0.0...HEAD
+[15.0.0]: https://github.com/niksy/eslint-config-nitpick/compare/v14.2.1...v15.0.0
 [14.2.1]: https://github.com/niksy/eslint-config-nitpick/compare/v14.2.0...v14.2.1
 [14.2.0]: https://github.com/niksy/eslint-config-nitpick/compare/v14.1.0...v14.2.0
 [14.1.0]: https://github.com/niksy/eslint-config-nitpick/tree/v14.1.0
