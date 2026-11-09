@@ -41,7 +41,8 @@
   ],
   "scripts": {
     "lint": "eslint '{index,browser,tests,vue,typescript,test/index}.{js,d.ts}'",
-    "prepare": "if [[ -x \"$(command -v husky)\" ]]; then husky; fi",
+    "prepare": "npm run build:eslint-find-rules && if [[ -x \"$(command -v husky)\" ]]; then husky; fi",
+    "build:eslint-find-rules": "ln -sfn src node_modules/eslint-find-rules/dist && npm rebuild eslint-find-rules",
     "postpublish": "GITHUB_TOKEN=$GITHUB_RELEASE_TOKEN github-release-from-changelog",
     "prerelease": "npm run lint",
     "release": "np --no-release-draft",
@@ -67,7 +68,7 @@
     "changelog-verify": "^1.1.2",
     "eslint": "^9.39.5",
     "eslint-config-prettier": "^10.1.8",
-    "eslint-find-rules": "^5.0.0",
+    "eslint-find-rules": "github:kevinoid/eslint-find-rules#4072659493487a90bc50e0eca50428821240afff",
     "eslint-plugin-prettier": "^5.5.6",
     "github-release-from-changelog": "^2.1.1",
     "husky": "^9.1.7",
