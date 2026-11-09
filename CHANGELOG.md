@@ -2,6 +2,8 @@
 
 ## [Unreleased][]
 
+## [16.0.0][] - 2026-11-09
+
 ### Changed
 
 - **Breaking**: Requires ESLint 10
@@ -134,7 +136,8 @@
 
 <!-- prettier-ignore-start -->
 
-[Unreleased]: https://github.com/niksy/eslint-config-nitpick/compare/v15.0.1...HEAD
+[Unreleased]: https://github.com/niksy/eslint-config-nitpick/compare/v16.0.0...HEAD
+[16.0.0]: https://github.com/niksy/eslint-config-nitpick/compare/v15.0.1...v16.0.0
 [15.0.1]: https://github.com/niksy/eslint-config-nitpick/compare/v15.0.0...v15.0.1
 [15.0.0]: https://github.com/niksy/eslint-config-nitpick/compare/v14.2.1...v15.0.0
 [14.2.1]: https://github.com/niksy/eslint-config-nitpick/compare/v14.2.0...v14.2.1
