@@ -2,6 +2,10 @@
 
 ## [Unreleased][]
 
+### Changed
+
+- Replace `eslint-plugin-import` with `eslint-plugin-import-x`, keeping the `import` namespace
+
 ## [15.0.1][] - 2026-09-10
 
 ### Changed

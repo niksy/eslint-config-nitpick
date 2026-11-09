@@ -2,7 +2,7 @@ import { defineConfig, globalIgnores } from 'eslint/config';
 import configPrettier from 'eslint-config-prettier';
 import pluginPrettier from 'eslint-plugin-prettier';
 import pluginUnicorn from 'eslint-plugin-unicorn';
-import pluginImport from 'eslint-plugin-import';
+import pluginImport from 'eslint-plugin-import-x';
 import configTest from './tests.js';
 import configBase from './index.js';
 
