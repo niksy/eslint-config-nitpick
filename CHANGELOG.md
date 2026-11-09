@@ -2,6 +2,8 @@
 
 ## [Unreleased][]
 
+## [16.0.1][] - 2026-11-09
+
 ### Fixed
 
 - Use separate type declaration file for each subpath export so `import/no-duplicates` does not
@@ -141,7 +143,8 @@
 
 <!-- prettier-ignore-start -->
 
-[Unreleased]: https://github.com/niksy/eslint-config-nitpick/compare/v16.0.0...HEAD
+[Unreleased]: https://github.com/niksy/eslint-config-nitpick/compare/v16.0.1...HEAD
+[16.0.1]: https://github.com/niksy/eslint-config-nitpick/compare/v16.0.0...v16.0.1
 [16.0.0]: https://github.com/niksy/eslint-config-nitpick/compare/v15.0.1...v16.0.0
 [15.0.1]: https://github.com/niksy/eslint-config-nitpick/compare/v15.0.0...v15.0.1
 [15.0.0]: https://github.com/niksy/eslint-config-nitpick/compare/v14.2.1...v15.0.0
