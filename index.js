@@ -566,8 +566,12 @@ export default defineConfig([
 			'import/extensions': [2, 'always', { ignorePackages: true }],
 			'import/consistent-type-specifier-style': 0,
 			'import/no-empty-named-blocks': 1,
-
-			// Stylistic rules
+			'import/avoid-barrel-files': 0,
+			'import/avoid-importing-barrel-files': 0,
+			'import/avoid-namespace-import': 0,
+			'import/avoid-re-export-all': 2,
+			'import/no-rename-default': 0,
+			'import/prefer-namespace-import': 0,
 			'array-bracket-newline': [1, 'consistent'],
 			'array-bracket-spacing': [
 				1,
