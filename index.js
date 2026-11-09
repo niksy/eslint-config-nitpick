@@ -3,7 +3,7 @@ import pluginPromise from 'eslint-plugin-promise';
 import pluginNode from 'eslint-plugin-n';
 import pluginUnicorn from 'eslint-plugin-unicorn';
 import pluginJsdoc from 'eslint-plugin-jsdoc';
-import pluginImport from 'eslint-plugin-import';
+import pluginImport from 'eslint-plugin-import-x';
 import { defineConfig } from 'eslint/config';
 
 export default defineConfig([
@@ -71,7 +71,7 @@ export default defineConfig([
 			'n/prefer-promises/fs': 1,
 			'n/prefer-process-get-builtin-module': 0,
 			'n/hashbang': 1,
-			'n/prefer-node-protocol': 1,
+			'n/prefer-node-protocol': 0,
 			'unicorn/import-style': 1,
 			'unicorn/no-null': 0,
 			'unicorn/no-object-as-default-parameter': 2,
@@ -128,7 +128,7 @@ export default defineConfig([
 			'unicorn/prefer-date-now': 1,
 			'unicorn/prefer-default-parameters': 1,
 			'unicorn/prefer-keyboard-event-key': 0,
-			'unicorn/prefer-node-protocol': 1,
+			'unicorn/prefer-node-protocol': 2,
 			'unicorn/prefer-regexp-test': 1,
 			'unicorn/prefer-string-replace-all': 0,
 			'unicorn/prefer-string-starts-ends-with': 0,
@@ -833,7 +833,6 @@ export default defineConfig([
 			'unicorn/prefer-string-raw': 0,
 			'unicorn/prefer-structured-clone': 0,
 			'promise/prefer-catch': 2,
-			'import/enforce-node-protocol-usage': [2, 'always'],
 			'n/no-top-level-await': 0,
 			'no-unassigned-vars': 1,
 			'preserve-caught-error': 2,
