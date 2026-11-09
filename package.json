@@ -66,7 +66,7 @@
     "@types/mocha": "^10.0.10",
     "@types/node": "^20.19.43",
     "changelog-verify": "^1.1.2",
-    "eslint": "^9.39.5",
+    "eslint": "^10.14.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-find-rules": "github:kevinoid/eslint-find-rules#4072659493487a90bc50e0eca50428821240afff",
     "eslint-plugin-prettier": "^5.5.6",
@@ -80,7 +80,7 @@
     "version-changelog": "^3.1.1"
   },
   "peerDependencies": {
-    "eslint": "^9.0.0"
+    "eslint": "^10.0.0"
   },
   "engines": {
     "node": ">=20.19"
