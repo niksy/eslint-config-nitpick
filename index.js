@@ -502,7 +502,12 @@ export default defineConfig([
 			'prefer-rest-params': 1,
 			'sort-imports': 0,
 			'symbol-description': 1,
-			'no-duplicate-imports': 1,
+			'no-duplicate-imports': [
+				1,
+				{
+					allowSeparateTypeImports: true
+				}
+			],
 			'no-useless-rename': 1,
 			'class-methods-use-this': 0,
 			'prefer-numeric-literals': 0,
