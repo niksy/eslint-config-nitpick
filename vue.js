@@ -247,8 +247,6 @@ export default defineConfig([
 			'vue/v-if-else-key': 2,
 			'vue/valid-define-options': 1,
 			'vue/no-console': 2,
-
-			// Stylistic rules
 			'vue/array-bracket-newline': [1, 'consistent'],
 			'vue/array-bracket-spacing': 0,
 			'vue/array-element-newline': [1, 'consistent'],
@@ -358,7 +356,10 @@ export default defineConfig([
 			'vue/no-shadow-native-events': 0,
 			'vue/no-undef-directives': 1,
 			'vue/prefer-single-event-payload': 1,
-			'vue/prefer-v-model': 1
+			'vue/prefer-v-model': 1,
+			'vue/no-content-outside-block': 0,
+			'vue/no-define-model-default': 0,
+			'vue/no-props-shadow': 0
 		}
 	},
 	{
