@@ -11,19 +11,19 @@
       "import": "./index.js"
     },
     "./browser": {
-      "types": "./index.d.ts",
+      "types": "./browser.d.ts",
       "import": "./browser.js"
     },
     "./tests": {
-      "types": "./index.d.ts",
+      "types": "./tests.d.ts",
       "import": "./tests.js"
     },
     "./vue": {
-      "types": "./index.d.ts",
+      "types": "./vue.d.ts",
       "import": "./vue.js"
     },
     "./typescript": {
-      "types": "./index.d.ts",
+      "types": "./typescript.d.ts",
       "import": "./typescript.js"
     },
     "./package.json": "./package.json"
@@ -33,8 +33,7 @@
     "test": "test"
   },
   "files": [
-    "{index,browser,tests,vue,typescript}.js",
-    "index.d.ts",
+    "{index,browser,tests,vue,typescript}.{js,d.ts}",
     "CHANGELOG.md",
     "LICENSE.md",
     "README.md"

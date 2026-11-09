@@ -2,6 +2,11 @@
 
 ## [Unreleased][]
 
+### Fixed
+
+- Use separate type declaration file for each subpath export so `import/no-duplicates` does not
+  report false duplicates
+
 ## [16.0.0][] - 2026-11-09
 
 ### Changed
